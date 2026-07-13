@@ -11,3 +11,11 @@ h2,
 h3 {
   @apply font-display;
 }
+
+a {
+  @apply underline underline-offset-2;
+}
+
+a:hover {
+  @apply text-secondary;
+}
