@@ -58,7 +58,7 @@ export function getAllNewsPosts(lang: Lang): NewsPost[] {
     }
   })
 
-  return posts.sort((a, b) => (a.date < b.date ? 1 : -1))
+  return posts.sort((a, b) => b.date.localeCompare(a.date))
 }
 
 export function getNewsPost(lang: Lang, slug: string): NewsPost | null {
