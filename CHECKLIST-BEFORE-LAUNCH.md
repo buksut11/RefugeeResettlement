@@ -32,3 +32,12 @@ None yet — impact statistics are introduced in Phase 3 (homepage) and Phase 5 
 
 - Routing, language switching, header/footer structure, fonts, and color tokens are final.
 - Organization name ("Horumar Resettlement Network"), hero headline/subline, and all Somali text are **demo placeholders only** — invented for local preview purposes, not real facts about the organization. Every occurrence is tagged `(DEMO)`/`(DEMO NAME)`/`(DEMO TEXT)` (or the Somali equivalent) directly in the copy so it's obvious on the rendered page. Replace with real Section 0 facts and reviewed translations before launch — see above.
+
+## Phase 3 (Homepage) — what's real vs. placeholder right now
+
+- Program names (Resettlement & Durable Solutions, Shelter & Essential Services, Livelihoods & Self-Reliance, Protection & Community Cohesion) are final, from the source brief. Their one-sentence summaries are **demo copy**, tagged `(DEMO)`/`(QORAAL DEMO AH)` inline — replace with real program language before launch.
+- All four impact-strip figures are placeholders (`[NUMBER TO BE CONFIRMED]` / Somali equivalent) with no source or period yet — per the source brief's rule, never invent a number. Replace once real, sourced, dated figures are supplied.
+- Hero image is a styled placeholder box, not a real photograph — swap in `hero-placeholder.jpg` (or the real photo) via `next/image` once supplied.
+- The homepage "Latest News" section is an honest empty state — no fake posts. Becomes real once the Markdown news pipeline (Phase 5) is built and posts exist in `/content/news/`.
+- The Somalia map uses real geoBoundaries (CC-BY 4.0) boundary data for the national outline and the closest available real regions (Hiiraan + Middle Shebelle for "Hiran/Hirshabelle"; Bay + Bakool + Lower Shebelle for "Southwest State") — no federal-member-state boundary dataset exists publicly. The map's CC-BY attribution line is a license requirement and must stay visible in both languages; do not remove it.
+- Program page links (`/programs/resettlement/` etc.) will 404 until Phase 4 builds those pages — expected mid-build, not a defect.

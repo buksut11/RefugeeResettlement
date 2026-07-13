@@ -1,13 +1,20 @@
-import { getContent } from '@/lib/content'
+import { Hero } from '@/components/home/Hero'
+import { SomaliaMap } from '@/components/home/SomaliaMap'
+import { ProgramsSection } from '@/components/home/ProgramsSection'
+import { ImpactStrip } from '@/components/home/ImpactStrip'
+import { NewsPreview } from '@/components/home/NewsPreview'
 import type { Lang } from '@/lib/i18n'
 
 export default function HomePage({ params }: { params: { lang: Lang } }) {
-  const content = getContent(params.lang)
+  const { lang } = params
 
   return (
-    <section className="px-4 py-12">
-      <h1 className="text-3xl font-semibold">{content.home.heroHeadline}</h1>
-      <p className="mt-2 text-lg">{content.home.heroSubline}</p>
-    </section>
+    <>
+      <Hero lang={lang} />
+      <SomaliaMap lang={lang} />
+      <ProgramsSection lang={lang} />
+      <ImpactStrip lang={lang} />
+      <NewsPreview lang={lang} />
+    </>
   )
 }

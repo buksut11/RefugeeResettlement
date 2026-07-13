@@ -3,15 +3,24 @@ import { render, screen } from '@testing-library/react'
 import HomePage from '@/app/[lang]/page'
 
 describe('HomePage', () => {
-  it('renders the hero headline and subline for the given language', () => {
+  it('renders every section in order: hero, map, programs (incl. each card title), impact, news', () => {
     render(<HomePage params={{ lang: 'en' }} />)
-    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(
-      'Helping displaced families in Hiran and Southwest State rebuild their lives (DEMO TEXT)'
-    )
-    expect(
-      screen.getByText(
-        'Resettlement, shelter, and livelihoods support for families in Beledweyne and Baidoa. (DEMO TEXT)'
-      )
-    ).toBeInTheDocument()
+
+    // ProgramCard renders an h3 per program, so all 4 program titles appear
+    // between "What We Do" and "Impact" in the full heading order.
+    const headings = screen.getAllByRole('heading').map((h) => h.textContent)
+    expect(headings).toEqual([
+      'Helping displaced families in Hiran and Southwest State rebuild their lives (DEMO TEXT)',
+      'Where We Work',
+      'What We Do',
+      'Resettlement & Durable Solutions',
+      'Shelter & Essential Services',
+      'Livelihoods & Self-Reliance',
+      'Protection & Community Cohesion',
+      'Impact',
+      'Latest News',
+    ])
+
+    expect(screen.getByRole('heading', { level: 1 })).toBeInTheDocument()
   })
 })
