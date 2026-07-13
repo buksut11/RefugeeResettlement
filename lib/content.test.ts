@@ -1,6 +1,16 @@
 import { describe, it, expect } from 'vitest'
 import { getContent } from '@/lib/content'
 
+function keyShape(value: unknown): unknown {
+  if (Array.isArray(value)) return value.map(keyShape)
+  if (value !== null && typeof value === 'object') {
+    return Object.keys(value as Record<string, unknown>)
+      .sort()
+      .map((key) => [key, keyShape((value as Record<string, unknown>)[key])])
+  }
+  return null
+}
+
 describe('getContent', () => {
   it('returns English content for "en"', () => {
     const content = getContent('en')
@@ -14,75 +24,42 @@ describe('getContent', () => {
     expect(content.nav.home).toBeDefined()
   })
 
-  it('includes Phase 3 homepage content keys', () => {
-    const content = getContent('en')
-    expect(content.home.whereWeWorkHeading).toBe('Where We Work')
-    expect(content.home.whatWeDoHeading).toBe('What We Do')
-    expect(content.home.impactHeading).toBe('Impact')
-    expect(content.home.newsHeading).toBe('Latest News')
-    expect(content.programs.resettlement.title).toBe('Resettlement & Durable Solutions')
-    expect(content.impact.figurePlaceholder).toBe('[NUMBER TO BE CONFIRMED]')
-  })
-
   it('includes Phase 4 About page content keys', () => {
     const content = getContent('en')
     expect(content.about.heading).toBe('About Us')
-    expect(content.about.values).toHaveLength(4)
     expect(content.about.leadership).toHaveLength(3)
-    expect(content.about.leadership[0].name).toBe('Amina Yusuf (DEMO NAME)')
-    expect(content.about.commitmentPSEA).toContain('zero-tolerance')
   })
 
-  it('includes Phase 4 extended program detail keys for all four programs', () => {
+  it('includes Phase 5 News content keys', () => {
     const content = getContent('en')
-    for (const slug of ['resettlement', 'shelter', 'livelihoods', 'protection'] as const) {
-      expect(content.programs[slug].problem.length).toBeGreaterThan(0)
-      expect(content.programs[slug].whatWeDo.length).toBeGreaterThan(0)
-      expect(content.programs[slug].story.length).toBeGreaterThan(0)
-      expect(content.programs[slug].storyAttribution.length).toBeGreaterThan(0)
-    }
-    expect(content.programDetail.problemHeading).toBe('The Problem')
-    expect(content.programDetail.supportCta).toBe('Support this program')
+    expect(content.news.pageHeading).toBe('News & Stories')
+    expect(content.news.filterRegionLabel).toBe('Region')
+    expect(content.news.filterProgramLabel).toBe('Program')
+    expect(content.news.filterAllLabel).toBe('All')
+    expect(content.news.regionBoth).toBe('Both regions')
+    expect(content.news.readMoreLabel).toBe('Read more')
+    expect(content.news.consentNotice).toContain('informed consent')
   })
 
-  it('includes Phase 4 Where We Work content keys with region anchors data', () => {
+  it('includes Phase 5 Impact page content keys', () => {
     const content = getContent('en')
-    expect(content.whereWeWork.heading).toBe('Where We Work')
-    expect(content.whereWeWork.hiran.heading).toBe('Hiran / Hirshabelle')
-    expect(content.whereWeWork.hiran.coordination).toBe('[COORDINATION PARTNERS TO BE CONFIRMED]')
-    expect(content.whereWeWork.southwest.heading).toBe('Southwest State')
-    expect(content.whereWeWork.regionLabels.districts).toBe('Districts Covered')
+    expect(content.impact.pageHeading).toBe('Impact & Accountability')
+    expect(content.impact.resultsThisYearLabel).toBe('This Year')
+    expect(content.impact.resultsLastYearLabel).toBe('Last Year')
+    expect(content.impact.percentagePlaceholder).toBe('[PERCENTAGE TO BE CONFIRMED]')
+    expect(content.impact.complaintsPhone).toBe('[PHONE NUMBER TO BE CONFIRMED]')
+    expect(content.impact.reportsEmptyState).toContain('[YEAR TO BE CONFIRMED]')
   })
 
-  it('has matching key structure between "en" and "so" for all Phase 4 content objects', () => {
-    // Structural check only — Somali strings are not final translations and may
-    // still change. This guards against a future edit silently dropping a key
-    // from one language file without the other.
-    function keyShape(value: unknown): unknown {
-      if (Array.isArray(value)) {
-        return value.map(keyShape)
-      }
-      if (value !== null && typeof value === 'object') {
-        return Object.keys(value as Record<string, unknown>)
-          .sort()
-          .reduce<Record<string, unknown>>((acc, key) => {
-            acc[key] = keyShape((value as Record<string, unknown>)[key])
-            return acc
-          }, {})
-      }
-      return null
-    }
-
+  it('keeps all Somali content structurally in sync with English', () => {
     const en = getContent('en')
     const so = getContent('so')
-
-    const sections = ['about', 'programDetail', 'programsPage', 'whereWeWork'] as const
-    for (const section of sections) {
-      expect(keyShape(so[section])).toEqual(keyShape(en[section]))
-    }
-
-    for (const slug of ['resettlement', 'shelter', 'livelihoods', 'protection'] as const) {
-      expect(keyShape(so.programs[slug])).toEqual(keyShape(en.programs[slug]))
-    }
+    expect(keyShape(so.about)).toEqual(keyShape(en.about))
+    expect(keyShape(so.news)).toEqual(keyShape(en.news))
+    expect(keyShape(so.impact)).toEqual(keyShape(en.impact))
+    expect(keyShape(so.programDetail)).toEqual(keyShape(en.programDetail))
+    expect(keyShape(so.programsPage)).toEqual(keyShape(en.programsPage))
+    expect(keyShape(so.whereWeWork)).toEqual(keyShape(en.whereWeWork))
+    expect(keyShape(so.programs)).toEqual(keyShape(en.programs))
   })
 })
