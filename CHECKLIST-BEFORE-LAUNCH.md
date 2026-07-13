@@ -41,3 +41,14 @@ None yet — impact statistics are introduced in Phase 3 (homepage) and Phase 5 
 - The homepage "Latest News" section is an honest empty state — no fake posts. Becomes real once the Markdown news pipeline (Phase 5) is built and posts exist in `/content/news/`.
 - The Somalia map uses real geoBoundaries (CC-BY 4.0) boundary data for the national outline and the closest available real regions (Hiiraan + Middle Shebelle for "Hiran/Hirshabelle"; Bay + Bakool + Lower Shebelle for "Southwest State") — no federal-member-state boundary dataset exists publicly. The map's CC-BY attribution line is a license requirement and must stay visible in both languages; do not remove it.
 - Program page links (`/programs/resettlement/` etc.) will 404 until Phase 4 builds those pages — expected mid-build, not a defect.
+
+## Phase 4 (About, Programs, Where We Work) — what's real vs. placeholder right now
+
+- Leadership/board names, roles, bios, and photos are demo placeholders, tagged `(DEMO NAME)`/`(DEMO ROLE)`/`(DEMO BIO)` — replace once real Section 0 facts (board names, roles) are supplied.
+- Each program sub-page's anonymized story is fictional demo content, clearly tagged `(DEMO STORY)` — replace with a real, consented, anonymized story before launch. Do not remove the "shared with consent" attribution pattern even when real stories are added; update it to reflect actual consent status.
+- Registration number is an honest placeholder (`[REGISTRATION NUMBER TO BE CONFIRMED]`) — not invented.
+- Coordination partners on the Where We Work page are an honest placeholder (`[COORDINATION PARTNERS TO BE CONFIRMED]`) — do not fill in with real organization names (UNHCR, IOM, etc.) until an actual partnership is confirmed by the user; naming a real org here without confirmation would imply a partnership that doesn't exist.
+- Districts covered and field office locations continue to use Beledweyne (Hiran) / Baidoa (Southwest) structurally; still unconfirmed per Section 0.
+- The 2023 Shabelle river flooding content on the Where We Work page **is verified, sourced content** (IOM, OCHA/ReliefWeb, FAO) — not a placeholder. If updated later, re-verify rather than editing from memory.
+- The About page's Safeguarding & PSEA link (`/{lang}/safeguarding/`) will 404 until Phase 7 builds the legal pages — expected mid-build, not a defect.
+- Program sub-page "Support this program" buttons link to `/{lang}/donate/`, which will 404 until Phase 6 — expected mid-build, not a defect.

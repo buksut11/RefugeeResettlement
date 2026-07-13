@@ -21,9 +21,68 @@ describe('getContent', () => {
     expect(content.home.impactHeading).toBe('Impact')
     expect(content.home.newsHeading).toBe('Latest News')
     expect(content.programs.resettlement.title).toBe('Resettlement & Durable Solutions')
-    expect(content.programs.shelter.title).toBe('Shelter & Essential Services')
-    expect(content.programs.livelihoods.title).toBe('Livelihoods & Self-Reliance')
-    expect(content.programs.protection.title).toBe('Protection & Community Cohesion')
     expect(content.impact.figurePlaceholder).toBe('[NUMBER TO BE CONFIRMED]')
+  })
+
+  it('includes Phase 4 About page content keys', () => {
+    const content = getContent('en')
+    expect(content.about.heading).toBe('About Us')
+    expect(content.about.values).toHaveLength(4)
+    expect(content.about.leadership).toHaveLength(3)
+    expect(content.about.leadership[0].name).toBe('Amina Yusuf (DEMO NAME)')
+    expect(content.about.commitmentPSEA).toContain('zero-tolerance')
+  })
+
+  it('includes Phase 4 extended program detail keys for all four programs', () => {
+    const content = getContent('en')
+    for (const slug of ['resettlement', 'shelter', 'livelihoods', 'protection'] as const) {
+      expect(content.programs[slug].problem.length).toBeGreaterThan(0)
+      expect(content.programs[slug].whatWeDo.length).toBeGreaterThan(0)
+      expect(content.programs[slug].story.length).toBeGreaterThan(0)
+      expect(content.programs[slug].storyAttribution.length).toBeGreaterThan(0)
+    }
+    expect(content.programDetail.problemHeading).toBe('The Problem')
+    expect(content.programDetail.supportCta).toBe('Support this program')
+  })
+
+  it('includes Phase 4 Where We Work content keys with region anchors data', () => {
+    const content = getContent('en')
+    expect(content.whereWeWork.heading).toBe('Where We Work')
+    expect(content.whereWeWork.hiran.heading).toBe('Hiran / Hirshabelle')
+    expect(content.whereWeWork.hiran.coordination).toBe('[COORDINATION PARTNERS TO BE CONFIRMED]')
+    expect(content.whereWeWork.southwest.heading).toBe('Southwest State')
+    expect(content.whereWeWork.regionLabels.districts).toBe('Districts Covered')
+  })
+
+  it('has matching key structure between "en" and "so" for all Phase 4 content objects', () => {
+    // Structural check only — Somali strings are not final translations and may
+    // still change. This guards against a future edit silently dropping a key
+    // from one language file without the other.
+    function keyShape(value: unknown): unknown {
+      if (Array.isArray(value)) {
+        return value.map(keyShape)
+      }
+      if (value !== null && typeof value === 'object') {
+        return Object.keys(value as Record<string, unknown>)
+          .sort()
+          .reduce<Record<string, unknown>>((acc, key) => {
+            acc[key] = keyShape((value as Record<string, unknown>)[key])
+            return acc
+          }, {})
+      }
+      return null
+    }
+
+    const en = getContent('en')
+    const so = getContent('so')
+
+    const sections = ['about', 'programDetail', 'programsPage', 'whereWeWork'] as const
+    for (const section of sections) {
+      expect(keyShape(so[section])).toEqual(keyShape(en[section]))
+    }
+
+    for (const slug of ['resettlement', 'shelter', 'livelihoods', 'protection'] as const) {
+      expect(keyShape(so.programs[slug])).toEqual(keyShape(en.programs[slug]))
+    }
   })
 })

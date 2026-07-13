@@ -40,19 +40,43 @@
   "programs": {
     "resettlement": {
       "title": "Dib-u-dejin iyo Xalal Waara",
-      "summary": "Waxaan ka caawinaa qoysaska barakacay inay helaan dhul, hoy, iyo meel ay dib ugu dhisan karaan noloshooda. (QORAAL DEMO AH)"
+      "summary": "Waxaan ka caawinaa qoysaska barakacay inay helaan dhul, hoy, iyo meel ay dib ugu dhisan karaan noloshooda. (QORAAL DEMO AH)",
+      "problem": "Qoysas badan oo barakacay oo ku nool Hiiraan iyo Koonfur Galbeed ma haystaan dhul sugan ama hoy ammaan ah. (QORAAL DEMO AH)",
+      "whatWeDo": "Waxaan taageernaa doorashada goobta, dukumentiga dhulka, dhismaha hoyga, iyo isku-dhafka bulshada martida loo yahay. (QORAAL DEMO AH)",
+      "whereText": "Waxaan ka shaqeynaa Hiiraan/Hirshabelle (Beledweyne) iyo Koonfur Galbeed (Baydhabo). (QORAAL DEMO AH)",
+      "measurement": "Waxaan la soconaa qoysaska dib loo dejiyay, dukumentiyada dhulka, iyo sahannada qanaacsanaanta qoysaska. (QORAAL DEMO AH)",
+      "story": "Halima iyo saddexdeeda carruur ayaa laba jeer barakacay ka hor inta aysan dib ugu dejin agagaarka Beledweyne, iyagoo la caawiyay dhul iyo hoy joogto ah. Magaca iyo faahfaahinta waa la beddelay si loo ilaaliyo aqoonsiga. (QORAAL DEMO AH)",
+      "storyAttribution": "Waxaa lala wadaagay ogolaansho ujeeddo tusaale ah; ma aha xisaab dhab ah oo macmiil. (QORAAL DEMO AH)"
     },
     "shelter": {
       "title": "Hoy iyo Adeegyo Muhiim ah",
-      "summary": "Waxaan bixinaa qalabka hoyga waxaanan qoysaska dib loo dejiyay ku xiraa biyo, caafimaad, iyo waxbarasho. (QORAAL DEMO AH)"
+      "summary": "Waxaan bixinaa qalabka hoyga waxaanan qoysaska dib loo dejiyay ku xiraa biyo, caafimaad, iyo waxbarasho. (QORAAL DEMO AH)",
+      "problem": "Qoysaska dib loo dejiyay badanaa ma helaan hoy ammaan ah iyo adeegyo aasaasi ah sida biyo, caafimaad, iyo waxbarasho. (QORAAL DEMO AH)",
+      "whatWeDo": "Waxaan qaybinaa qalabka hoyga waxaanan xiraa qoysaska biyo, caafimaad, iyo adeegyada waxbarasho. (QORAAL DEMO AH)",
+      "whereText": "Waxaan ka shaqeynaa Hiiraan/Hirshabelle iyo Koonfur Galbeed, agagaarka goobaha dib-u-dejinta. (QORAAL DEMO AH)",
+      "measurement": "Waxaan la soconaa qalabka hoyga ee la qaybiyay iyo qoysaska adeegyada lagu xiray. (QORAAL DEMO AH)",
+      "story": "Kadib markii uu dib ugu dejiyay Baydhabo, qoyska Ahmed waxay helay qalab hoy waxaana lagu xiray xarun caafimaad u dhow. Magaca iyo faahfaahinta waa la beddelay. (QORAAL DEMO AH)",
+      "storyAttribution": "Waxaa lala wadaagay ogolaansho ujeeddo tusaale ah; ma aha xisaab dhab ah oo macmiil. (QORAAL DEMO AH)"
     },
     "livelihoods": {
       "title": "Nolol-maalmeed iyo Iskaa Wax u Qabso",
-      "summary": "Waxaan bixinaa tababar xirfadeed iyo taageero ganacsi yar si qoysasku uga gudbaan ku tiirsanaanta gargaarka. (QORAAL DEMO AH)"
+      "summary": "Waxaan bixinaa tababar xirfadeed iyo taageero ganacsi yar si qoysasku uga gudbaan ku tiirsanaanta gargaarka. (QORAAL DEMO AH)",
+      "problem": "La'aanta dakhli joogto ah, qoysaska barakacay way sii ku tiirsanaan gargaarka xitaa kadib dib-u-dejinta. (QORAAL DEMO AH)",
+      "whatWeDo": "Waxaan bixinaa tababar xirfadeed, fursado shaqo-lacag, iyo deeqo ganacsi yaryar. (QORAAL DEMO AH)",
+      "whereText": "Waxaan ka shaqeynaa Hiiraan/Hirshabelle iyo Koonfur Galbeed. (QORAAL DEMO AH)",
+      "measurement": "Waxaan la soconaa tababarrada la dhammeeyay, deeqaha la bixiyay, iyo dakhliga qoysaska muddo ka dib. (QORAAL DEMO AH)",
+      "story": "Deeq ganacsi yar ayay Fartun ku furatay dukaan dharsameyn oo ku yaal Beledweyne, oo hadda shaqaaleysiisa laba haween ah oo dib loo dejiyay. Magaca iyo faahfaahinta waa la beddelay. (QORAAL DEMO AH)",
+      "storyAttribution": "Waxaa lala wadaagay ogolaansho ujeeddo tusaale ah; ma aha xisaab dhab ah oo macmiil. (QORAAL DEMO AH)"
     },
     "protection": {
       "title": "Ilaalin iyo Isku-dhafka Bulshada",
-      "summary": "Waxaan qabannaa shaqada ilaalinta, gudbinta xaaladaha, iyo xallinta khilaafaadka dhex mara bulshooyinka barakacay iyo kuwa martida loo yahay. (QORAAL DEMO AH)"
+      "summary": "Waxaan qabannaa shaqada ilaalinta, gudbinta xaaladaha, iyo xallinta khilaafaadka dhex mara bulshooyinka barakacay iyo kuwa martida loo yahay. (QORAAL DEMO AH)",
+      "problem": "Barakac wuxuu kordhin karaa khatarta rabshadaha jinsiga, walaaca ilaalinta caruurta, iyo xiisadda dhex mara bulshooyinka barakacay iyo kuwa martida loo yahay. (QORAAL DEMO AH)",
+      "whatWeDo": "Waxaan qabannaa adeegyada ilaalinta, wadooyinka gudbinta rabshadaha jinsiga, taageerada ilaalinta caruurta, iyo xallinta khilaafaadka bulshada. (QORAAL DEMO AH)",
+      "whereText": "Waxaan ka shaqeynaa Hiiraan/Hirshabelle iyo Koonfur Galbeed. (QORAAL DEMO AH)",
+      "measurement": "Waxaan la soconaa gudbinta la sameeyay, khilaafaadka la xalliyay, iyo kulamada jawaab-celinta bulshada. (QORAAL DEMO AH)",
+      "story": "Kulan xallinta khilaaf oo ku dhacay Baydhabo ayaa caawiyay qoys barakacay iyo deris martida loo yahay inay ku heshiiyaan gelitaanka biyaha la wadaago. Faahfaahinta waa la beddelay. (QORAAL DEMO AH)",
+      "storyAttribution": "Waxaa lala wadaagay ogolaansho ujeeddo tusaale ah; ma aha xisaab dhab ah oo macmiil. (QORAAL DEMO AH)"
     }
   },
   "impact": {
@@ -61,5 +85,86 @@
     "livelihoodsTrainings": "tababarro nolol-maalmeed oo dhammaystiran",
     "districtsReached": "degmooyin la gaadhay",
     "figurePlaceholder": "[LAMBARKA WELI LAMA XAQIIJIN]"
+  },
+  "about": {
+    "heading": "Nagu Saabsan",
+    "whoWeAreHeading": "Waa Ayaan Nahay",
+    "whoWeAreBody": "Horumar Resettlement Network waa hay'ad Soomaali ah oo taageerta qoysaska ay barakaciyeen colaad iyo saameyn cimilo, kuwaas oo dib u dejinaya oo dib u dhisaya Hiiraan iyo Koonfur Galbeed. (QORAAL DEMO AH)",
+    "missionHeading": "Hadafka",
+    "missionBody": "In la caawiyo qoysaska barakacay inay helaan hoy ammaan ah, nolol-maalmeed waara, iyo meel ay ku noolaadaan si joogto ah. (QORAAL DEMO AH)",
+    "visionHeading": "Aragtida",
+    "visionBody": "Soomaali aysan qoys ku hadhin barakac la'aan hab ku gaadhaya nolol deggan oo sharaf leh. (QORAAL DEMO AH)",
+    "valuesHeading": "Qiyamka",
+    "values": [
+      "Sharafta (QORAAL DEMO AH)",
+      "Xisaabtan bixinta (QORAAL DEMO AH)",
+      "Xalallo bulshadu hoggaamiso (QORAAL DEMO AH)",
+      "Waxyeelo la'aan (QORAAL DEMO AH)"
+    ],
+    "ourStoryHeading": "Taariikhdeenna",
+    "ourStoryBody": "Waxaa la aasaasay jawaab celin loogu talagalay barakaca Hiiraan iyo Koonfur Galbeed, hay'adeenna waxay ka soo baxday dadaallo gargaar deegaan una soo baxday barnaamij dib-u-dejin iyo nolol-maalmeed oo qaab leh. (QORAAL DEMO AH)",
+    "leadershipHeading": "Hoggaanka iyo Guddiga",
+    "leadership": [
+      {
+        "name": "Amina Yusuf (MAGAC DEMO AH)",
+        "role": "Agaasimaha Guud (DOORKA DEMO AH)",
+        "bio": "Hoggaamiya istaraatiijiyadda hay'adda iyo iskaashiga bulshada. (SHARAXAAD DEMO AH)"
+      },
+      {
+        "name": "Mohamed Ali (MAGAC DEMO AH)",
+        "role": "Agaasimaha Barnaamijyada (DOORKA DEMO AH)",
+        "bio": "Kormeeraya barnaamijyada dib-u-dejinta, hoyga, iyo nolol-maalmeedka. (SHARAXAAD DEMO AH)"
+      },
+      {
+        "name": "Fadumo Hassan (MAGAC DEMO AH)",
+        "role": "Guddoomiyaha Guddiga (DOORKA DEMO AH)",
+        "bio": "Bixisa kormeerka maamulka iyo xisaabtan bixinta bulshada. (SHARAXAAD DEMO AH)"
+      }
+    ],
+    "legalGovernanceHeading": "Diiwaangelinta Sharciga iyo Maamulka",
+    "legalGovernanceBody": "Xaaladda diiwaangelinta: [LAMBARKA DIIWAANGELINTA WELI LAMA XAQIIJIN]. Waxaa maamula guddi aasaas ah oo mutadawiciin ah. (QORAAL DEMO AH)",
+    "commitmentsHeading": "Ballanqaadyadeenna",
+    "commitmentHumanitarianPrinciples": "Waxaan raacnaa Mabaadi'da Bini'aadmiga ee bini'aadannimada, dhexdhexaadnimada, cadaaladda, iyo madax-banaanida shaqadeenna oo dhan.",
+    "commitmentCHS": "Waxaan u heellan nahay inaan buuxino Heerka Bini'aadmiga Dhexe (CHS) ee Tayada iyo Xisaabtan Bixinta.",
+    "commitmentPSEA": "Waxaan haynaa siyaasad aan dulqaadan ka faa'iidaysiga iyo xadgudubka galmada (PSEA). Akhri buuggeenna",
+    "commitmentDoNoHarm": "Waxaan raacnaa mabaadi'da Waxyeelo La'aanta waxaana helnaa ogolaansho la ogsoon yahay ka hor inaan wadaagno sheeko ama sawir kasta."
+  },
+  "programDetail": {
+    "problemHeading": "Dhibaatada",
+    "whatWeDoHeading": "Waxa Aan Qabano",
+    "whereHeading": "Meesha Aan Ka Shaqeyno",
+    "measurementHeading": "Sida Aan U Cabbirno",
+    "storyHeading": "Sheeko Ka Mid Ah Shaqadeenna",
+    "supportCta": "Taageer barnaamijkan"
+  },
+  "programsPage": {
+    "heading": "Barnaamijyadeenna",
+    "intro": "Afar barnaamij oo isku xiran ayaa ka caawiya qoysaska barakacay inay uga gudbaan xaalad degdeg ah una gudbaan xasilooni. (QORAAL DEMO AH)"
+  },
+  "whereWeWork": {
+    "heading": "Meesha Aan Ka Shaqeyno",
+    "intro": "Waxaan ka shaqeynaa laba gobol oo Soomaaliya ah: Hiiraan/Hirshabelle iyo Koonfur Galbeed. (QORAAL DEMO AH)",
+    "regionLabels": {
+      "districts": "Degmooyinka La Gaadhay",
+      "office": "Xafiiskeenna",
+      "whatWeRun": "Waxa Aan Ka Wadno Halkan",
+      "coordination": "Kuwa Aan La Iskaashano"
+    },
+    "hiran": {
+      "heading": "Hiiraan / Hirshabelle",
+      "displacementContext": "Bishii Maajo 2023, Webiga Shabeelle ayaa ka buuxsamay Beledweyne, daadka ugu weyn 30 sano gudahood, taasoo saameysay ilaa 200,000 oo qof waxayna daadku qarqisay ilaa 79% oo magaalada ah — mid ka mid ah dhowr duufaan oo barakac ah oo ay keentay colaad iyo isbeddel cimileed. (Ilo: IOM, OCHA)",
+      "districts": "Degmada Beledweyne. (qodob qaab dhismeed ah — degmooyin dheeraad ah waxaa lagu xaqiijin doonaa)",
+      "office": "Beledweyne (goobta xafiiska waa qaab dhismeed loo qaatay; waxaa lagu xaqiijin doonaa)",
+      "whatWeRun": "Barnaamijyada dib-u-dejinta, hoyga, iyo nolol-maalmeedka. (QORAAL DEMO AH)",
+      "coordination": "[SHURACADA WELI LAMA XAQIIJIN]"
+    },
+    "southwest": {
+      "heading": "Koonfur Galbeed",
+      "displacementContext": "Koonfur Galbeed waxay soo martay barakac dib-u-soo-noqnoqda oo ay sababeen colaad iyo abaaro soo noqnoqda ee ka dhaca Koonfur-Dhexe ee Soomaaliya. (macluumaad guud oo la aqoonsaday; xogta dhacdada gaarka ah waa la sugayaa)",
+      "districts": "Degmada Baydhabo. (qodob qaab dhismeed ah — degmooyin dheeraad ah waxaa lagu xaqiijin doonaa)",
+      "office": "Baydhabo (goobta xafiiska waa qaab dhismeed loo qaatay; waxaa lagu xaqiijin doonaa)",
+      "whatWeRun": "Barnaamijyada dib-u-dejinta, hoyga, iyo nolol-maalmeedka. (QORAAL DEMO AH)",
+      "coordination": "[SHURACADA WELI LAMA XAQIIJIN]"
+    }
   }
 }
