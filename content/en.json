@@ -23,6 +23,43 @@
   },
   "home": {
     "heroHeadline": "Helping displaced families in Hiran and Southwest State rebuild their lives (DEMO TEXT)",
-    "heroSubline": "Resettlement, shelter, and livelihoods support for families in Beledweyne and Baidoa. (DEMO TEXT)"
+    "heroSubline": "Resettlement, shelter, and livelihoods support for families in Beledweyne and Baidoa. (DEMO TEXT)",
+    "heroCtaPrimary": "Our work",
+    "heroCtaSecondary": "Support our work",
+    "heroPhotoPlaceholder": "Photo placeholder — real photograph to follow",
+    "whereWeWorkHeading": "Where We Work",
+    "mapAriaLabel": "Illustrative map of Somalia showing Hiran and Southwest State, the organization's areas of operation",
+    "mapRegionHiran": "Hiran / Hirshabelle",
+    "mapRegionSouthwest": "Southwest State",
+    "mapAttribution": "Map data: geoBoundaries, CC-BY 4.0",
+    "whatWeDoHeading": "What We Do",
+    "impactHeading": "Impact",
+    "newsHeading": "Latest News",
+    "newsEmptyState": "News and updates will appear here once published."
+  },
+  "programs": {
+    "resettlement": {
+      "title": "Resettlement & Durable Solutions",
+      "summary": "We help displaced families secure land, shelter, and a lasting place to rebuild. (DEMO)"
+    },
+    "shelter": {
+      "title": "Shelter & Essential Services",
+      "summary": "We provide shelter kits and connect resettled families to water, health, and education. (DEMO)"
+    },
+    "livelihoods": {
+      "title": "Livelihoods & Self-Reliance",
+      "summary": "We offer skills training and small business support so families move beyond aid dependency. (DEMO)"
+    },
+    "protection": {
+      "title": "Protection & Community Cohesion",
+      "summary": "We run safeguarding, referral, and dispute-resolution work between displaced and host communities. (DEMO)"
+    }
+  },
+  "impact": {
+    "householdsSupported": "households supported",
+    "shelterKits": "shelter kits distributed",
+    "livelihoodsTrainings": "livelihoods trainings completed",
+    "districtsReached": "districts reached",
+    "figurePlaceholder": "[NUMBER TO BE CONFIRMED]"
   }
 }

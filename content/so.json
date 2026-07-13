@@ -23,6 +23,43 @@
   },
   "home": {
     "heroHeadline": "Ka caawinta qoysaska barakacay ee Hiiraan iyo Koonfur Galbeed inay dib u dhisaan noloshooda (QORAAL DEMO AH)",
-    "heroSubline": "Taageero dib-u-dejin, hoy, iyo nolol-maalmeed oo loogu talagalay qoysaska ku nool Beledweyne iyo Baydhabo. (QORAAL DEMO AH)"
+    "heroSubline": "Taageero dib-u-dejin, hoy, iyo nolol-maalmeed oo loogu talagalay qoysaska ku nool Beledweyne iyo Baydhabo. (QORAAL DEMO AH)",
+    "heroCtaPrimary": "Shaqadeenna",
+    "heroCtaSecondary": "Taageer Shaqadeenna",
+    "heroPhotoPlaceholder": "Sawir beddel ah — sawir dhab ah ayaa iman doona",
+    "whereWeWorkHeading": "Meesha Aan Ka Shaqeyno",
+    "mapAriaLabel": "Khariidad muujineed oo Soomaaliya ah oo muujinaysa Hiiraan iyo Gobolka Koonfur Galbeed, meelaha ay hay'adu ka shaqeyso",
+    "mapRegionHiran": "Hiiraan / Hirshabelle",
+    "mapRegionSouthwest": "Gobolka Koonfur Galbeed",
+    "mapAttribution": "Xogta khariidadda: geoBoundaries, CC-BY 4.0",
+    "whatWeDoHeading": "Waxa Aan Qabano",
+    "impactHeading": "Saameynta",
+    "newsHeading": "Wararka Ugu Dambeeyay",
+    "newsEmptyState": "Wararka iyo cusboonaysiinta halkan ayey ka soo muuqan doonaan marka la daabaco."
+  },
+  "programs": {
+    "resettlement": {
+      "title": "Dib-u-dejin iyo Xalal Waara",
+      "summary": "Waxaan ka caawinaa qoysaska barakacay inay helaan dhul, hoy, iyo meel ay dib ugu dhisan karaan noloshooda. (QORAAL DEMO AH)"
+    },
+    "shelter": {
+      "title": "Hoy iyo Adeegyo Muhiim ah",
+      "summary": "Waxaan bixinaa qalabka hoyga waxaanan qoysaska dib loo dejiyay ku xiraa biyo, caafimaad, iyo waxbarasho. (QORAAL DEMO AH)"
+    },
+    "livelihoods": {
+      "title": "Nolol-maalmeed iyo Iskaa Wax u Qabso",
+      "summary": "Waxaan bixinaa tababar xirfadeed iyo taageero ganacsi yar si qoysasku uga gudbaan ku tiirsanaanta gargaarka. (QORAAL DEMO AH)"
+    },
+    "protection": {
+      "title": "Ilaalin iyo Isku-dhafka Bulshada",
+      "summary": "Waxaan qabannaa shaqada ilaalinta, gudbinta xaaladaha, iyo xallinta khilaafaadka dhex mara bulshooyinka barakacay iyo kuwa martida loo yahay. (QORAAL DEMO AH)"
+    }
+  },
+  "impact": {
+    "householdsSupported": "qoysas la taageeray",
+    "shelterKits": "qalab hoy oo la qaybiyay",
+    "livelihoodsTrainings": "tababarro nolol-maalmeed oo dhammaystiran",
+    "districtsReached": "degmooyin la gaadhay",
+    "figurePlaceholder": "[LAMBARKA WELI LAMA XAQIIJIN]"
   }
 }

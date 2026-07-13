@@ -13,4 +13,17 @@ describe('getContent', () => {
     expect(content.site.name).toBe('Horumar Resettlement Network')
     expect(content.nav.home).toBeDefined()
   })
+
+  it('includes Phase 3 homepage content keys', () => {
+    const content = getContent('en')
+    expect(content.home.whereWeWorkHeading).toBe('Where We Work')
+    expect(content.home.whatWeDoHeading).toBe('What We Do')
+    expect(content.home.impactHeading).toBe('Impact')
+    expect(content.home.newsHeading).toBe('Latest News')
+    expect(content.programs.resettlement.title).toBe('Resettlement & Durable Solutions')
+    expect(content.programs.shelter.title).toBe('Shelter & Essential Services')
+    expect(content.programs.livelihoods.title).toBe('Livelihoods & Self-Reliance')
+    expect(content.programs.protection.title).toBe('Protection & Community Cohesion')
+    expect(content.impact.figurePlaceholder).toBe('[NUMBER TO BE CONFIRMED]')
+  })
 })
