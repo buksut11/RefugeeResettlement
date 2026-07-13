@@ -52,3 +52,12 @@ None yet — impact statistics are introduced in Phase 3 (homepage) and Phase 5 
 - The 2023 Shabelle river flooding content on the Where We Work page **is verified, sourced content** (IOM, OCHA/ReliefWeb, FAO) — not a placeholder. If updated later, re-verify rather than editing from memory.
 - The About page's Safeguarding & PSEA link (`/{lang}/safeguarding/`) will 404 until Phase 7 builds the legal pages — expected mid-build, not a defect.
 - Program sub-page "Support this program" buttons link to `/{lang}/donate/`, which will 404 until Phase 6 — expected mid-build, not a defect.
+
+## Phase 5 (Impact & Accountability, News, Reports) — what's real vs. placeholder right now
+
+- Both news posts are fictional demo content, clearly tagged `(DEMO)`/`(QORAAL DEMO AH)` — remove or replace once real news exists. The consent-notice line itself is real, mandated policy text (not a placeholder) and renders on every post regardless of whether the post is real or demo.
+- Impact results-table figures (all 8 cells per region) are placeholders (`[NUMBER TO BE CONFIRMED]`) — no year, region-specific figures have been supplied yet.
+- The funds-use bar's three percentages are placeholders (`[PERCENTAGE TO BE CONFIRMED]`) — never invent a plausible-looking split; replace only with real, sourced percentages.
+- Complaints/feedback phone, WhatsApp, and email are honest placeholders pending Section 0 facts.
+- The Reports section is an honest empty state (`content/reports/{lang}/` is intentionally empty) — no demo PDF was fabricated, per the master prompt's explicit instruction. Populate `content/reports/{lang}/*.md` and the corresponding files under `public/reports/` once real PDFs are supplied.
+- Both demo news posts omit `image`/`alt` front-matter (no image renders) — this is intentional (no fabricated photo), not a bug; the pipeline supports real images with meaningful alt text once supplied.
