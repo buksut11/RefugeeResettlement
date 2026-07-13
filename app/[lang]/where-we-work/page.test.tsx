@@ -18,4 +18,9 @@ describe('WhereWeWorkPage', () => {
 
     expect(screen.getByText(/Shabelle River burst its banks at Beledweyne/)).toBeInTheDocument()
   })
+
+  it('renders the Somali version without crashing', () => {
+    render(<WhereWeWorkPage params={{ lang: 'so' }} />)
+    expect(screen.getByRole('heading', { level: 1 })).toBeInTheDocument()
+  })
 })

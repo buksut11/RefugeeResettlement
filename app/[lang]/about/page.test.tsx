@@ -27,4 +27,9 @@ describe('AboutPage', () => {
       '/en/safeguarding/'
     )
   })
+
+  it('renders the Somali version without crashing', () => {
+    render(<AboutPage params={{ lang: 'so' }} />)
+    expect(screen.getByRole('heading', { level: 1 })).toBeInTheDocument()
+  })
 })

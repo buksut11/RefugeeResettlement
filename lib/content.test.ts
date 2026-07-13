@@ -53,4 +53,36 @@ describe('getContent', () => {
     expect(content.whereWeWork.southwest.heading).toBe('Southwest State')
     expect(content.whereWeWork.regionLabels.districts).toBe('Districts Covered')
   })
+
+  it('has matching key structure between "en" and "so" for all Phase 4 content objects', () => {
+    // Structural check only — Somali strings are not final translations and may
+    // still change. This guards against a future edit silently dropping a key
+    // from one language file without the other.
+    function keyShape(value: unknown): unknown {
+      if (Array.isArray(value)) {
+        return value.map(keyShape)
+      }
+      if (value !== null && typeof value === 'object') {
+        return Object.keys(value as Record<string, unknown>)
+          .sort()
+          .reduce<Record<string, unknown>>((acc, key) => {
+            acc[key] = keyShape((value as Record<string, unknown>)[key])
+            return acc
+          }, {})
+      }
+      return null
+    }
+
+    const en = getContent('en')
+    const so = getContent('so')
+
+    const sections = ['about', 'programDetail', 'programsPage', 'whereWeWork'] as const
+    for (const section of sections) {
+      expect(keyShape(so[section])).toEqual(keyShape(en[section]))
+    }
+
+    for (const slug of ['resettlement', 'shelter', 'livelihoods', 'protection'] as const) {
+      expect(keyShape(so.programs[slug])).toEqual(keyShape(en.programs[slug]))
+    }
+  })
 })

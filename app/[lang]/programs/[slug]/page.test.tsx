@@ -9,4 +9,9 @@ describe('ProgramPage', () => {
       'Shelter & Essential Services'
     )
   })
+
+  it('renders the Somali version without crashing', () => {
+    render(<ProgramPage params={{ lang: 'so', slug: 'resettlement' }} />)
+    expect(screen.getByRole('heading', { level: 1 })).toBeInTheDocument()
+  })
 })

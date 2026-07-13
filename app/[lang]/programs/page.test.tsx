@@ -27,5 +27,23 @@ describe('ProgramsPage', () => {
       'href',
       '/en/programs/protection/'
     )
+
+    expect(
+      screen.getByRole('heading', { level: 2, name: /Resettlement & Durable Solutions/ })
+    ).toBeInTheDocument()
+    expect(
+      screen.getByRole('heading', { level: 2, name: /Shelter & Essential Services/ })
+    ).toBeInTheDocument()
+    expect(
+      screen.getByRole('heading', { level: 2, name: /Livelihoods & Self-Reliance/ })
+    ).toBeInTheDocument()
+    expect(
+      screen.getByRole('heading', { level: 2, name: /Protection & Community Cohesion/ })
+    ).toBeInTheDocument()
+  })
+
+  it('renders the Somali version without crashing', () => {
+    render(<ProgramsPage params={{ lang: 'so' }} />)
+    expect(screen.getByRole('heading', { level: 1 })).toBeInTheDocument()
   })
 })

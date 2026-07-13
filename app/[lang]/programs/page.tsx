@@ -23,6 +23,7 @@ export default function ProgramsPage({ params }: { params: { lang: Lang } }) {
             slug={slug}
             title={content.programs[slug].title}
             summary={content.programs[slug].summary}
+            headingLevel="h2"
           />
         ))}
       </div>
