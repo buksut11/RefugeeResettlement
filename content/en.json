@@ -1,6 +1,6 @@
 {
   "site": {
-    "name": "[ORGANIZATION NAME]"
+    "name": "Horumar Resettlement Network"
   },
   "nav": {
     "home": "Home",
@@ -19,10 +19,10 @@
     "safeguarding": "Safeguarding & PSEA",
     "privacy": "Privacy Policy",
     "terms": "Terms",
-    "copyright": "© {year} [ORGANIZATION NAME]. All rights reserved."
+    "copyright": "© {year} Horumar Resettlement Network (DEMO NAME). All rights reserved."
   },
   "home": {
-    "heroHeadline": "[HERO HEADLINE TO BE CONFIRMED]",
-    "heroSubline": "[HERO SUBLINE TO BE CONFIRMED]"
+    "heroHeadline": "Helping displaced families in Hiran and Southwest State rebuild their lives (DEMO TEXT)",
+    "heroSubline": "Resettlement, shelter, and livelihoods support for families in Beledweyne and Baidoa. (DEMO TEXT)"
   }
 }
