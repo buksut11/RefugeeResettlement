@@ -1,0 +1,28 @@
+{
+  "site": {
+    "name": "[ORGANIZATION NAME]"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "programs": "Programs",
+    "whereWeWork": "Where We Work",
+    "impact": "Impact",
+    "news": "News",
+    "getInvolved": "Get Involved",
+    "donate": "Donate",
+    "contact": "Contact"
+  },
+  "footer": {
+    "contactHeading": "Contact",
+    "quickLinksHeading": "Quick Links",
+    "safeguarding": "Safeguarding & PSEA",
+    "privacy": "Privacy Policy",
+    "terms": "Terms",
+    "copyright": "© {year} [ORGANIZATION NAME]. All rights reserved."
+  },
+  "home": {
+    "heroHeadline": "[HERO HEADLINE TO BE CONFIRMED]",
+    "heroSubline": "[HERO SUBLINE TO BE CONFIRMED]"
+  }
+}
