@@ -51,10 +51,15 @@ describe('getContent', () => {
     expect(content.impact.reportsEmptyState).toContain('[YEAR TO BE CONFIRMED]')
   })
 
-  it('keeps Somali news and impact content structurally in sync with English', () => {
+  it('keeps all Somali content structurally in sync with English', () => {
     const en = getContent('en')
     const so = getContent('so')
+    expect(keyShape(so.about)).toEqual(keyShape(en.about))
     expect(keyShape(so.news)).toEqual(keyShape(en.news))
     expect(keyShape(so.impact)).toEqual(keyShape(en.impact))
+    expect(keyShape(so.programDetail)).toEqual(keyShape(en.programDetail))
+    expect(keyShape(so.programsPage)).toEqual(keyShape(en.programsPage))
+    expect(keyShape(so.whereWeWork)).toEqual(keyShape(en.whereWeWork))
+    expect(keyShape(so.programs)).toEqual(keyShape(en.programs))
   })
 })
