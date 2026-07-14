@@ -1,12 +1,31 @@
+import type { Metadata } from 'next'
 import { LANGS, type Lang } from '@/lib/i18n'
 import { getAllNewsPosts, getNewsPost } from '@/lib/markdown'
 import { getContent } from '@/lib/content'
+import { buildMetadata } from '@/lib/seo'
 import { ConsentNotice } from '@/components/news/ConsentNotice'
 
 export function generateStaticParams() {
   return LANGS.flatMap((lang) =>
     getAllNewsPosts(lang).map((post) => ({ lang, slug: post.slug }))
   )
+}
+
+export function generateMetadata({
+  params,
+}: {
+  params: { lang: Lang; slug: string }
+}): Metadata {
+  const post = getNewsPost(params.lang, params.slug)
+  if (!post) {
+    return {}
+  }
+  return buildMetadata({
+    lang: params.lang,
+    path: `/news/${params.slug}/`,
+    title: post.title,
+    description: post.summary,
+  })
 }
 
 export default function NewsPostPage({

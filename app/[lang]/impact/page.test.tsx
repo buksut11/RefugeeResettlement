@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import { render, screen } from '@testing-library/react'
-import ImpactPage from '@/app/[lang]/impact/page'
+import ImpactPage, { generateMetadata } from '@/app/[lang]/impact/page'
 
 describe('ImpactPage', () => {
   it('renders every section heading in order, both results tables, and the reports empty state', () => {
@@ -26,5 +26,13 @@ describe('ImpactPage', () => {
   it('renders correctly for Somali without crashing', () => {
     render(<ImpactPage params={{ lang: 'so' }} />)
     expect(screen.getByRole('heading', { level: 1 })).toBeInTheDocument()
+  })
+})
+
+describe('generateMetadata', () => {
+  it('returns the Impact page title, description, and hreflang alternates', () => {
+    const metadata = generateMetadata({ params: { lang: 'en' } })
+    expect(metadata.title).toBe('Impact & Accountability | Horumar Resettlement Network')
+    expect(metadata.alternates?.canonical).toBe('/en/impact/')
   })
 })

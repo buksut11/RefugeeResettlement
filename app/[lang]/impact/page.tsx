@@ -1,4 +1,6 @@
+import type { Metadata } from 'next'
 import { getContent } from '@/lib/content'
+import { buildMetadata } from '@/lib/seo'
 import { LANGS, type Lang } from '@/lib/i18n'
 import { getAllReports } from '@/lib/markdown'
 import { ImpactResultsTable } from '@/components/impact/ImpactResultsTable'
@@ -8,6 +10,16 @@ import { ReportsSection } from '@/components/impact/ReportsSection'
 
 export function generateStaticParams() {
   return LANGS.map((lang) => ({ lang }))
+}
+
+export function generateMetadata({ params }: { params: { lang: Lang } }): Metadata {
+  const content = getContent(params.lang)
+  return buildMetadata({
+    lang: params.lang,
+    path: '/impact/',
+    title: content.seo.impact.title,
+    description: content.seo.impact.description,
+  })
 }
 
 export default function ImpactPage({ params }: { params: { lang: Lang } }) {

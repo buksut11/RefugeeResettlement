@@ -1,9 +1,21 @@
+import type { Metadata } from 'next'
 import { getContent } from '@/lib/content'
+import { buildMetadata } from '@/lib/seo'
 import { LANGS, type Lang } from '@/lib/i18n'
 import { RegionBlock } from '@/components/where-we-work/RegionBlock'
 
 export function generateStaticParams() {
   return LANGS.map((lang) => ({ lang }))
+}
+
+export function generateMetadata({ params }: { params: { lang: Lang } }): Metadata {
+  const content = getContent(params.lang)
+  return buildMetadata({
+    lang: params.lang,
+    path: '/where-we-work/',
+    title: content.seo.whereWeWork.title,
+    description: content.seo.whereWeWork.description,
+  })
 }
 
 export default function WhereWeWorkPage({ params }: { params: { lang: Lang } }) {

@@ -1,7 +1,6 @@
-// app/[lang]/news/[slug]/page.test.tsx
 import { describe, it, expect } from 'vitest'
 import { render, screen } from '@testing-library/react'
-import NewsPostPage from '@/app/[lang]/news/[slug]/page'
+import NewsPostPage, { generateMetadata } from '@/app/[lang]/news/[slug]/page'
 
 describe('NewsPostPage', () => {
   it('renders the post title, date, rendered Markdown body, and consent notice', () => {
@@ -24,5 +23,17 @@ describe('NewsPostPage', () => {
   it('renders correctly for Somali without crashing', () => {
     render(<NewsPostPage params={{ lang: 'so', slug: 'shelter-kits-arrive-in-beledweyne' }} />)
     expect(screen.getByRole('heading', { level: 1 })).toBeInTheDocument()
+  })
+})
+
+describe('generateMetadata', () => {
+  it('derives title and description from the post itself, not a shared content.seo entry', () => {
+    const metadata = generateMetadata({
+      params: { lang: 'en', slug: 'shelter-kits-arrive-in-beledweyne' },
+    })
+    expect(metadata.title).toBe('Shelter kits arrive in Beledweyne (DEMO) | Horumar Resettlement Network')
+    expect(metadata.alternates?.canonical).toBe(
+      '/en/news/shelter-kits-arrive-in-beledweyne/'
+    )
   })
 })

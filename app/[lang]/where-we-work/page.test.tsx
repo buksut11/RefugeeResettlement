@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import { render, screen } from '@testing-library/react'
-import WhereWeWorkPage from '@/app/[lang]/where-we-work/page'
+import WhereWeWorkPage, { generateMetadata } from '@/app/[lang]/where-we-work/page'
 
 describe('WhereWeWorkPage', () => {
   it('renders the page heading and both region blocks with the correct anchor ids', () => {
@@ -22,5 +22,13 @@ describe('WhereWeWorkPage', () => {
   it('renders the Somali version without crashing', () => {
     render(<WhereWeWorkPage params={{ lang: 'so' }} />)
     expect(screen.getByRole('heading', { level: 1 })).toBeInTheDocument()
+  })
+})
+
+describe('generateMetadata', () => {
+  it('returns the Where We Work page title, description, and hreflang alternates', () => {
+    const metadata = generateMetadata({ params: { lang: 'en' } })
+    expect(metadata.title).toBe('Where We Work | Horumar Resettlement Network')
+    expect(metadata.alternates?.canonical).toBe('/en/where-we-work/')
   })
 })
