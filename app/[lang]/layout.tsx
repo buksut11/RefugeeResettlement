@@ -3,6 +3,7 @@ import { Newsreader, IBM_Plex_Sans } from 'next/font/google'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { getContent } from '@/lib/content'
+import { buildOrganizationJsonLd } from '@/lib/jsonld'
 import { LANGS, type Lang } from '@/lib/i18n'
 import '../globals.css'
 
@@ -44,6 +45,10 @@ export default function LangLayout({
   return (
     <html lang={lang} className={`${newsreader.variable} ${plexSans.variable}`}>
       <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: buildOrganizationJsonLd(lang) }}
+        />
         <Header lang={lang} />
         <main>{children}</main>
         <Footer lang={lang} />
