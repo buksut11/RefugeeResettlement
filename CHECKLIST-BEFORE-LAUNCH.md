@@ -73,3 +73,12 @@ None yet — impact statistics are introduced in Phase 3 (homepage) and Phase 5 
 - The Contact page's Safeguarding & PSEA link will 404 until Phase 7 builds the legal pages — expected mid-build, not a defect.
 - The Get Involved page's "Work with us" section describes the page's current content (no positions listed) rather than asserting the organization has no vacancies — update this copy directly if/when real listings exist.
 - The Hero button and every program sub-page's "Support this program" button, which linked to `/donate/` since Phases 3-4, now resolve correctly.
+
+## Phase 7a (Legal Pages, SEO, Security Headers) — what's real vs. placeholder right now
+
+- All three legal pages (Privacy, Safeguarding & PSEA, Terms) are unreviewed drafts — both the literal HTML comment and the visible on-page banner say so. They must be reviewed by the organization's legal/protection focal point before launch. The policy language itself is real and specific (not lorem ipsum, not demo filler) and is meant to be followed once reviewed — only the Terms page's governing-law jurisdiction is an honest placeholder pending confirmation of the organization's legal registration.
+- Analytics (Plausible/Umami) was not wired up this phase, per explicit decision — needs a real account/site ID before it can be added.
+- JSON-LD Organization schema is intentionally minimal (name only) — add `url`, `logo`, `address`, and `contactPoint` once a real domain and Section 0 facts exist; don't fill these with bracketed placeholder strings, since structured-data fields are parsed more strictly than visible page text.
+- `sitemap.xml` and `robots.txt` use a placeholder production domain (`https://example.org`) in `app/sitemap.ts` and `app/robots.ts` — update the `SITE_URL` constant in both files once Phase 8 assigns the real domain.
+- Security headers are configured in `vercel.json` but only take effect once the site is actually deployed (Phase 8).
+- The Safeguarding & PSEA page now resolves — the About page's Commitments block link, the Contact page's safeguarding callout, and the Footer's safeguarding link (all pointing here since Phase 4) are no longer 404s. The Terms page resolves the Footer's terms link similarly.
