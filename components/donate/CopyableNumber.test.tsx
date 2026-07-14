@@ -44,4 +44,29 @@ describe('CopyableNumber', () => {
     )
     expect(await screen.findByRole('button', { name: 'Copied!' })).toBeInTheDocument()
   })
+
+  it('does not show the copied confirmation when the clipboard write fails', async () => {
+    Object.assign(navigator, {
+      clipboard: { writeText: vi.fn().mockRejectedValue(new Error('denied')) },
+    })
+
+    render(
+      <CopyableNumber
+        label="EVC Plus"
+        number="[EVC PLUS NUMBER TO BE CONFIRMED]"
+        ussd="[EVC PLUS USSD CODE TO BE CONFIRMED]"
+        copyButtonLabel="Copy number"
+        copiedLabel="Copied!"
+      />
+    )
+
+    fireEvent.click(screen.getByRole('button', { name: 'Copy number' }))
+
+    expect(navigator.clipboard.writeText).toHaveBeenCalledWith(
+      '[EVC PLUS NUMBER TO BE CONFIRMED]'
+    )
+    await new Promise((resolve) => setTimeout(resolve, 0))
+    expect(screen.getByRole('button', { name: 'Copy number' })).toBeInTheDocument()
+    expect(screen.queryByRole('button', { name: 'Copied!' })).not.toBeInTheDocument()
+  })
 })

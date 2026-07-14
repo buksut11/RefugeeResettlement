@@ -18,8 +18,17 @@ export function CopyableNumber({
   const [copied, setCopied] = useState(false)
 
   async function handleCopy() {
-    await navigator.clipboard.writeText(number)
-    setCopied(true)
+    if (!navigator.clipboard) {
+      return
+    }
+
+    try {
+      await navigator.clipboard.writeText(number)
+      setCopied(true)
+    } catch {
+      // Clipboard write failed (e.g. permission denied); leave the
+      // button showing copyButtonLabel rather than falsely reporting success.
+    }
   }
 
   return (
