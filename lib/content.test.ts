@@ -33,7 +33,7 @@ describe('getContent', () => {
 
   it('includes Phase 7a legal content keys', () => {
     const content = getContent('en')
-    expect(content.legal.draftNotice).toContain('unreviewed draft')
+    expect(content.legal.draftNotice).toContain('has not yet been reviewed')
     expect(content.privacy.heading).toBe('Privacy Policy')
     expect(content.safeguarding.heading).toBe('Safeguarding & PSEA Policy')
     expect(content.terms.heading).toBe('Terms of Use')
