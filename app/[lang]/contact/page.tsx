@@ -1,11 +1,23 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import { getContent } from '@/lib/content'
+import { buildMetadata } from '@/lib/seo'
 import { LANGS, type Lang } from '@/lib/i18n'
 import { OfficeCard } from '@/components/contact/OfficeCard'
 import { ContactForm } from '@/components/contact/ContactForm'
 
 export function generateStaticParams() {
   return LANGS.map((lang) => ({ lang }))
+}
+
+export function generateMetadata({ params }: { params: { lang: Lang } }): Metadata {
+  const content = getContent(params.lang)
+  return buildMetadata({
+    lang: params.lang,
+    path: '/contact/',
+    title: content.seo.contact.title,
+    description: content.seo.contact.description,
+  })
 }
 
 export default function ContactPage({ params }: { params: { lang: Lang } }) {

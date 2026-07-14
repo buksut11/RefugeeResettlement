@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import { render, screen } from '@testing-library/react'
-import ContactPage from '@/app/[lang]/contact/page'
+import ContactPage, { generateMetadata } from '@/app/[lang]/contact/page'
 
 describe('ContactPage', () => {
   it('renders both office cards, the contact form, and a prominent separate safeguarding link', () => {
@@ -28,5 +28,13 @@ describe('ContactPage', () => {
   it('renders correctly for Somali without crashing', () => {
     render(<ContactPage params={{ lang: 'so' }} />)
     expect(screen.getByRole('heading', { level: 1 })).toBeInTheDocument()
+  })
+})
+
+describe('generateMetadata', () => {
+  it('returns the Contact page title, description, and hreflang alternates', () => {
+    const metadata = generateMetadata({ params: { lang: 'en' } })
+    expect(metadata.title).toBe('Contact Us | Horumar Resettlement Network')
+    expect(metadata.alternates?.canonical).toBe('/en/contact/')
   })
 })

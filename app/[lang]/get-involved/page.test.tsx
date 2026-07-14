@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import { render, screen } from '@testing-library/react'
-import GetInvolvedPage from '@/app/[lang]/get-involved/page'
+import GetInvolvedPage, { generateMetadata } from '@/app/[lang]/get-involved/page'
 
 describe('GetInvolvedPage', () => {
   it('renders all three paths in order, each linking to the right page', () => {
@@ -31,5 +31,13 @@ describe('GetInvolvedPage', () => {
   it('renders correctly for Somali without crashing', () => {
     render(<GetInvolvedPage params={{ lang: 'so' }} />)
     expect(screen.getByRole('heading', { level: 1 })).toBeInTheDocument()
+  })
+})
+
+describe('generateMetadata', () => {
+  it('returns the Get Involved page title, description, and hreflang alternates', () => {
+    const metadata = generateMetadata({ params: { lang: 'en' } })
+    expect(metadata.title).toBe('Get Involved | Horumar Resettlement Network')
+    expect(metadata.alternates?.canonical).toBe('/en/get-involved/')
   })
 })

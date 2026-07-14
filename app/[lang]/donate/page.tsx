@@ -1,5 +1,7 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import { getContent } from '@/lib/content'
+import { buildMetadata } from '@/lib/seo'
 import { LANGS, type Lang } from '@/lib/i18n'
 import { CopyableNumber } from '@/components/donate/CopyableNumber'
 import { BankDetails } from '@/components/donate/BankDetails'
@@ -7,6 +9,16 @@ import { CardDonations } from '@/components/donate/CardDonations'
 
 export function generateStaticParams() {
   return LANGS.map((lang) => ({ lang }))
+}
+
+export function generateMetadata({ params }: { params: { lang: Lang } }): Metadata {
+  const content = getContent(params.lang)
+  return buildMetadata({
+    lang: params.lang,
+    path: '/donate/',
+    title: content.seo.donate.title,
+    description: content.seo.donate.description,
+  })
 }
 
 export default function DonatePage({ params }: { params: { lang: Lang } }) {

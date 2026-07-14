@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import { render, screen } from '@testing-library/react'
-import DonatePage from '@/app/[lang]/donate/page'
+import DonatePage, { generateMetadata } from '@/app/[lang]/donate/page'
 
 describe('DonatePage', () => {
   it('renders every section heading in order and all three mobile money providers', () => {
@@ -32,5 +32,13 @@ describe('DonatePage', () => {
   it('renders correctly for Somali without crashing', () => {
     render(<DonatePage params={{ lang: 'so' }} />)
     expect(screen.getByRole('heading', { level: 1 })).toBeInTheDocument()
+  })
+})
+
+describe('generateMetadata', () => {
+  it('returns the Donate page title, description, and hreflang alternates', () => {
+    const metadata = generateMetadata({ params: { lang: 'en' } })
+    expect(metadata.title).toBe('Donate | Horumar Resettlement Network')
+    expect(metadata.alternates?.canonical).toBe('/en/donate/')
   })
 })
