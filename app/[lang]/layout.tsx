@@ -5,6 +5,7 @@ import { Footer } from '@/components/layout/Footer'
 import { getContent } from '@/lib/content'
 import { buildOrganizationJsonLd } from '@/lib/jsonld'
 import { LANGS, type Lang } from '@/lib/i18n'
+import { SITE_URL } from '@/lib/site-config'
 import '../globals.css'
 
 const newsreader = Newsreader({
@@ -30,6 +31,7 @@ export function generateMetadata({ params }: { params: { lang: Lang } }): Metada
   const content = getContent(params.lang)
   return {
     title: content.site.name,
+    metadataBase: new URL(SITE_URL),
   }
 }
 
