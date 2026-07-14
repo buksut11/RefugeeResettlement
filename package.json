@@ -8,16 +8,18 @@
     "start": "next start",
     "test": "vitest run",
     "test:watch": "vitest",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "audit:lighthouse": "npm run build && node scripts/lighthouse-audit.mjs"
   },
   "dependencies": {
+    "gray-matter": "^4.0.3",
+    "marked": "^18.0.6",
     "next": "^14.2.5",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "gray-matter": "^4.0.3",
-    "marked": "^18.0.6"
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
+    "@puppeteer/browsers": "^3.0.6",
     "@testing-library/jest-dom": "^6.4.8",
     "@testing-library/react": "^16.0.0",
     "@types/node": "^22.1.0",
@@ -25,8 +27,11 @@
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",
     "autoprefixer": "^10.4.20",
+    "chrome-launcher": "^1.2.1",
     "jsdom": "^24.1.1",
+    "lighthouse": "^13.4.0",
     "postcss": "^8.4.41",
+    "serve": "^14.2.6",
     "tailwindcss": "^3.4.7",
     "typescript": "^5.5.4",
     "vitest": "^2.0.5"
