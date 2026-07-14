@@ -37,7 +37,7 @@ export function CopyableNumber({
       <a href={`tel:${number}`} className="mt-1 block text-lg">
         {number}
       </a>
-      <p className="mt-1 text-xs text-ink/60">{ussd}</p>
+      <p className="mt-1 text-xs text-ink/70">{ussd}</p>
       <button
         type="button"
         onClick={handleCopy}
