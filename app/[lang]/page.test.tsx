@@ -1,13 +1,11 @@
 import { describe, it, expect } from 'vitest'
 import { render, screen } from '@testing-library/react'
-import HomePage from '@/app/[lang]/page'
+import HomePage, { generateMetadata } from '@/app/[lang]/page'
 
 describe('HomePage', () => {
   it('renders every section in order: hero, map, programs (incl. each card title), impact, news', () => {
     render(<HomePage params={{ lang: 'en' }} />)
 
-    // ProgramCard renders an h3 per program, so all 4 program titles appear
-    // between "What We Do" and "Impact" in the full heading order.
     const headings = screen.getAllByRole('heading').map((h) => h.textContent)
     expect(headings).toEqual([
       'Helping displaced families in Hiran and Southwest State rebuild their lives (DEMO TEXT)',
@@ -22,5 +20,14 @@ describe('HomePage', () => {
     ])
 
     expect(screen.getByRole('heading', { level: 1 })).toBeInTheDocument()
+  })
+})
+
+describe('generateMetadata', () => {
+  it('returns the home page title, description, and hreflang alternates', () => {
+    const metadata = generateMetadata({ params: { lang: 'en' } })
+    expect(metadata.title).toBe('Home | Horumar Resettlement Network')
+    expect(metadata.alternates?.canonical).toBe('/en/')
+    expect(metadata.alternates?.languages).toEqual({ en: '/en/', so: '/so/' })
   })
 })

@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import { render, screen } from '@testing-library/react'
-import AboutPage from '@/app/[lang]/about/page'
+import AboutPage, { generateMetadata } from '@/app/[lang]/about/page'
 
 describe('AboutPage', () => {
   it('renders every section heading in order and the leadership/commitments content', () => {
@@ -31,5 +31,13 @@ describe('AboutPage', () => {
   it('renders the Somali version without crashing', () => {
     render(<AboutPage params={{ lang: 'so' }} />)
     expect(screen.getByRole('heading', { level: 1 })).toBeInTheDocument()
+  })
+})
+
+describe('generateMetadata', () => {
+  it('returns the About page title, description, and hreflang alternates', () => {
+    const metadata = generateMetadata({ params: { lang: 'en' } })
+    expect(metadata.title).toBe('About Us | Horumar Resettlement Network')
+    expect(metadata.alternates?.canonical).toBe('/en/about/')
   })
 })

@@ -1,10 +1,22 @@
+import type { Metadata } from 'next'
 import { getContent } from '@/lib/content'
+import { buildMetadata } from '@/lib/seo'
 import { LANGS, type Lang } from '@/lib/i18n'
 import { Leadership } from '@/components/about/Leadership'
 import { CommitmentsBlock } from '@/components/about/CommitmentsBlock'
 
 export function generateStaticParams() {
   return LANGS.map((lang) => ({ lang }))
+}
+
+export function generateMetadata({ params }: { params: { lang: Lang } }): Metadata {
+  const content = getContent(params.lang)
+  return buildMetadata({
+    lang: params.lang,
+    path: '/about/',
+    title: content.seo.about.title,
+    description: content.seo.about.description,
+  })
 }
 
 export default function AboutPage({ params }: { params: { lang: Lang } }) {

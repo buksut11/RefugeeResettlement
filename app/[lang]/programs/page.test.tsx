@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import { render, screen } from '@testing-library/react'
-import ProgramsPage from '@/app/[lang]/programs/page'
+import ProgramsPage, { generateMetadata } from '@/app/[lang]/programs/page'
 
 describe('ProgramsPage', () => {
   it('renders the page heading, intro, and all four program cards with correct hrefs', () => {
@@ -45,5 +45,13 @@ describe('ProgramsPage', () => {
   it('renders the Somali version without crashing', () => {
     render(<ProgramsPage params={{ lang: 'so' }} />)
     expect(screen.getByRole('heading', { level: 1 })).toBeInTheDocument()
+  })
+})
+
+describe('generateMetadata', () => {
+  it('returns the Programs index page title, description, and hreflang alternates', () => {
+    const metadata = generateMetadata({ params: { lang: 'en' } })
+    expect(metadata.title).toBe('Our Programs | Horumar Resettlement Network')
+    expect(metadata.alternates?.canonical).toBe('/en/programs/')
   })
 })

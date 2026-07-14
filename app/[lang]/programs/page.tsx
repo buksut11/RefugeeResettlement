@@ -1,10 +1,22 @@
+import type { Metadata } from 'next'
 import { getContent } from '@/lib/content'
+import { buildMetadata } from '@/lib/seo'
 import { LANGS, type Lang } from '@/lib/i18n'
 import { PROGRAM_SLUGS } from '@/components/home/programs-data'
 import { ProgramCard } from '@/components/home/ProgramCard'
 
 export function generateStaticParams() {
   return LANGS.map((lang) => ({ lang }))
+}
+
+export function generateMetadata({ params }: { params: { lang: Lang } }): Metadata {
+  const content = getContent(params.lang)
+  return buildMetadata({
+    lang: params.lang,
+    path: '/programs/',
+    title: content.seo.programs.title,
+    description: content.seo.programs.description,
+  })
 }
 
 export default function ProgramsPage({ params }: { params: { lang: Lang } }) {
