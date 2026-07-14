@@ -194,5 +194,93 @@
       "whatWeRun": "Resettlement, shelter, and livelihoods programming. (DEMO)",
       "coordination": "[COORDINATION PARTNERS TO BE CONFIRMED]"
     }
+  },
+  "getInvolved": {
+    "heading": "Get Involved",
+    "intro": "There are three ways to support our work. (DEMO)",
+    "donateHeading": "Donate",
+    "donateBody": "Support our programs with a one-time or recurring gift. (DEMO)",
+    "donateCta": "Donate now",
+    "partnerHeading": "Partner With Us",
+    "partnerBody": "We welcome partnerships with donors, government agencies, and other organizations working in Hiran and Southwest State. (DEMO)",
+    "partnerCta": "Contact us to partner",
+    "workHeading": "Work With Us",
+    "workBody": "No open positions or volunteer roles are listed here at this time. If you're interested in volunteering with us, please reach out through our contact form and mention your interest.",
+    "workCta": "Contact us"
+  },
+  "donate": {
+    "heading": "Donate",
+    "intro": "Your support helps displaced families in Hiran and Southwest State rebuild their lives. (DEMO)",
+    "mobileMoneyHeading": "Somali Mobile Money",
+    "mobileMoneyIntro": "Send a donation directly using mobile money. (DEMO)",
+    "copyButtonLabel": "Copy number",
+    "copiedLabel": "Copied!",
+    "mobileMoneyProviders": {
+      "evcPlus": {
+        "label": "EVC Plus",
+        "number": "[EVC PLUS NUMBER TO BE CONFIRMED]",
+        "ussd": "[EVC PLUS USSD CODE TO BE CONFIRMED]"
+      },
+      "zaad": {
+        "label": "Zaad",
+        "number": "[ZAAD NUMBER TO BE CONFIRMED]",
+        "ussd": "[ZAAD USSD CODE TO BE CONFIRMED]"
+      },
+      "sahal": {
+        "label": "Sahal",
+        "number": "[SAHAL NUMBER TO BE CONFIRMED]",
+        "ussd": "[SAHAL USSD CODE TO BE CONFIRMED]"
+      }
+    },
+    "bankHeading": "Bank Transfer",
+    "bankIntro": "For institutional donors, transfer directly to our bank account. (DEMO)",
+    "bankNameLabel": "Bank Name",
+    "bankName": "[BANK NAME TO BE CONFIRMED]",
+    "accountNameLabel": "Account Name",
+    "accountName": "[ACCOUNT NAME TO BE CONFIRMED]",
+    "accountNumberLabel": "Account Number",
+    "accountNumber": "[ACCOUNT NUMBER TO BE CONFIRMED]",
+    "swiftLabel": "SWIFT/BIC",
+    "swift": "[SWIFT CODE TO BE CONFIRMED]",
+    "cardHeading": "Card Donations",
+    "cardEmptyState": "Card donations will be available here once our payment provider link is set up.",
+    "safeguardingHeading": "How Donations Are Safeguarded",
+    "safeguardingStatement": "All donations are recorded, allocated according to our published funds-use breakdown, and subject to our financial accountability and safeguarding policies. See our Impact & Accountability page for details."
+  },
+  "contact": {
+    "heading": "Contact",
+    "intro": "Reach out to our offices or send us a message. (DEMO)",
+    "officesHeading": "Our Offices",
+    "officeLabels": {
+      "address": "Address",
+      "phone": "Phone",
+      "whatsapp": "WhatsApp",
+      "email": "Email"
+    },
+    "offices": {
+      "hiran": {
+        "heading": "Beledweyne Office",
+        "address": "[ADDRESS TO BE CONFIRMED], Beledweyne, Hiran",
+        "phone": "[PHONE NUMBER TO BE CONFIRMED]",
+        "whatsapp": "[WHATSAPP NUMBER TO BE CONFIRMED]",
+        "email": "[EMAIL TO BE CONFIRMED]"
+      },
+      "southwest": {
+        "heading": "Baidoa Office",
+        "address": "[ADDRESS TO BE CONFIRMED], Baidoa, Southwest State",
+        "phone": "[PHONE NUMBER TO BE CONFIRMED]",
+        "whatsapp": "[WHATSAPP NUMBER TO BE CONFIRMED]",
+        "email": "[EMAIL TO BE CONFIRMED]"
+      }
+    },
+    "formHeading": "Send a Message",
+    "nameLabel": "Name",
+    "emailLabel": "Email",
+    "subjectLabel": "Subject",
+    "messageLabel": "Message",
+    "submitLabel": "Send message",
+    "formspreeEndpoint": "https://formspree.io/f/[FORMSPREE_FORM_ID_TO_BE_CONFIRMED]",
+    "safeguardingPrompt": "If you need to report a safeguarding concern or complaint, please use our dedicated channel instead of this form.",
+    "safeguardingCta": "Report a concern"
   }
 }

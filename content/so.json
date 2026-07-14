@@ -194,5 +194,93 @@
       "whatWeRun": "Barnaamijyada dib-u-dejinta, hoyga, iyo nolol-maalmeedka. (QORAAL DEMO AH)",
       "coordination": "[SHURACADA WELI LAMA XAQIIJIN]"
     }
+  },
+  "getInvolved": {
+    "heading": "Naga Qeyb Qaado",
+    "intro": "Waxaa jira saddex siyaabood oo aad shaqadeenna u taageeri karto. (QORAAL DEMO AH)",
+    "donateHeading": "Deeq Bixi",
+    "donateBody": "Taageer barnaamijyadeenna hadiyad hal mar ah ama mid soo noqnoqota. (QORAAL DEMO AH)",
+    "donateCta": "Deeq bixi hadda",
+    "partnerHeading": "Nala Iskaashó",
+    "partnerBody": "Waxaan soo dhaweynaa iskaashi la sameyno deeq-bixiyayaal, hay'adaha dawladda, iyo hay'ado kale oo ka shaqeeya Hiiraan iyo Koonfur Galbeed. (QORAAL DEMO AH)",
+    "partnerCta": "Nala soo xiriir si aad u iskaashato",
+    "workHeading": "Nala Shaqee",
+    "workBody": "Wax boos banaan ama door mutadawac ah halkan lagama qorin waqtigan. Haddii aad xiisaynayso inaad naga qeyb qaadato mutadawac ahaan, fadlan nagala soo xiriir foomka nala soo xiriirka oo sheeg xiisahaaga.",
+    "workCta": "Nala soo xiriir"
+  },
+  "donate": {
+    "heading": "Deeq Bixi",
+    "intro": "Taageeradaadu waxay caawisaa qoysaska barakacay ee Hiiraan iyo Koonfur Galbeed inay dib u dhisaan noloshooda. (QORAAL DEMO AH)",
+    "mobileMoneyHeading": "Lacagta Mobilada Soomaalida",
+    "mobileMoneyIntro": "Deeq toos ah ugu dir adigoo isticmaalaya lacagta mobilada. (QORAAL DEMO AH)",
+    "copyButtonLabel": "Koobi lambarka",
+    "copiedLabel": "La koobiyeeyay!",
+    "mobileMoneyProviders": {
+      "evcPlus": {
+        "label": "EVC Plus",
+        "number": "[LAMBARKA EVC PLUS WELI LAMA XAQIIJIN]",
+        "ussd": "[XARIIQDA USSD EE EVC PLUS WELI LAMA XAQIIJIN]"
+      },
+      "zaad": {
+        "label": "Zaad",
+        "number": "[LAMBARKA ZAAD WELI LAMA XAQIIJIN]",
+        "ussd": "[XARIIQDA USSD EE ZAAD WELI LAMA XAQIIJIN]"
+      },
+      "sahal": {
+        "label": "Sahal",
+        "number": "[LAMBARKA SAHAL WELI LAMA XAQIIJIN]",
+        "ussd": "[XARIIQDA USSD EE SAHAL WELI LAMA XAQIIJIN]"
+      }
+    },
+    "bankHeading": "Wareejinta Bangiga",
+    "bankIntro": "Deeq-bixiyayaasha hay'adaha, si toos ah ugu wareeji xisaabta bangigeenna. (QORAAL DEMO AH)",
+    "bankNameLabel": "Magaca Bangiga",
+    "bankName": "[MAGACA BANGIGA WELI LAMA XAQIIJIN]",
+    "accountNameLabel": "Magaca Xisaabta",
+    "accountName": "[MAGACA XISAABTA WELI LAMA XAQIIJIN]",
+    "accountNumberLabel": "Lambarka Xisaabta",
+    "accountNumber": "[LAMBARKA XISAABTA WELI LAMA XAQIIJIN]",
+    "swiftLabel": "SWIFT/BIC",
+    "swift": "[XARIIQDA SWIFT WELI LAMA XAQIIJIN]",
+    "cardHeading": "Deeqaha Kaararka",
+    "cardEmptyState": "Deeqaha kaararku waxay halkan ka heli doonaan marka bixiyaha lacag-bixinta la dejiyo.",
+    "safeguardingHeading": "Sida Deeqaha Loo Ilaaliyo",
+    "safeguardingStatement": "Deeqaha oo dhan waa la duubaa, waxaana loo qaybiyaa sida ku qeexan qaybinta lacagaha ee la daabacay, waxaana ku xiran siyaasadaha xisaabtan bixinta iyo ilaalinta. Eeg bogga Saameynta iyo Xisaabtan Bixinta si aad wax badan u ogaato."
+  },
+  "contact": {
+    "heading": "Nala Soo Xiriir",
+    "intro": "Nala soo xiriir xafiisyadeenna ama nagu soo dir fariin. (QORAAL DEMO AH)",
+    "officesHeading": "Xafiisyadeenna",
+    "officeLabels": {
+      "address": "Ciwaanka",
+      "phone": "Telefoon",
+      "whatsapp": "WhatsApp",
+      "email": "Iimayl"
+    },
+    "offices": {
+      "hiran": {
+        "heading": "Xafiiska Beledweyne",
+        "address": "[CIWAANKA WELI LAMA XAQIIJIN], Beledweyne, Hiiraan",
+        "phone": "[LAMBARKA TALEEFANKA WELI LAMA XAQIIJIN]",
+        "whatsapp": "[LAMBARKA WHATSAPP WELI LAMA XAQIIJIN]",
+        "email": "[IIMAYLKA WELI LAMA XAQIIJIN]"
+      },
+      "southwest": {
+        "heading": "Xafiiska Baydhabo",
+        "address": "[CIWAANKA WELI LAMA XAQIIJIN], Baydhabo, Koonfur Galbeed",
+        "phone": "[LAMBARKA TALEEFANKA WELI LAMA XAQIIJIN]",
+        "whatsapp": "[LAMBARKA WHATSAPP WELI LAMA XAQIIJIN]",
+        "email": "[IIMAYLKA WELI LAMA XAQIIJIN]"
+      }
+    },
+    "formHeading": "Nagu Soo Dir Fariin",
+    "nameLabel": "Magaca",
+    "emailLabel": "Iimayl",
+    "subjectLabel": "Mowduuca",
+    "messageLabel": "Fariinta",
+    "submitLabel": "Dir fariinta",
+    "formspreeEndpoint": "https://formspree.io/f/[FORMSPREE_FORM_ID_TO_BE_CONFIRMED]",
+    "safeguardingPrompt": "Haddii aad u baahan tahay inaad soo sheegto walaac ilaalineed ama cabasho, fadlan isticmaal kanaalka gaarka ah ee ilaalinta halkii aad ka isticmaali lahayd foomkan.",
+    "safeguardingCta": "Soo sheeg walaac"
   }
 }

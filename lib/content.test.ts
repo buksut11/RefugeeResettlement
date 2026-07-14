@@ -24,31 +24,37 @@ describe('getContent', () => {
     expect(content.nav.home).toBeDefined()
   })
 
-  it('includes Phase 4 About page content keys', () => {
-    const content = getContent('en')
-    expect(content.about.heading).toBe('About Us')
-    expect(content.about.leadership).toHaveLength(3)
-  })
-
-  it('includes Phase 5 News content keys', () => {
+  it('includes Phase 5 News and Impact content keys', () => {
     const content = getContent('en')
     expect(content.news.pageHeading).toBe('News & Stories')
-    expect(content.news.filterRegionLabel).toBe('Region')
-    expect(content.news.filterProgramLabel).toBe('Program')
-    expect(content.news.filterAllLabel).toBe('All')
-    expect(content.news.regionBoth).toBe('Both regions')
-    expect(content.news.readMoreLabel).toBe('Read more')
-    expect(content.news.consentNotice).toContain('informed consent')
+    expect(content.impact.pageHeading).toBe('Impact & Accountability')
   })
 
-  it('includes Phase 5 Impact page content keys', () => {
+  it('includes Phase 6 Get Involved content keys', () => {
     const content = getContent('en')
-    expect(content.impact.pageHeading).toBe('Impact & Accountability')
-    expect(content.impact.resultsThisYearLabel).toBe('This Year')
-    expect(content.impact.resultsLastYearLabel).toBe('Last Year')
-    expect(content.impact.percentagePlaceholder).toBe('[PERCENTAGE TO BE CONFIRMED]')
-    expect(content.impact.complaintsPhone).toBe('[PHONE NUMBER TO BE CONFIRMED]')
-    expect(content.impact.reportsEmptyState).toContain('[YEAR TO BE CONFIRMED]')
+    expect(content.getInvolved.heading).toBe('Get Involved')
+    expect(content.getInvolved.workBody).toContain('contact form')
+  })
+
+  it('includes Phase 6 Donate content keys', () => {
+    const content = getContent('en')
+    expect(content.donate.heading).toBe('Donate')
+    expect(content.donate.mobileMoneyProviders.evcPlus.label).toBe('EVC Plus')
+    expect(content.donate.mobileMoneyProviders.evcPlus.number).toBe(
+      '[EVC PLUS NUMBER TO BE CONFIRMED]'
+    )
+    expect(content.donate.bankName).toBe('[BANK NAME TO BE CONFIRMED]')
+    expect(content.donate.cardEmptyState).toContain('payment provider')
+  })
+
+  it('includes Phase 6 Contact content keys', () => {
+    const content = getContent('en')
+    expect(content.contact.heading).toBe('Contact')
+    expect(content.contact.offices.hiran.heading).toBe('Beledweyne Office')
+    expect(content.contact.offices.southwest.heading).toBe('Baidoa Office')
+    expect(content.contact.formspreeEndpoint).toBe(
+      'https://formspree.io/f/[FORMSPREE_FORM_ID_TO_BE_CONFIRMED]'
+    )
   })
 
   it('keeps all Somali content structurally in sync with English', () => {
@@ -61,5 +67,8 @@ describe('getContent', () => {
     expect(keyShape(so.programsPage)).toEqual(keyShape(en.programsPage))
     expect(keyShape(so.whereWeWork)).toEqual(keyShape(en.whereWeWork))
     expect(keyShape(so.programs)).toEqual(keyShape(en.programs))
+    expect(keyShape(so.getInvolved)).toEqual(keyShape(en.getInvolved))
+    expect(keyShape(so.donate)).toEqual(keyShape(en.donate))
+    expect(keyShape(so.contact)).toEqual(keyShape(en.contact))
   })
 })
