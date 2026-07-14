@@ -284,5 +284,102 @@
     "formspreeEndpoint": "https://formspree.io/f/[FORMSPREE_FORM_ID_TO_BE_CONFIRMED]",
     "safeguardingPrompt": "Haddii aad u baahan tahay inaad soo sheegto walaac ilaalineed ama cabasho, fadlan isticmaal kanaalka gaarka ah ee ilaalinta halkii aad ka isticmaali lahayd foomkan.",
     "safeguardingCta": "Soo sheeg walaac"
+  },
+  "legal": {
+    "draftNotice": "Qorshe aan la eegon — boggan wali lama eegin agaasimaha sharciga ama ilaalinta ee hay'adda. Ha u qaadan sida mid kama dambays ah."
+  },
+  "privacy": {
+    "heading": "Siyaasadda Sirta",
+    "intro": "Siyaasaddan Sirta waxay sharaxaysaa macluumaadka Horumar Resettlement Network ay ka ururiso bogga internetka, sida loo isticmaalo, iyo waxa aan la ururin marnaba.",
+    "whatWeCollectHeading": "Waxa Aan Ururino",
+    "whatWeCollectBody": "Hadda, macluumaadka gaarka ah ee kaliya ee bogga internetkani uu ururiyo waa waxa aad ku soo gudbiso foomka nala soo xiriirka: magacaaga, iimaylkaaga, mowduuca, iyo fariinta. Ma isticmaalno cookies, mana jiro barnaamij falanqeyn ama la socod ah oo ka shaqeeya bogga.",
+    "thirdPartyHeading": "Habaynta Dhinaca Saddexaad",
+    "thirdPartyBody": "Fariimaha foomka nala soo xiriirka waxaa habeeya Formspree, adeeg dhinac saddexaad ah, kaliya si loogu gudbiyo fariintaada shaqaaleheenna. Macluumaadkaaga lama wadaagno dhinac kale.",
+    "whatWeNeverCollectHeading": "Waxa Aannu Marnaba Ururin",
+    "whatWeNeverCollectBody": "Marnaba ma ururino magacyada, goobaha, faahfaahinta qoyska, ama xogta baayooloji ee dadka aan caawino, bogganna ma laha astaan lagu diiwaan gelinayo ama lagu codsanayo gargaar.",
+    "retentionHeading": "Ilaalinta Xogta",
+    "retentionBody": "Fariimaha foomka nala soo xiriirka waxaa la haystaa kaliya inta lagama maarmaan ah si loogu jawaabo su'aashaada, mana loo isticmaalo ujeeddo kale.",
+    "contactHeading": "Su'aalaha Ku Saabsan Siyaasaddan",
+    "contactBody": "Haddii aad qabto su'aalo ku saabsan siyaasaddan ama aad rabto inaad codsato in la tirtiro macluumaad aad soo gudbisay, nagala soo xiriir tafaasiisha ku qoran bogga Nala Soo Xiriir.",
+    "changesHeading": "Isbeddelada Siyaasaddan",
+    "changesBody": "Waxaan cusboonaysiin karnaa siyaasaddan marka dhaqamadeenna isbeddelaan. Taariikhda cusboonaysiinta ugu dambeysay ayaa halkan lagu qori doonaa marka siyaasaddan la dhammaystiro."
+  },
+  "safeguarding": {
+    "heading": "Siyaasadda Ilaalinta iyo PSEA",
+    "intro": "Horumar Resettlement Network waxay u heellan tahay inay ka ilaaliso dadka aan u adeegno, shaqaalaheenna, iyo iskaashatooyinkeenna khatarta, ka faa'iidaysiga, iyo xadgudubka.",
+    "zeroToleranceHeading": "Siyaasadda Aan Dulqaadan Lahayn",
+    "zeroToleranceBody": "Waxaan haynaa siyaasad aan dulqaadan ka faa'iidaysiga iyo xadgudubka galmada (SEA) ee ay geli karaan shaqaale, mutadawac, qandaraasle, ama iskaashade kasta. Qof kasta oo la ogaado inuu ku xadgudbay siyaasaddan wuxuu wajahi doonaa tallaabo edeb, oo ay ku jiraan ka shaqo bixin iyo gudbin ciidamada sharciga marka ay ku habboon tahay.",
+    "reportingHeading": "Sida Loo Soo Sheego Walaac",
+    "reportingBody": "Haddii aad aragtay ama la kulantay ka faa'iidaysiga galmada, xadgudub, ama walaac kale oo ilaalineed ah, waxaad ka soo sheegi kartaa kanaalka gaarka ah ee ilaalinta ee bogga Nala Soo Xiriir, ama adigoo isticmaalaya lambarka taleefanka, WhatsApp, iyo iimaylka ku qoran bogga Saameynta iyo Xisaabtan Bixinta. Warbixinnada waxaa lagu soo gudbin karaa qarsoodi.",
+    "confidentialityHeading": "Qarsoodiga iyo Aan Aargudashada Lahayn",
+    "confidentialityBody": "Dhammaan warbixinnada waxaa lagu maamulaa si qarsoodi ah waxaana lala wadaagaa kaliya kuwa u baahan inay ogaadaan si ay uga jawaabaan. Soo sheegidda, niyad wanaagsan, marnaba ma saameyn doonto helitaanka gargaarkeenna adiga ama qoyskaaga, aargudashadana ka dhanka ah qof kasta oo soo sheega walaac waa xadgudub siyaasaddan lafteeda ah.",
+    "consentHeading": "Ogolaanshaha, Sawirrada, iyo Sheekaynta",
+    "consentBody": "Waxaan kaliya wadaagnaa sheeko ama sawirka qof marka ay ogolaanshahiisa la ogsoon yahay jiro, magacyadana waa la beddeli karaa si loo ilaaliyo aqoonsiga. Marnaba ma daabacno sawirro la aqoonsan karo oo caruur ah oo aan lahayn diiwaan ogolaansho oo cad oo ka socda waalid ama masuul.",
+    "investigationHeading": "Sida Warbixinnada Loo Maareeyo",
+    "investigationBody": "Warbixin kasta waa la eegaa, marka ay ku habboon tahay waxaana baara shaqaalaha mas'uulka ka ah ilaalinta. Waxaan hadafka nahay inaan si degdeg ah u aqoonsano warbixinnada waxaana la socon doonaa kii soo sheegay natiijada marka ay ammaan iyo ku habboon tahay."
+  },
+  "terms": {
+    "heading": "Shuruudaha Isticmaalka",
+    "intro": "Shuruudahani Isticmaalka waxay xukumaan isticmaalkaaga bogga Horumar Resettlement Network.",
+    "acceptableUseHeading": "Isticmaal La Aqbali Karo",
+    "acceptableUseBody": "Waxaad isticmaali kartaa boggan si aad wax uga baratid shaqadeenna, akhrisatid wararkeenna iyo warbixinnadeenna, oo aad nagala soo xiriirtid. Ma isticmaali kartid si aad ugu isku daydo gelitaan aan la ogolayn nidaamyadeenna, si aad ugu faragelin shaqada bogga, ama ujeeddo sharci darro ah.",
+    "contentOwnershipHeading": "Milkiilaha Waxa Ku Qoran",
+    "contentOwnershipBody": "Ilaa la sheego si kale, qoraalka, sawirrada, iyo waxa kale ee ku qoran boggan waxaa iska leh Horumar Resettlement Network ama waxaa loo isticmaalaa ogolaansho. Waxaad la wadaagi kartaa xiriiriyayaal waxa aan qornay, laakiin ma dib-u-daabaci kartid iyada oo aan qorista ogolaanshahayaga la helin.",
+    "noWarrantyHeading": "Aan Dammaanad Lahayn",
+    "noWarrantyBody": "Boggan waxaa la bixiyaa sida uu yahay. In kasta oo aan isku dayno inaan macluumaadka sax iyo cusboonaysiin ka dhigno, ma dammaanad qaadeyno inuu dhammaystiran yahay ama aan khalad lahayn.",
+    "governingLawHeading": "Sharciga Xukuma",
+    "governingLawBody": "Shuruudahani waxaa xukuma sharciyada [JURISDICTION TO BE CONFIRMED], iyadoo la sugayo xaqiijinta diiwaangelinta sharciga rasmiga ah ee hay'adeenna.",
+    "changesHeading": "Isbeddelada Shuruudahan",
+    "changesBody": "Waxaan mararka qaarkood cusboonaysiin karnaa shuruudahan. Sii isticmaalka bogga ka dib marka isbeddelada la daabaco macnaheedu waa inaad aqbashay shuruudaha cusboonaysiin ah."
+  },
+  "seo": {
+    "home": {
+      "title": "Bogga Hore",
+      "description": "Horumar Resettlement Network waxay taageertaa qoysaska barakacay ee Hiiraan iyo Koonfur Galbeed, Soomaaliya, iyadoo bixineysa barnaamijyo dib-u-dejin, hoy, iyo nolol-maalmeed. (QORAAL DEMO AH)"
+    },
+    "about": {
+      "title": "Nagu Saabsan",
+      "description": "Ka baro hadafka, qiyamka, hoggaanka, iyo ballanqaadyada Horumar Resettlement Network ee bulshooyinka aan u adeegno. (QORAAL DEMO AH)"
+    },
+    "programs": {
+      "title": "Barnaamijyadeenna",
+      "description": "Sahmi afarta barnaamij: dib-u-dejin, hoy, nolol-maalmeed, iyo ilaalin oo loogu talagalay qoysaska barakacay ee Soomaaliya. (QORAAL DEMO AH)"
+    },
+    "whereWeWork": {
+      "title": "Meesha Aan Ka Shaqeyno",
+      "description": "Arag gobollada Hiiraan/Hirshabelle iyo Koonfur Galbeed ee uu Horumar Resettlement Network ka shaqeeyo. (QORAAL DEMO AH)"
+    },
+    "impact": {
+      "title": "Saameynta iyo Xisaabtan Bixinta",
+      "description": "Natiijooyinkeenna, qaybinta lacagaha, hab-cabashada, iyo warbixinnada la daabacay. (QORAAL DEMO AH)"
+    },
+    "news": {
+      "title": "Wararka iyo Sheekooyinka",
+      "description": "Wararka iyo sheekooyinka ugu dambeeyay ee shaqada Horumar Resettlement Network ee Soomaaliya. (QORAAL DEMO AH)"
+    },
+    "getInvolved": {
+      "title": "Naga Qeyb Qaado",
+      "description": "Deeq bixi, nala iskaashó, ama baro sida aad u taageeri karto shaqada Horumar Resettlement Network. (QORAAL DEMO AH)"
+    },
+    "donate": {
+      "title": "Deeq Bixi",
+      "description": "Taageer qoysaska barakacay ee Soomaaliya adigoo isticmaalaya lacagta mobilada, wareejinta bangiga, ama deeqda kaararka. (QORAAL DEMO AH)"
+    },
+    "contact": {
+      "title": "Nala Soo Xiriir",
+      "description": "La xiriir xafiisyada Horumar Resettlement Network, ama soo sheeg walaac ilaalineed. (QORAAL DEMO AH)"
+    },
+    "privacy": {
+      "title": "Siyaasadda Sirta",
+      "description": "Sida Horumar Resettlement Network u maareeyo macluumaadka laga ururiyo bogga internetkan."
+    },
+    "safeguarding": {
+      "title": "Siyaasadda Ilaalinta iyo PSEA",
+      "description": "Siyaasaddeenna aan dulqaadan ka faa'iidaysiga iyo xadgudubka galmada, iyo sida loo soo sheego walaac."
+    },
+    "terms": {
+      "title": "Shuruudaha Isticmaalka",
+      "description": "Shuruudaha xukuma isticmaalka bogga Horumar Resettlement Network."
+    }
   }
 }

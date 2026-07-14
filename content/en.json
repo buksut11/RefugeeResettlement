@@ -284,5 +284,102 @@
     "formspreeEndpoint": "https://formspree.io/f/[FORMSPREE_FORM_ID_TO_BE_CONFIRMED]",
     "safeguardingPrompt": "If you need to report a safeguarding concern or complaint, please use our dedicated channel instead of this form.",
     "safeguardingCta": "Report a concern"
+  },
+  "legal": {
+    "draftNotice": "unreviewed draft — this page has not yet been reviewed by the organization's legal or protection focal point. Do not rely on it as final."
+  },
+  "privacy": {
+    "heading": "Privacy Policy",
+    "intro": "This Privacy Policy explains what information Horumar Resettlement Network collects through this website, how it is used, and what is never collected.",
+    "whatWeCollectHeading": "What We Collect",
+    "whatWeCollectBody": "Today, the only personal information this website collects is what you choose to submit through the contact form: your name, email address, subject, and message. We do not use cookies, and no analytics or tracking software is active on this site.",
+    "thirdPartyHeading": "Third-Party Processing",
+    "thirdPartyBody": "Contact form submissions are processed by Formspree, a third-party form service, solely to deliver your message to our staff. We do not share your information with any other third party.",
+    "whatWeNeverCollectHeading": "What We Never Collect",
+    "whatWeNeverCollectBody": "We never collect the names, locations, family details, or biometric data of people we assist, and this website has no feature to register for or apply for assistance.",
+    "retentionHeading": "Data Retention",
+    "retentionBody": "Contact form messages are retained only as long as needed to respond to your inquiry, and are not used for any other purpose.",
+    "contactHeading": "Questions About This Policy",
+    "contactBody": "If you have questions about this policy or wish to request that we delete information you have submitted, contact us using the details on our Contact page.",
+    "changesHeading": "Changes to This Policy",
+    "changesBody": "We may update this policy as our practices change. The date of the most recent update will be noted here once this policy is finalized."
+  },
+  "safeguarding": {
+    "heading": "Safeguarding & PSEA Policy",
+    "intro": "Horumar Resettlement Network is committed to protecting the people we serve, our staff, and our partners from harm, exploitation, and abuse.",
+    "zeroToleranceHeading": "Zero-Tolerance Policy",
+    "zeroToleranceBody": "We maintain a zero-tolerance policy toward sexual exploitation and abuse (SEA) by any staff member, volunteer, contractor, or partner. Anyone found to have violated this policy will face disciplinary action, up to and including termination and referral to law enforcement where appropriate.",
+    "reportingHeading": "How to Report a Concern",
+    "reportingBody": "If you have witnessed or experienced sexual exploitation, abuse, or any other safeguarding concern, you can report it through our Contact page's dedicated safeguarding channel, or using the phone, WhatsApp, and email details on our Impact & Accountability page. Reports can be made anonymously.",
+    "confidentialityHeading": "Confidentiality and Non-Retaliation",
+    "confidentialityBody": "All reports are handled confidentially and shared only with those who need to know in order to respond. Making a report, in good faith, will never affect your or your family's access to our assistance, and retaliation against anyone who reports a concern is itself a violation of this policy.",
+    "consentHeading": "Consent, Photography, and Storytelling",
+    "consentBody": "We only share a person's story or photograph with their informed consent, and names may be changed to protect identity. We never publish identifiable images of children without an explicit consent record from a parent or guardian.",
+    "investigationHeading": "How Reports Are Handled",
+    "investigationBody": "Every report is reviewed and, where appropriate, investigated by staff responsible for safeguarding. We aim to acknowledge reports promptly and keep the reporter informed of the outcome where safe and appropriate to do so."
+  },
+  "terms": {
+    "heading": "Terms of Use",
+    "intro": "These Terms of Use govern your use of the Horumar Resettlement Network website.",
+    "acceptableUseHeading": "Acceptable Use",
+    "acceptableUseBody": "You may use this website to learn about our work, read our news and reports, and contact us. You may not use it to attempt unauthorized access to our systems, to interfere with the site's operation, or for any unlawful purpose.",
+    "contentOwnershipHeading": "Content Ownership",
+    "contentOwnershipBody": "Unless otherwise noted, the text, photographs, and other content on this website belong to Horumar Resettlement Network or are used with permission. You may share links to our content, but you may not republish it without our written consent.",
+    "noWarrantyHeading": "No Warranty",
+    "noWarrantyBody": "This website is provided as-is. While we try to keep information accurate and current, we make no guarantee that it is complete or error-free.",
+    "governingLawHeading": "Governing Law",
+    "governingLawBody": "These terms are governed by the laws of [JURISDICTION TO BE CONFIRMED], pending confirmation of our formal legal registration.",
+    "changesHeading": "Changes to These Terms",
+    "changesBody": "We may update these terms from time to time. Continued use of the website after changes are posted means you accept the updated terms."
+  },
+  "seo": {
+    "home": {
+      "title": "Home",
+      "description": "Horumar Resettlement Network supports displaced families in Hiran and Southwest State, Somalia, with resettlement, shelter, and livelihoods programs. (DEMO)"
+    },
+    "about": {
+      "title": "About Us",
+      "description": "Learn about Horumar Resettlement Network's mission, values, leadership, and commitments to the communities we serve. (DEMO)"
+    },
+    "programs": {
+      "title": "Our Programs",
+      "description": "Explore our four programs: resettlement, shelter, livelihoods, and protection for displaced families in Somalia. (DEMO)"
+    },
+    "whereWeWork": {
+      "title": "Where We Work",
+      "description": "See the regions of Hiran/Hirshabelle and Southwest State where Horumar Resettlement Network operates. (DEMO)"
+    },
+    "impact": {
+      "title": "Impact & Accountability",
+      "description": "Our results, funds-use breakdown, complaints mechanism, and published reports. (DEMO)"
+    },
+    "news": {
+      "title": "News & Stories",
+      "description": "The latest news and stories from Horumar Resettlement Network's work in Somalia. (DEMO)"
+    },
+    "getInvolved": {
+      "title": "Get Involved",
+      "description": "Donate, partner with us, or learn how to support Horumar Resettlement Network's work. (DEMO)"
+    },
+    "donate": {
+      "title": "Donate",
+      "description": "Support displaced families in Somalia through mobile money, bank transfer, or card donation. (DEMO)"
+    },
+    "contact": {
+      "title": "Contact Us",
+      "description": "Contact Horumar Resettlement Network's offices, or report a safeguarding concern. (DEMO)"
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "description": "How Horumar Resettlement Network handles information collected through this website."
+    },
+    "safeguarding": {
+      "title": "Safeguarding & PSEA Policy",
+      "description": "Our zero-tolerance policy on sexual exploitation and abuse, and how to report a concern."
+    },
+    "terms": {
+      "title": "Terms of Use",
+      "description": "The terms governing use of the Horumar Resettlement Network website."
+    }
   }
 }

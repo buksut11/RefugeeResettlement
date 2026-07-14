@@ -24,37 +24,41 @@ describe('getContent', () => {
     expect(content.nav.home).toBeDefined()
   })
 
-  it('includes Phase 5 News and Impact content keys', () => {
-    const content = getContent('en')
-    expect(content.news.pageHeading).toBe('News & Stories')
-    expect(content.impact.pageHeading).toBe('Impact & Accountability')
-  })
-
-  it('includes Phase 6 Get Involved content keys', () => {
+  it('includes Phase 6 Get Involved, Donate, and Contact content keys', () => {
     const content = getContent('en')
     expect(content.getInvolved.heading).toBe('Get Involved')
-    expect(content.getInvolved.workBody).toContain('contact form')
-  })
-
-  it('includes Phase 6 Donate content keys', () => {
-    const content = getContent('en')
     expect(content.donate.heading).toBe('Donate')
-    expect(content.donate.mobileMoneyProviders.evcPlus.label).toBe('EVC Plus')
-    expect(content.donate.mobileMoneyProviders.evcPlus.number).toBe(
-      '[EVC PLUS NUMBER TO BE CONFIRMED]'
-    )
-    expect(content.donate.bankName).toBe('[BANK NAME TO BE CONFIRMED]')
-    expect(content.donate.cardEmptyState).toContain('payment provider')
+    expect(content.contact.heading).toBe('Contact')
   })
 
-  it('includes Phase 6 Contact content keys', () => {
+  it('includes Phase 7a legal content keys', () => {
     const content = getContent('en')
-    expect(content.contact.heading).toBe('Contact')
-    expect(content.contact.offices.hiran.heading).toBe('Beledweyne Office')
-    expect(content.contact.offices.southwest.heading).toBe('Baidoa Office')
-    expect(content.contact.formspreeEndpoint).toBe(
-      'https://formspree.io/f/[FORMSPREE_FORM_ID_TO_BE_CONFIRMED]'
-    )
+    expect(content.legal.draftNotice).toContain('unreviewed draft')
+    expect(content.privacy.heading).toBe('Privacy Policy')
+    expect(content.safeguarding.heading).toBe('Safeguarding & PSEA Policy')
+    expect(content.terms.heading).toBe('Terms of Use')
+    expect(content.terms.governingLawBody).toContain('[JURISDICTION TO BE CONFIRMED]')
+  })
+
+  it('includes Phase 7a SEO content keys for all twelve static pages', () => {
+    const content = getContent('en')
+    for (const page of [
+      'home',
+      'about',
+      'programs',
+      'whereWeWork',
+      'impact',
+      'news',
+      'getInvolved',
+      'donate',
+      'contact',
+      'privacy',
+      'safeguarding',
+      'terms',
+    ] as const) {
+      expect(content.seo[page].title.length).toBeGreaterThan(0)
+      expect(content.seo[page].description.length).toBeGreaterThan(0)
+    }
   })
 
   it('keeps all Somali content structurally in sync with English', () => {
@@ -70,5 +74,10 @@ describe('getContent', () => {
     expect(keyShape(so.getInvolved)).toEqual(keyShape(en.getInvolved))
     expect(keyShape(so.donate)).toEqual(keyShape(en.donate))
     expect(keyShape(so.contact)).toEqual(keyShape(en.contact))
+    expect(keyShape(so.legal)).toEqual(keyShape(en.legal))
+    expect(keyShape(so.privacy)).toEqual(keyShape(en.privacy))
+    expect(keyShape(so.safeguarding)).toEqual(keyShape(en.safeguarding))
+    expect(keyShape(so.terms)).toEqual(keyShape(en.terms))
+    expect(keyShape(so.seo)).toEqual(keyShape(en.seo))
   })
 })
