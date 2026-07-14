@@ -24,6 +24,9 @@ describe('DonatePage', () => {
         'Card donations will be available here once our payment provider link is set up.'
       )
     ).toBeInTheDocument()
+
+    const impactLink = screen.getByRole('link', { name: 'Impact & Accountability' })
+    expect(impactLink).toHaveAttribute('href', '/en/impact/')
   })
 
   it('renders correctly for Somali without crashing', () => {

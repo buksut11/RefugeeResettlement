@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { getContent } from '@/lib/content'
 import { LANGS, type Lang } from '@/lib/i18n'
 import { CopyableNumber } from '@/components/donate/CopyableNumber'
@@ -59,6 +60,13 @@ export default function DonatePage({ params }: { params: { lang: Lang } }) {
       <section className="mt-8">
         <h2 className="font-display text-2xl font-semibold">{donate.safeguardingHeading}</h2>
         <p className="mt-2 text-sm">{donate.safeguardingStatement}</p>
+        <p className="mt-2 text-sm">
+          {donate.safeguardingLinkIntro}{' '}
+          <Link href={`/${lang}/impact/`} className="underline">
+            {content.impact.pageHeading}
+          </Link>{' '}
+          {donate.safeguardingLinkOutro}
+        </p>
       </section>
     </div>
   )

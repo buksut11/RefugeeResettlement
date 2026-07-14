@@ -245,7 +245,9 @@
     "cardHeading": "Card Donations",
     "cardEmptyState": "Card donations will be available here once our payment provider link is set up.",
     "safeguardingHeading": "How Donations Are Safeguarded",
-    "safeguardingStatement": "All donations are recorded, allocated according to our published funds-use breakdown, and subject to our financial accountability and safeguarding policies. See our Impact & Accountability page for details."
+    "safeguardingStatement": "All donations are recorded, allocated according to our published funds-use breakdown, and subject to our financial accountability and safeguarding policies.",
+    "safeguardingLinkIntro": "See our",
+    "safeguardingLinkOutro": "page for details."
   },
   "contact": {
     "heading": "Contact",

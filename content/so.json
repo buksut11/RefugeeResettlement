@@ -245,7 +245,9 @@
     "cardHeading": "Deeqaha Kaararka",
     "cardEmptyState": "Deeqaha kaararku waxay halkan ka heli doonaan marka bixiyaha lacag-bixinta la dejiyo.",
     "safeguardingHeading": "Sida Deeqaha Loo Ilaaliyo",
-    "safeguardingStatement": "Deeqaha oo dhan waa la duubaa, waxaana loo qaybiyaa sida ku qeexan qaybinta lacagaha ee la daabacay, waxaana ku xiran siyaasadaha xisaabtan bixinta iyo ilaalinta. Eeg bogga Saameynta iyo Xisaabtan Bixinta si aad wax badan u ogaato."
+    "safeguardingStatement": "Deeqaha oo dhan waa la duubaa, waxaana loo qaybiyaa sida ku qeexan qaybinta lacagaha ee la daabacay, waxaana ku xiran siyaasadaha xisaabtan bixinta iyo ilaalinta.",
+    "safeguardingLinkIntro": "Eeg bogga",
+    "safeguardingLinkOutro": "si aad wax badan u ogaato."
   },
   "contact": {
     "heading": "Nala Soo Xiriir",
