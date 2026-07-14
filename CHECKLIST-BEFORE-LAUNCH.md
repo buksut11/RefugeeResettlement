@@ -61,3 +61,15 @@ None yet — impact statistics are introduced in Phase 3 (homepage) and Phase 5 
 - Complaints/feedback phone, WhatsApp, and email are honest placeholders pending Section 0 facts.
 - The Reports section is an honest empty state (`content/reports/{lang}/` is intentionally empty) — no demo PDF was fabricated, per the master prompt's explicit instruction. Populate `content/reports/{lang}/*.md` and the corresponding files under `public/reports/` once real PDFs are supplied.
 - Both demo news posts omit `image`/`alt` front-matter (no image renders) — this is intentional (no fabricated photo), not a bug; the pipeline supports real images with meaningful alt text once supplied.
+
+## Phase 6 (Get Involved, Donate, Contact) — what's real vs. placeholder right now
+
+- All three mobile money numbers and USSD codes (EVC Plus, Zaad, Sahal) are honest placeholders — the Copy button is fully functional but copies placeholder text until real numbers are supplied.
+- Bank transfer details (bank name, account name, account number, SWIFT/BIC) are honest placeholders pending Section 0 facts.
+- The card donations section is an honest empty state — no Stripe Payment Link or Donorbox embed has been supplied yet, and none was fabricated. Populate `content.donate` with a real link once the organization provides one; do not build a custom payment form per the master prompt's explicit instruction.
+- Suggested giving levels were omitted entirely this phase, per the master prompt's own instruction, since no unit costs have been supplied.
+- The Contact page's Formspree endpoint (`content.contact.formspreeEndpoint`) is a placeholder — the contact form will not actually submit anywhere until a real Formspree form ID is configured.
+- Office address/phone/WhatsApp/email on the Contact page are placeholders, same unconfirmed Section 0 facts tracked since Phase 2.
+- The Contact page's Safeguarding & PSEA link will 404 until Phase 7 builds the legal pages — expected mid-build, not a defect.
+- The Get Involved page's "Work with us" section describes the page's current content (no positions listed) rather than asserting the organization has no vacancies — update this copy directly if/when real listings exist.
+- The Hero button and every program sub-page's "Support this program" button, which linked to `/donate/` since Phases 3-4, now resolve correctly.
