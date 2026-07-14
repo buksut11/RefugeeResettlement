@@ -14,15 +14,21 @@ export function Footer({ lang }: { lang: Lang }) {
       </div>
       <div className="mb-4">
         <h2 className="font-display text-base">{content.footer.quickLinksHeading}</h2>
-        <ul>
+        <ul className="space-y-1">
           <li>
-            <Link href={`/${lang}/safeguarding/`}>{content.footer.safeguarding}</Link>
+            <Link href={`/${lang}/safeguarding/`} className="inline-block py-3">
+              {content.footer.safeguarding}
+            </Link>
           </li>
           <li>
-            <Link href={`/${lang}/privacy/`}>{content.footer.privacy}</Link>
+            <Link href={`/${lang}/privacy/`} className="inline-block py-3">
+              {content.footer.privacy}
+            </Link>
           </li>
           <li>
-            <Link href={`/${lang}/terms/`}>{content.footer.terms}</Link>
+            <Link href={`/${lang}/terms/`} className="inline-block py-3">
+              {content.footer.terms}
+            </Link>
           </li>
         </ul>
       </div>
