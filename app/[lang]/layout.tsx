@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Newsreader, IBM_Plex_Sans, IBM_Plex_Mono } from 'next/font/google'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
+import { ChunkErrorRecovery } from '@/components/layout/ChunkErrorRecovery'
 import { getContent } from '@/lib/content'
 import { buildOrganizationJsonLd } from '@/lib/jsonld'
 import { LANGS, type Lang } from '@/lib/i18n'
@@ -58,6 +59,7 @@ export default function LangLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: buildOrganizationJsonLd(lang) }}
         />
+        <ChunkErrorRecovery />
         <Header lang={lang} />
         <main>{children}</main>
         <Footer lang={lang} />

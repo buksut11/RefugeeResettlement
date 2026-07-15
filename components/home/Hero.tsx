@@ -38,7 +38,7 @@ export function Hero({ lang }: { lang: Lang }) {
         >
           <div className="relative aspect-[4/3] overflow-hidden bg-primary/[0.06]">
             <Image
-              src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=900&q=80"
+              src="/images/hero-community-support.jpg"
               alt={content.home.heroPhotoAlt}
               fill
               sizes="(min-width: 1024px) 480px, 100vw"
