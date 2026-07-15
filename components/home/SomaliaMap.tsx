@@ -28,6 +28,15 @@ export function SomaliaMap({ lang }: { lang: Lang }) {
       return
     }
 
+    // Some browsers don't fire the observer's initial callback for content
+    // that's already on-screen at load unless the user scrolls. Check the
+    // element's actual position up front so it isn't stuck hidden forever.
+    const rect = node.getBoundingClientRect()
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
+      setRevealed(true)
+      return
+    }
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -35,10 +44,18 @@ export function SomaliaMap({ lang }: { lang: Lang }) {
           observer.disconnect()
         }
       },
-      { threshold: 0.35 }
+      { threshold: 0.1 }
     )
     observer.observe(node)
-    return () => observer.disconnect()
+
+    // Belt-and-suspenders: never leave the map permanently hidden if the
+    // observer doesn't fire for some reason.
+    const fallback = window.setTimeout(() => setRevealed(true), 2500)
+
+    return () => {
+      observer.disconnect()
+      window.clearTimeout(fallback)
+    }
   }, [])
 
   return (
