@@ -33,8 +33,8 @@ export default function ImpactPage({ params }: { params: { lang: Lang } }) {
 
       <section className="mt-8">
         <h2 className="font-display text-2xl font-semibold">{content.impact.resultsHeading}</h2>
-        <ImpactResultsTable lang={lang} regionLabel={content.home.mapRegionHiran} />
-        <ImpactResultsTable lang={lang} regionLabel={content.home.mapRegionSouthwest} />
+        <ImpactResultsTable lang={lang} region="hiran" regionLabel={content.home.mapRegionHiran} />
+        <ImpactResultsTable lang={lang} region="southwest" regionLabel={content.home.mapRegionSouthwest} />
       </section>
 
       <section className="mt-8">

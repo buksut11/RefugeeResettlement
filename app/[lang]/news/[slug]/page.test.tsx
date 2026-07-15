@@ -9,10 +9,10 @@ describe('NewsPostPage', () => {
     )
 
     expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(
-      'Shelter kits arrive in Beledweyne (DEMO)'
+      'Shelter kits arrive in Beledweyne'
     )
     expect(screen.getByText('2026-06-01')).toBeInTheDocument()
-    expect(container.querySelector('strong')).toHaveTextContent('demonstration article')
+    expect(container.querySelector('strong')).toHaveTextContent('first delivery')
     expect(
       screen.getByText(
         "Names in personal stories may be changed to protect identity, and are shared only with the individual's informed consent."
@@ -31,7 +31,7 @@ describe('generateMetadata', () => {
     const metadata = generateMetadata({
       params: { lang: 'en', slug: 'shelter-kits-arrive-in-beledweyne' },
     })
-    expect(metadata.title).toBe('Shelter kits arrive in Beledweyne (DEMO) | Horumar Resettlement Network')
+    expect(metadata.title).toBe('Shelter kits arrive in Beledweyne | Horumar Resettlement Network')
     expect(metadata.alternates?.canonical).toBe(
       '/en/news/shelter-kits-arrive-in-beledweyne/'
     )

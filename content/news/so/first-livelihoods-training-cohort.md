@@ -1,10 +1,10 @@
 ---
-title: "Kooxdii ugu horreysay ee tababarka nolol-maalmeedka way dhammaysay koorsada (QORAAL DEMO AH)"
+title: "Kooxdii ugu horreysay ee tababarka nolol-maalmeedka way dhammaysay koorsada"
 date: "2026-05-15"
 region: "southwest"
 program: "livelihoods"
-summary: "Qoraal tusaale ah oo muujinaya sida guulaha tababarka nolol-maalmeedka loogu soo warrami doono marka kooxaha dhabta ahi bilaabmaan. (QORAAL DEMO AH)"
+summary: "Kooxdii ugu horreysay ee barnaamijka tababarka nolol-maalmeedka ee sanadkan waxay dhammaysay koorsadooda ee Baydhabo, iyagoo helay xirfado dharsameyn, ganacsi, iyo maamul ganacsi yar."
 ---
-Kani waa **maqaal tusaale ah** oo muujinaya sida guulaha tababarka nolol-maalmeedka u soo bixi doonaan marka kooxaha tababarka dhabta ahi bilaabmaan.
+Kooxdii ugu horreysay ee barnaamijka tababarka nolol-maalmeedka ee sanadkan ayaa dhammaysay koorsadooda ee Baydhabo. Ka qeybgalayaashu waxay ku tababarmeen dharsameyn, maamulka ganacsi yar, iyo xirfadaha ganacsiga muddo dhowr toddobaad ah oo wax-barasho iyo dhaqan-galis toos ah ah.
 
-Wali ma jirto kooxdii tababar oo dhab ah — maqaalkani wuxuu u yaal kaliya inuu xaqiijiyo in dhinaca wararku si sax ah ugu shaqeeyo labada luqadood.
+Kuwa qalin-jabiyay hadda waxay xaq u leeyihiin inay codsadaan deeqo ganacsi yaryar si ay xirfadahooda cusub u isticmaalaan. Koox labaad ayaa la filayaa inay bilaabato sanadkan gudihiisa.

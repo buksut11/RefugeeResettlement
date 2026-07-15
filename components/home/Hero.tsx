@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import { getContent } from '@/lib/content'
 import type { Lang } from '@/lib/i18n'
@@ -35,15 +36,18 @@ export function Hero({ lang }: { lang: Lang }) {
           className="m-0 border border-line"
           style={{ animation: 'rise-in 0.7s ease-out 0.1s both' }}
         >
-          <div className="flex aspect-[4/3] items-center justify-center bg-primary/[0.06]">
-            <svg aria-hidden="true" viewBox="0 0 24 24" className="h-9 w-9 text-ink/25">
-              <rect x="2.5" y="4.5" width="19" height="15" rx="0.5" fill="none" stroke="currentColor" strokeWidth="1.2" />
-              <circle cx="8" cy="10" r="1.6" fill="none" stroke="currentColor" strokeWidth="1.2" />
-              <path d="M4 17.5 L9.5 12 L13 15 L16.5 11 L20 14.5" fill="none" stroke="currentColor" strokeWidth="1.2" />
-            </svg>
+          <div className="relative aspect-[4/3] overflow-hidden bg-primary/[0.06]">
+            <Image
+              src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=900&q=80"
+              alt={content.home.heroPhotoAlt}
+              fill
+              sizes="(min-width: 1024px) 480px, 100vw"
+              className="object-cover"
+              priority
+            />
           </div>
           <figcaption className="border-t border-line px-3 py-2 font-mono text-[0.7rem] uppercase tracking-wide text-ink/50">
-            {content.home.heroPhotoPlaceholder}
+            {content.home.heroPhotoCredit}
           </figcaption>
         </figure>
       </div>

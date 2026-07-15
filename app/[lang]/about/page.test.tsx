@@ -20,8 +20,8 @@ describe('AboutPage', () => {
     ])
 
     expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('About Us')
-    expect(screen.getByText('Dignity (DEMO)')).toBeInTheDocument()
-    expect(screen.getByText('Amina Yusuf (DEMO NAME)')).toBeInTheDocument()
+    expect(screen.getByText('Dignity')).toBeInTheDocument()
+    expect(screen.getByText('Amina Yusuf')).toBeInTheDocument()
     expect(screen.getByRole('link', { name: 'Safeguarding & PSEA' })).toHaveAttribute(
       'href',
       '/en/safeguarding/'

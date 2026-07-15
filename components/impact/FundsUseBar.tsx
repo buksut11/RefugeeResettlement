@@ -5,9 +5,24 @@ export function FundsUseBar({ lang }: { lang: Lang }) {
   const content = getContent(lang)
 
   const segments = [
-    { label: content.impact.fundsUseProgramLabel, color: 'bg-secondary', textColor: 'text-paper' },
-    { label: content.impact.fundsUseAdminLabel, color: 'bg-primary', textColor: 'text-paper' },
-    { label: content.impact.fundsUseFundraisingLabel, color: 'bg-accent/80', textColor: 'text-ink' },
+    {
+      label: content.impact.fundsUseProgramLabel,
+      percentage: content.impact.fundsUsePercentages.program,
+      color: 'bg-secondary',
+      textColor: 'text-paper',
+    },
+    {
+      label: content.impact.fundsUseAdminLabel,
+      percentage: content.impact.fundsUsePercentages.admin,
+      color: 'bg-primary',
+      textColor: 'text-paper',
+    },
+    {
+      label: content.impact.fundsUseFundraisingLabel,
+      percentage: content.impact.fundsUsePercentages.fundraising,
+      color: 'bg-accent/80',
+      textColor: 'text-ink',
+    },
   ]
 
   return (
@@ -18,7 +33,7 @@ export function FundsUseBar({ lang }: { lang: Lang }) {
           className={`flex-1 p-3 text-center text-xs ${segment.color} ${segment.textColor}`}
         >
           <p className="font-semibold">{segment.label}</p>
-          <p>{content.impact.percentagePlaceholder}</p>
+          <p>{segment.percentage}</p>
         </div>
       ))}
     </div>

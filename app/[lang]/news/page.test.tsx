@@ -7,9 +7,9 @@ describe('NewsPage', () => {
     render(<NewsPage params={{ lang: 'en' }} />)
 
     expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('News & Stories')
-    expect(screen.getByText('Shelter kits arrive in Beledweyne (DEMO)')).toBeInTheDocument()
+    expect(screen.getByText('Shelter kits arrive in Beledweyne')).toBeInTheDocument()
     expect(
-      screen.getByText('First livelihoods training cohort completes course (DEMO)')
+      screen.getByText('First livelihoods training cohort completes course')
     ).toBeInTheDocument()
   })
 

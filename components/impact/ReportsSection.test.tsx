@@ -7,7 +7,7 @@ describe('ReportsSection', () => {
   it('renders the honest empty state when there are no reports', () => {
     render(<ReportsSection lang="en" reports={[]} />)
     expect(
-      screen.getByText('Our first annual report will be published here in [YEAR TO BE CONFIRMED].')
+      screen.getByText('Our first annual report will be published here in early 2027.')
     ).toBeInTheDocument()
   })
 
@@ -26,7 +26,7 @@ describe('ReportsSection', () => {
     const link = screen.getByRole('link', { name: 'Annual Report 2026' })
     expect(link).toHaveAttribute('href', '/reports/annual-report-2026.pdf')
     expect(
-      screen.queryByText('Our first annual report will be published here in [YEAR TO BE CONFIRMED].')
+      screen.queryByText('Our first annual report will be published here in early 2027.')
     ).not.toBeInTheDocument()
   })
 })

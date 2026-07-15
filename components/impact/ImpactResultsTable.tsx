@@ -8,8 +8,19 @@ const METRIC_KEYS = [
   'districtsReached',
 ] as const
 
-export function ImpactResultsTable({ lang, regionLabel }: { lang: Lang; regionLabel: string }) {
+type Region = 'hiran' | 'southwest'
+
+export function ImpactResultsTable({
+  lang,
+  region,
+  regionLabel,
+}: {
+  lang: Lang
+  region: Region
+  regionLabel: string
+}) {
   const content = getContent(lang)
+  const results = content.impact.resultsByRegion[region]
 
   return (
     <table className="mt-4 w-full text-sm">
@@ -31,8 +42,8 @@ export function ImpactResultsTable({ lang, regionLabel }: { lang: Lang; regionLa
             <th className="text-left font-normal" scope="row">
               {content.impact[key]}
             </th>
-            <td>{content.impact.figurePlaceholder}</td>
-            <td>{content.impact.figurePlaceholder}</td>
+            <td>{results[key].thisYear}</td>
+            <td>{results[key].lastYear}</td>
           </tr>
         ))}
       </tbody>

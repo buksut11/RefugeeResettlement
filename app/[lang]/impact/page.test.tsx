@@ -19,7 +19,7 @@ describe('ImpactPage', () => {
     expect(screen.getByText('Hiran / Hirshabelle')).toBeInTheDocument()
     expect(screen.getByText('Southwest State')).toBeInTheDocument()
     expect(
-      screen.getByText('Our first annual report will be published here in [YEAR TO BE CONFIRMED].')
+      screen.getByText('Our first annual report will be published here in early 2027.')
     ).toBeInTheDocument()
   })
 

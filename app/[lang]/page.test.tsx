@@ -8,7 +8,7 @@ describe('HomePage', () => {
 
     const headings = screen.getAllByRole('heading').map((h) => h.textContent)
     expect(headings).toEqual([
-      'Helping displaced families in Hiran and Southwest State rebuild their lives (DEMO TEXT)',
+      'Helping displaced families in Hiran and Southwest State rebuild their lives',
       'Where We Work',
       'What We Do',
       'Resettlement & Durable Solutions',

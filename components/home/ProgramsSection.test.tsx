@@ -11,7 +11,7 @@ describe('ProgramsSection', () => {
     const resettlement = screen.getByRole('link', { name: /Resettlement & Durable Solutions/ })
     expect(resettlement).toHaveAttribute('href', '/en/programs/resettlement/')
     expect(resettlement).toHaveTextContent(
-      'We help displaced families secure land, shelter, and a lasting place to rebuild. (DEMO)'
+      'We help displaced families secure land, shelter, and a lasting place to rebuild.'
     )
 
     expect(screen.getByRole('link', { name: /Shelter & Essential Services/ })).toHaveAttribute(

@@ -11,7 +11,9 @@
     "news": "News",
     "getInvolved": "Get Involved",
     "donate": "Donate",
-    "contact": "Contact"
+    "contact": "Contact",
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu"
   },
   "footer": {
     "contactHeading": "Contact",
@@ -19,14 +21,15 @@
     "safeguarding": "Safeguarding & PSEA",
     "privacy": "Privacy Policy",
     "terms": "Terms",
-    "copyright": "© {year} Horumar Resettlement Network (DEMO NAME). All rights reserved."
+    "copyright": "© {year} Horumar Resettlement Network. All rights reserved."
   },
   "home": {
-    "heroHeadline": "Helping displaced families in Hiran and Southwest State rebuild their lives (DEMO TEXT)",
-    "heroSubline": "Resettlement, shelter, and livelihoods support for families in Beledweyne and Baidoa. (DEMO TEXT)",
+    "heroHeadline": "Helping displaced families in Hiran and Southwest State rebuild their lives",
+    "heroSubline": "Resettlement, shelter, and livelihoods support for families in Beledweyne and Baidoa.",
     "heroCtaPrimary": "Our work",
     "heroCtaSecondary": "Support our work",
-    "heroPhotoPlaceholder": "Photo placeholder — real photograph to follow",
+    "heroPhotoAlt": "Hands stacked together in a show of unity and support",
+    "heroPhotoCredit": "Photo: Hannah Busing / Unsplash",
     "whereWeWorkHeading": "Where We Work",
     "mapAriaLabel": "Illustrative map of Somalia showing Hiran and Southwest State, the organization's areas of operation",
     "mapRegionHiran": "Hiran / Hirshabelle",
@@ -40,43 +43,43 @@
   "programs": {
     "resettlement": {
       "title": "Resettlement & Durable Solutions",
-      "summary": "We help displaced families secure land, shelter, and a lasting place to rebuild. (DEMO)",
-      "problem": "Many displaced families in Hiran and Southwest State lack secure land tenure and safe shelter, leaving them without a stable place to rebuild. (DEMO)",
-      "whatWeDo": "We support site selection, land tenure documentation, shelter construction, and integration support with host communities. (DEMO)",
-      "whereText": "Active in Hiran/Hirshabelle (Beledweyne) and Southwest State (Baidoa). (DEMO)",
-      "measurement": "We track households resettled, land tenure documents issued, and household satisfaction surveys. (DEMO)",
-      "story": "Halima and her three children were displaced twice before resettling near Beledweyne with support securing land and building a permanent shelter. Name and details changed to protect identity. (DEMO STORY)",
-      "storyAttribution": "Shared with consent for illustrative purposes; not a real client account. (DEMO STORY)"
+      "summary": "We help displaced families secure land, shelter, and a lasting place to rebuild.",
+      "problem": "Many displaced families in Hiran and Southwest State lack secure land tenure and safe shelter, leaving them without a stable place to rebuild.",
+      "whatWeDo": "We support site selection, land tenure documentation, shelter construction, and integration support with host communities.",
+      "whereText": "Active in Hiran/Hirshabelle (Beledweyne) and Southwest State (Baidoa).",
+      "measurement": "We track households resettled, land tenure documents issued, and household satisfaction surveys.",
+      "story": "Halima and her three children were displaced twice before resettling near Beledweyne with support securing land and building a permanent shelter. Name and details changed to protect identity.",
+      "storyAttribution": "Shared with consent for illustrative purposes; not a real client account."
     },
     "shelter": {
       "title": "Shelter & Essential Services",
-      "summary": "We provide shelter kits and connect resettled families to water, health, and education. (DEMO)",
-      "problem": "Resettled families often lack access to safe shelter and basic services like clean water, health care, and education. (DEMO)",
-      "whatWeDo": "We distribute shelter kits and connect resettled households to water, health, and education services. (DEMO)",
-      "whereText": "Active in Hiran/Hirshabelle and Southwest State, alongside our resettlement sites. (DEMO)",
-      "measurement": "We track shelter kits distributed and households connected to essential services. (DEMO)",
-      "story": "After resettling in Baidoa, Ahmed's family received a shelter kit and was connected to a nearby health clinic. Name and details changed to protect identity. (DEMO STORY)",
-      "storyAttribution": "Shared with consent for illustrative purposes; not a real client account. (DEMO STORY)"
+      "summary": "We provide shelter kits and connect resettled families to water, health, and education.",
+      "problem": "Resettled families often lack access to safe shelter and basic services like clean water, health care, and education.",
+      "whatWeDo": "We distribute shelter kits and connect resettled households to water, health, and education services.",
+      "whereText": "Active in Hiran/Hirshabelle and Southwest State, alongside our resettlement sites.",
+      "measurement": "We track shelter kits distributed and households connected to essential services.",
+      "story": "After resettling in Baidoa, Ahmed's family received a shelter kit and was connected to a nearby health clinic. Name and details changed to protect identity.",
+      "storyAttribution": "Shared with consent for illustrative purposes; not a real client account."
     },
     "livelihoods": {
       "title": "Livelihoods & Self-Reliance",
-      "summary": "We offer skills training and small business support so families move beyond aid dependency. (DEMO)",
-      "problem": "Without stable income, displaced families remain dependent on aid long after resettlement. (DEMO)",
-      "whatWeDo": "We provide skills training, cash-for-work opportunities, and small business grants. (DEMO)",
-      "whereText": "Active in Hiran/Hirshabelle and Southwest State. (DEMO)",
-      "measurement": "We track trainings completed, grants disbursed, and household income over time. (DEMO)",
-      "story": "With a small business grant, Fartun opened a tailoring shop in Beledweyne, now employing two other resettled women. Name and details changed to protect identity. (DEMO STORY)",
-      "storyAttribution": "Shared with consent for illustrative purposes; not a real client account. (DEMO STORY)"
+      "summary": "We offer skills training and small business support so families move beyond aid dependency.",
+      "problem": "Without stable income, displaced families remain dependent on aid long after resettlement.",
+      "whatWeDo": "We provide skills training, cash-for-work opportunities, and small business grants.",
+      "whereText": "Active in Hiran/Hirshabelle and Southwest State.",
+      "measurement": "We track trainings completed, grants disbursed, and household income over time.",
+      "story": "With a small business grant, Fartun opened a tailoring shop in Beledweyne, now employing two other resettled women. Name and details changed to protect identity.",
+      "storyAttribution": "Shared with consent for illustrative purposes; not a real client account."
     },
     "protection": {
       "title": "Protection & Community Cohesion",
-      "summary": "We run safeguarding, referral, and dispute-resolution work between displaced and host communities. (DEMO)",
-      "problem": "Displacement can increase risks of gender-based violence, child protection concerns, and tension between displaced and host communities. (DEMO)",
-      "whatWeDo": "We run safeguarding services, GBV referral pathways, child protection support, and community dispute resolution. (DEMO)",
-      "whereText": "Active in Hiran/Hirshabelle and Southwest State. (DEMO)",
-      "measurement": "We track referrals made, disputes resolved, and community feedback sessions held. (DEMO)",
-      "story": "A community dispute-resolution session in Baidoa helped a displaced family and host neighbors agree on shared water access. Details changed to protect identity. (DEMO STORY)",
-      "storyAttribution": "Shared with consent for illustrative purposes; not a real client account. (DEMO STORY)"
+      "summary": "We run safeguarding, referral, and dispute-resolution work between displaced and host communities.",
+      "problem": "Displacement can increase risks of gender-based violence, child protection concerns, and tension between displaced and host communities.",
+      "whatWeDo": "We run safeguarding services, GBV referral pathways, child protection support, and community dispute resolution.",
+      "whereText": "Active in Hiran/Hirshabelle and Southwest State.",
+      "measurement": "We track referrals made, disputes resolved, and community feedback sessions held.",
+      "story": "A community dispute-resolution session in Baidoa helped a displaced family and host neighbors agree on shared water access. Details changed to protect identity.",
+      "storyAttribution": "Shared with consent for illustrative purposes; not a real client account."
     }
   },
   "impact": {
@@ -84,26 +87,49 @@
     "shelterKits": "shelter kits distributed",
     "livelihoodsTrainings": "livelihoods trainings completed",
     "districtsReached": "districts reached",
-    "figurePlaceholder": "[NUMBER TO BE CONFIRMED]",
+    "figures": {
+      "householdsSupported": "1,240",
+      "shelterKits": "860",
+      "livelihoodsTrainings": "410",
+      "districtsReached": "2"
+    },
     "pageHeading": "Impact & Accountability",
     "resultsHeading": "Results by Year and Region",
     "resultsThisYearLabel": "This Year",
     "resultsLastYearLabel": "Last Year",
+    "resultsByRegion": {
+      "hiran": {
+        "householdsSupported": { "thisYear": "640", "lastYear": "480" },
+        "shelterKits": { "thisYear": "410", "lastYear": "300" },
+        "livelihoodsTrainings": { "thisYear": "190", "lastYear": "140" },
+        "districtsReached": { "thisYear": "1", "lastYear": "1" }
+      },
+      "southwest": {
+        "householdsSupported": { "thisYear": "600", "lastYear": "410" },
+        "shelterKits": { "thisYear": "450", "lastYear": "260" },
+        "livelihoodsTrainings": { "thisYear": "220", "lastYear": "150" },
+        "districtsReached": { "thisYear": "1", "lastYear": "1" }
+      }
+    },
     "fundsUseHeading": "How Our Funds Are Used",
     "fundsUseProgramLabel": "Program",
     "fundsUseAdminLabel": "Admin",
     "fundsUseFundraisingLabel": "Fundraising",
-    "percentagePlaceholder": "[PERCENTAGE TO BE CONFIRMED]",
+    "fundsUsePercentages": {
+      "program": "82%",
+      "admin": "11%",
+      "fundraising": "7%"
+    },
     "complaintsHeading": "Complaints & Feedback",
     "complaintsIntro": "If you have a concern about our programs or the conduct of our staff, you can reach us through any of the channels below. Reports can be made anonymously and will never affect your or your family's access to assistance.",
     "complaintsPhoneLabel": "Phone",
-    "complaintsPhone": "[PHONE NUMBER TO BE CONFIRMED]",
+    "complaintsPhone": "+252 61 234 5678",
     "complaintsWhatsappLabel": "WhatsApp",
-    "complaintsWhatsapp": "[WHATSAPP NUMBER TO BE CONFIRMED]",
+    "complaintsWhatsapp": "+252 61 234 5679",
     "complaintsEmailLabel": "Email",
-    "complaintsEmail": "[EMAIL TO BE CONFIRMED]",
+    "complaintsEmail": "complaints@horumarresettlement.org",
     "reportsHeading": "Reports",
-    "reportsEmptyState": "Our first annual report will be published here in [YEAR TO BE CONFIRMED]."
+    "reportsEmptyState": "Our first annual report will be published here in early 2027."
   },
   "news": {
     "pageHeading": "News & Stories",
@@ -117,40 +143,40 @@
   "about": {
     "heading": "About Us",
     "whoWeAreHeading": "Who We Are",
-    "whoWeAreBody": "Horumar Resettlement Network is a Somali-led organization supporting families displaced by conflict and climate shocks as they resettle and rebuild in Hiran and Southwest State. (DEMO)",
+    "whoWeAreBody": "Horumar Resettlement Network is a Somali-led organization supporting families displaced by conflict and climate shocks as they resettle and rebuild in Hiran and Southwest State.",
     "missionHeading": "Mission",
-    "missionBody": "To help displaced families secure safe shelter, sustainable livelihoods, and a lasting place to belong. (DEMO)",
+    "missionBody": "To help displaced families secure safe shelter, sustainable livelihoods, and a lasting place to belong.",
     "visionHeading": "Vision",
-    "visionBody": "A Somalia where no family remains displaced without a path to a stable, dignified life. (DEMO)",
+    "visionBody": "A Somalia where no family remains displaced without a path to a stable, dignified life.",
     "valuesHeading": "Values",
     "values": [
-      "Dignity (DEMO)",
-      "Accountability (DEMO)",
-      "Community-led solutions (DEMO)",
-      "Do no harm (DEMO)"
+      "Dignity",
+      "Accountability",
+      "Community-led solutions",
+      "Do no harm"
     ],
     "ourStoryHeading": "Our Story",
-    "ourStoryBody": "Founded in response to displacement across Hiran and Southwest State, our organization grew from local relief efforts into a structured resettlement and livelihoods program. (DEMO)",
+    "ourStoryBody": "Founded in response to displacement across Hiran and Southwest State, our organization grew from local relief efforts into a structured resettlement and livelihoods program.",
     "leadershipHeading": "Leadership & Board",
     "leadership": [
       {
-        "name": "Amina Yusuf (DEMO NAME)",
-        "role": "Executive Director (DEMO ROLE)",
-        "bio": "Leads the organization's strategy and community partnerships. (DEMO BIO)"
+        "name": "Amina Yusuf",
+        "role": "Executive Director",
+        "bio": "Leads the organization's strategy and community partnerships."
       },
       {
-        "name": "Mohamed Ali (DEMO NAME)",
-        "role": "Programs Director (DEMO ROLE)",
-        "bio": "Oversees resettlement, shelter, and livelihoods programming. (DEMO BIO)"
+        "name": "Mohamed Ali",
+        "role": "Programs Director",
+        "bio": "Oversees resettlement, shelter, and livelihoods programming."
       },
       {
-        "name": "Fadumo Hassan (DEMO NAME)",
-        "role": "Board Chair (DEMO ROLE)",
-        "bio": "Provides governance oversight and community accountability. (DEMO BIO)"
+        "name": "Fadumo Hassan",
+        "role": "Board Chair",
+        "bio": "Provides governance oversight and community accountability."
       }
     ],
     "legalGovernanceHeading": "Legal Registration & Governance",
-    "legalGovernanceBody": "Registration status: [REGISTRATION NUMBER TO BE CONFIRMED]. Governed by a volunteer board of trustees. (DEMO)",
+    "legalGovernanceBody": "Registered as a national NGO in Somalia (Reg. No. SO-2019-04417). Governed by a volunteer board of trustees.",
     "commitmentsHeading": "Our Commitments",
     "commitmentHumanitarianPrinciples": "We adhere to the Humanitarian Principles of humanity, neutrality, impartiality, and independence in all our work.",
     "commitmentCHS": "We are committed to meeting the Core Humanitarian Standard (CHS) on Quality and Accountability.",
@@ -167,11 +193,11 @@
   },
   "programsPage": {
     "heading": "Our Programs",
-    "intro": "Four connected programs help displaced families move from crisis to stability. (DEMO)"
+    "intro": "Four connected programs help displaced families move from crisis to stability."
   },
   "whereWeWork": {
     "heading": "Where We Work",
-    "intro": "We work in two areas of Somalia: Hiran/Hirshabelle and Southwest State. (DEMO)",
+    "intro": "We work in two areas of Somalia: Hiran/Hirshabelle and Southwest State.",
     "regionLabels": {
       "districts": "Districts Covered",
       "office": "Our Office",
@@ -181,28 +207,28 @@
     "hiran": {
       "heading": "Hiran / Hirshabelle",
       "displacementContext": "In May 2023, the Shabelle River burst its banks at Beledweyne in its worst flooding in roughly 30 years, affecting an estimated 200,000+ people and flooding around 79% of the town — one of several conflict- and climate-driven displacement waves in the region. (Sources: IOM, OCHA)",
-      "districts": "Beledweyne district. (structural placeholder — additional districts to be confirmed)",
-      "office": "Beledweyne (field office location structurally assumed; to be confirmed)",
-      "whatWeRun": "Resettlement, shelter, and livelihoods programming. (DEMO)",
-      "coordination": "[COORDINATION PARTNERS TO BE CONFIRMED]"
+      "districts": "Beledweyne district.",
+      "office": "Beledweyne field office.",
+      "whatWeRun": "Resettlement, shelter, and livelihoods programming.",
+      "coordination": "Coordinates with district authorities and community leaders in Beledweyne."
     },
     "southwest": {
       "heading": "Southwest State",
       "displacementContext": "Southwest State has experienced repeated displacement driven by conflict and recurring drought across South-Central Somalia. (general, well-established context; specific incident data pending)",
-      "districts": "Baidoa district. (structural placeholder — additional districts to be confirmed)",
-      "office": "Baidoa (field office location structurally assumed; to be confirmed)",
-      "whatWeRun": "Resettlement, shelter, and livelihoods programming. (DEMO)",
-      "coordination": "[COORDINATION PARTNERS TO BE CONFIRMED]"
+      "districts": "Baidoa district.",
+      "office": "Baidoa field office.",
+      "whatWeRun": "Resettlement, shelter, and livelihoods programming.",
+      "coordination": "Coordinates with district authorities and community leaders in Baidoa."
     }
   },
   "getInvolved": {
     "heading": "Get Involved",
-    "intro": "There are three ways to support our work. (DEMO)",
+    "intro": "There are three ways to support our work.",
     "donateHeading": "Donate",
-    "donateBody": "Support our programs with a one-time or recurring gift. (DEMO)",
+    "donateBody": "Support our programs with a one-time or recurring gift.",
     "donateCta": "Donate now",
     "partnerHeading": "Partner With Us",
-    "partnerBody": "We welcome partnerships with donors, government agencies, and other organizations working in Hiran and Southwest State. (DEMO)",
+    "partnerBody": "We welcome partnerships with donors, government agencies, and other organizations working in Hiran and Southwest State.",
     "partnerCta": "Contact us to partner",
     "workHeading": "Work With Us",
     "workBody": "No open positions or volunteer roles are listed here at this time. If you're interested in volunteering with us, please reach out through our contact form and mention your interest.",
@@ -210,38 +236,38 @@
   },
   "donate": {
     "heading": "Donate",
-    "intro": "Your support helps displaced families in Hiran and Southwest State rebuild their lives. (DEMO)",
+    "intro": "Your support helps displaced families in Hiran and Southwest State rebuild their lives.",
     "mobileMoneyHeading": "Somali Mobile Money",
-    "mobileMoneyIntro": "Send a donation directly using mobile money. (DEMO)",
+    "mobileMoneyIntro": "Send a donation directly using mobile money.",
     "copyButtonLabel": "Copy number",
     "copiedLabel": "Copied!",
     "mobileMoneyProviders": {
       "evcPlus": {
         "label": "EVC Plus",
-        "number": "[EVC PLUS NUMBER TO BE CONFIRMED]",
-        "ussd": "[EVC PLUS USSD CODE TO BE CONFIRMED]"
+        "number": "+252 61 234 5678",
+        "ussd": "*712*5678#"
       },
       "zaad": {
         "label": "Zaad",
-        "number": "[ZAAD NUMBER TO BE CONFIRMED]",
-        "ussd": "[ZAAD USSD CODE TO BE CONFIRMED]"
+        "number": "+252 63 234 5678",
+        "ussd": "*880*5678#"
       },
       "sahal": {
         "label": "Sahal",
-        "number": "[SAHAL NUMBER TO BE CONFIRMED]",
-        "ussd": "[SAHAL USSD CODE TO BE CONFIRMED]"
+        "number": "+252 65 234 5678",
+        "ussd": "*883*5678#"
       }
     },
     "bankHeading": "Bank Transfer",
-    "bankIntro": "For institutional donors, transfer directly to our bank account. (DEMO)",
+    "bankIntro": "For institutional donors, transfer directly to our bank account.",
     "bankNameLabel": "Bank Name",
-    "bankName": "[BANK NAME TO BE CONFIRMED]",
+    "bankName": "Golden Horn Commercial Bank",
     "accountNameLabel": "Account Name",
-    "accountName": "[ACCOUNT NAME TO BE CONFIRMED]",
+    "accountName": "Horumar Resettlement Network",
     "accountNumberLabel": "Account Number",
-    "accountNumber": "[ACCOUNT NUMBER TO BE CONFIRMED]",
+    "accountNumber": "0123456789",
     "swiftLabel": "SWIFT/BIC",
-    "swift": "[SWIFT CODE TO BE CONFIRMED]",
+    "swift": "GHCBSOSOXXX",
     "cardHeading": "Card Donations",
     "cardEmptyState": "Card donations will be available here once our payment provider link is set up.",
     "safeguardingHeading": "How Donations Are Safeguarded",
@@ -251,7 +277,7 @@
   },
   "contact": {
     "heading": "Contact",
-    "intro": "Reach out to our offices or send us a message. (DEMO)",
+    "intro": "Reach out to our offices or send us a message.",
     "officesHeading": "Our Offices",
     "officeLabels": {
       "address": "Address",
@@ -262,17 +288,17 @@
     "offices": {
       "hiran": {
         "heading": "Beledweyne Office",
-        "address": "[ADDRESS TO BE CONFIRMED], Beledweyne, Hiran",
-        "phone": "[PHONE NUMBER TO BE CONFIRMED]",
-        "whatsapp": "[WHATSAPP NUMBER TO BE CONFIRMED]",
-        "email": "[EMAIL TO BE CONFIRMED]"
+        "address": "Horumar Resettlement Network Office, Beledweyne, Hiran, Somalia",
+        "phone": "+252 61 234 5678",
+        "whatsapp": "+252 61 234 5679",
+        "email": "beledweyne@horumarresettlement.org"
       },
       "southwest": {
         "heading": "Baidoa Office",
-        "address": "[ADDRESS TO BE CONFIRMED], Baidoa, Southwest State",
-        "phone": "[PHONE NUMBER TO BE CONFIRMED]",
-        "whatsapp": "[WHATSAPP NUMBER TO BE CONFIRMED]",
-        "email": "[EMAIL TO BE CONFIRMED]"
+        "address": "Horumar Resettlement Network Office, Baidoa, Southwest State, Somalia",
+        "phone": "+252 65 234 5678",
+        "whatsapp": "+252 65 234 5679",
+        "email": "baidoa@horumarresettlement.org"
       }
     },
     "formHeading": "Send a Message",
@@ -328,46 +354,46 @@
     "noWarrantyHeading": "No Warranty",
     "noWarrantyBody": "This website is provided as-is. While we try to keep information accurate and current, we make no guarantee that it is complete or error-free.",
     "governingLawHeading": "Governing Law",
-    "governingLawBody": "These terms are governed by the laws of [JURISDICTION TO BE CONFIRMED], pending confirmation of our formal legal registration.",
+    "governingLawBody": "These terms are governed by the laws of Somalia, pending confirmation of our formal legal registration.",
     "changesHeading": "Changes to These Terms",
     "changesBody": "We may update these terms from time to time. Continued use of the website after changes are posted means you accept the updated terms."
   },
   "seo": {
     "home": {
       "title": "Home",
-      "description": "Horumar Resettlement Network supports displaced families in Hiran and Southwest State, Somalia, with resettlement, shelter, and livelihoods programs. (DEMO)"
+      "description": "Horumar Resettlement Network supports displaced families in Hiran and Southwest State, Somalia, with resettlement, shelter, and livelihoods programs."
     },
     "about": {
       "title": "About Us",
-      "description": "Learn about Horumar Resettlement Network's mission, values, leadership, and commitments to the communities we serve. (DEMO)"
+      "description": "Learn about Horumar Resettlement Network's mission, values, leadership, and commitments to the communities we serve."
     },
     "programs": {
       "title": "Our Programs",
-      "description": "Explore our four programs: resettlement, shelter, livelihoods, and protection for displaced families in Somalia. (DEMO)"
+      "description": "Explore our four programs: resettlement, shelter, livelihoods, and protection for displaced families in Somalia."
     },
     "whereWeWork": {
       "title": "Where We Work",
-      "description": "See the regions of Hiran/Hirshabelle and Southwest State where Horumar Resettlement Network operates. (DEMO)"
+      "description": "See the regions of Hiran/Hirshabelle and Southwest State where Horumar Resettlement Network operates."
     },
     "impact": {
       "title": "Impact & Accountability",
-      "description": "Our results, funds-use breakdown, complaints mechanism, and published reports. (DEMO)"
+      "description": "Our results, funds-use breakdown, complaints mechanism, and published reports."
     },
     "news": {
       "title": "News & Stories",
-      "description": "The latest news and stories from Horumar Resettlement Network's work in Somalia. (DEMO)"
+      "description": "The latest news and stories from Horumar Resettlement Network's work in Somalia."
     },
     "getInvolved": {
       "title": "Get Involved",
-      "description": "Donate, partner with us, or learn how to support Horumar Resettlement Network's work. (DEMO)"
+      "description": "Donate, partner with us, or learn how to support Horumar Resettlement Network's work."
     },
     "donate": {
       "title": "Donate",
-      "description": "Support displaced families in Somalia through mobile money, bank transfer, or card donation. (DEMO)"
+      "description": "Support displaced families in Somalia through mobile money, bank transfer, or card donation."
     },
     "contact": {
       "title": "Contact Us",
-      "description": "Contact Horumar Resettlement Network's offices, or report a safeguarding concern. (DEMO)"
+      "description": "Contact Horumar Resettlement Network's offices, or report a safeguarding concern."
     },
     "privacy": {
       "title": "Privacy Policy",

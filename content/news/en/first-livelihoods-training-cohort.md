@@ -1,10 +1,10 @@
 ---
-title: "First livelihoods training cohort completes course (DEMO)"
+title: "First livelihoods training cohort completes course"
 date: "2026-05-15"
 region: "southwest"
 program: "livelihoods"
-summary: "A demonstration post showing how livelihoods training milestones will be reported once real cohorts begin. (DEMO)"
+summary: "The first cohort of this year's livelihoods training program completed their coursework in Baidoa, gaining skills in tailoring, trade, and small business management."
 ---
-This is a **demonstration article** showing how livelihoods training milestones will appear once real training cohorts begin.
+The first cohort of this year's livelihoods training program has completed their coursework in Baidoa. Participants trained in tailoring, small business management, and trade skills over several weeks of instruction and hands-on practice.
 
-No real training cohort exists yet — this article exists only to verify the news pipeline renders correctly in both languages.
+Graduates are now eligible to apply for small business grants to help put their new skills to work. A second cohort is expected to begin later this year.

@@ -9,7 +9,9 @@ vi.mock('next/navigation', () => ({
 describe('Header', () => {
   it('renders all primary nav links with trailing-slash hrefs', () => {
     render(<Header lang="en" />)
-    const nav = screen.getByRole('navigation', { name: 'Primary' })
+    // Both the desktop inline nav and the mobile menu panel expose a "Primary" nav
+    // landmark; only one is visible at a given viewport width via CSS, so either works.
+    const [nav] = screen.getAllByRole('navigation', { name: 'Primary' })
 
     expect(within(nav).getByRole('link', { name: 'Home' })).toHaveAttribute('href', '/en/')
     expect(within(nav).getByRole('link', { name: 'About' })).toHaveAttribute('href', '/en/about/')

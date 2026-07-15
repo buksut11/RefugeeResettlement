@@ -18,7 +18,7 @@ export function ImpactStrip({ lang }: { lang: Lang }) {
         {FIGURE_KEYS.map((key) => (
           <div key={key} className="py-6 sm:px-6 sm:py-2 sm:first:pl-0">
             <p className="font-mono text-2xl font-medium tracking-tight text-ink sm:text-[1.75rem]">
-              {content.impact.figurePlaceholder}
+              {content.impact.figures[key]}
             </p>
             <p className="mt-1.5 text-sm text-ink/70">{content.impact[key]}</p>
           </div>

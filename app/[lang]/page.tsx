@@ -6,7 +6,11 @@ import { SomaliaMap } from '@/components/home/SomaliaMap'
 import { ProgramsSection } from '@/components/home/ProgramsSection'
 import { ImpactStrip } from '@/components/home/ImpactStrip'
 import { NewsPreview } from '@/components/home/NewsPreview'
-import type { Lang } from '@/lib/i18n'
+import { LANGS, type Lang } from '@/lib/i18n'
+
+export function generateStaticParams() {
+  return LANGS.map((lang) => ({ lang }))
+}
 
 export function generateMetadata({ params }: { params: { lang: Lang } }): Metadata {
   const content = getContent(params.lang)

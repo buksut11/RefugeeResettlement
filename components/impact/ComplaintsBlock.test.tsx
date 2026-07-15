@@ -8,10 +8,9 @@ describe('ComplaintsBlock', () => {
 
     expect(screen.getByText(/Reports can be made anonymously/)).toBeInTheDocument()
     expect(screen.getByText('Phone')).toBeInTheDocument()
-    expect(screen.getByText('[PHONE NUMBER TO BE CONFIRMED]')).toBeInTheDocument()
+    expect(screen.getByText('+252 61 234 5678')).toBeInTheDocument()
     expect(screen.getByText('WhatsApp')).toBeInTheDocument()
-    expect(screen.getByText('[WHATSAPP NUMBER TO BE CONFIRMED]')).toBeInTheDocument()
     expect(screen.getByText('Email')).toBeInTheDocument()
-    expect(screen.getByText('[EMAIL TO BE CONFIRMED]')).toBeInTheDocument()
+    expect(screen.getByText('complaints@horumarresettlement.org')).toBeInTheDocument()
   })
 })

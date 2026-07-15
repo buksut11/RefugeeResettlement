@@ -8,7 +8,7 @@ describe('ProgramsPage', () => {
 
     expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('Our Programs')
     expect(
-      screen.getByText('Four connected programs help displaced families move from crisis to stability. (DEMO)')
+      screen.getByText('Four connected programs help displaced families move from crisis to stability.')
     ).toBeInTheDocument()
 
     expect(screen.getByRole('link', { name: /Resettlement & Durable Solutions/ })).toHaveAttribute(

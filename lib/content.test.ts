@@ -37,7 +37,7 @@ describe('getContent', () => {
     expect(content.privacy.heading).toBe('Privacy Policy')
     expect(content.safeguarding.heading).toBe('Safeguarding & PSEA Policy')
     expect(content.terms.heading).toBe('Terms of Use')
-    expect(content.terms.governingLawBody).toContain('[JURISDICTION TO BE CONFIRMED]')
+    expect(content.terms.governingLawBody).toContain('the laws of Somalia')
   })
 
   it('includes Phase 7a SEO content keys for all twelve static pages', () => {
