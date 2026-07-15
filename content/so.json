@@ -24,15 +24,15 @@
     "copyright": "© {year} Horumar Resettlement Network. Xuquuqda oo dhan waa xifdisan yihiin."
   },
   "home": {
-    "heroHeadline": "Ka caawinta qoysaska barakacay ee Hiiraan iyo Koonfur Galbeed inay dib u dhisaan noloshooda",
+    "heroHeadline": "Ka caawinta qoysaska barakacay ee Gobolka Hirshabelle iyo Gobolka Koonfur Galbeed inay dib u dhisaan noloshooda",
     "heroSubline": "Taageero dib-u-dejin, hoy, iyo nolol-maalmeed oo loogu talagalay qoysaska ku nool Beledweyne iyo Baydhabo.",
     "heroCtaPrimary": "Shaqadeenna",
     "heroCtaSecondary": "Taageer Shaqadeenna",
     "heroPhotoAlt": "Gacmo isku wada taagan oo muujinaya midnimada iyo taageerada",
     "heroPhotoCredit": "Sawir: Hannah Busing / Unsplash",
     "whereWeWorkHeading": "Meesha Aan Ka Shaqeyno",
-    "mapAriaLabel": "Khariidad muujineed oo Soomaaliya ah oo muujinaysa Hiiraan iyo Gobolka Koonfur Galbeed, meelaha ay hay'adu ka shaqeyso",
-    "mapRegionHiran": "Hiiraan / Hirshabelle",
+    "mapAriaLabel": "Khariidad muujineed oo Soomaaliya ah oo muujinaysa Gobolka Hirshabelle iyo Gobolka Koonfur Galbeed, meelaha ay hay'adu ka shaqeyso",
+    "mapRegionHiran": "Gobolka Hirshabelle",
     "mapRegionSouthwest": "Gobolka Koonfur Galbeed",
     "mapAttribution": "Xogta khariidadda: geoBoundaries, CC-BY 4.0",
     "whatWeDoHeading": "Waxa Aan Qabano",
@@ -44,9 +44,9 @@
     "resettlement": {
       "title": "Dib-u-dejin iyo Xalal Waara",
       "summary": "Waxaan ka caawinaa qoysaska barakacay inay helaan dhul, hoy, iyo meel ay dib ugu dhisan karaan noloshooda.",
-      "problem": "Qoysas badan oo barakacay oo ku nool Hiiraan iyo Koonfur Galbeed ma haystaan dhul sugan ama hoy ammaan ah.",
+      "problem": "Qoysas badan oo barakacay oo ku nool Gobolka Hirshabelle iyo Gobolka Koonfur Galbeed ma haystaan dhul sugan ama hoy ammaan ah.",
       "whatWeDo": "Waxaan taageernaa doorashada goobta, dukumentiga dhulka, dhismaha hoyga, iyo isku-dhafka bulshada martida loo yahay.",
-      "whereText": "Waxaan ka shaqeynaa Hiiraan/Hirshabelle (Beledweyne) iyo Koonfur Galbeed (Baydhabo).",
+      "whereText": "Waxaan ka shaqeynaa Gobolka Hirshabelle (Beledweyne) iyo Koonfur Galbeed (Baydhabo).",
       "measurement": "Waxaan la soconaa qoysaska dib loo dejiyay, dukumentiyada dhulka, iyo sahannada qanaacsanaanta qoysaska.",
       "story": "Halima iyo saddexdeeda carruur ayaa laba jeer barakacay ka hor inta aysan dib ugu dejin agagaarka Beledweyne, iyagoo la caawiyay dhul iyo hoy joogto ah. Magaca iyo faahfaahinta waa la beddelay si loo ilaaliyo aqoonsiga.",
       "storyAttribution": "Waxaa lala wadaagay ogolaansho ujeeddo tusaale ah; ma aha xisaab dhab ah oo macmiil."
@@ -56,7 +56,7 @@
       "summary": "Waxaan bixinaa qalabka hoyga waxaanan qoysaska dib loo dejiyay ku xiraa biyo, caafimaad, iyo waxbarasho.",
       "problem": "Qoysaska dib loo dejiyay badanaa ma helaan hoy ammaan ah iyo adeegyo aasaasi ah sida biyo, caafimaad, iyo waxbarasho.",
       "whatWeDo": "Waxaan qaybinaa qalabka hoyga waxaanan xiraa qoysaska biyo, caafimaad, iyo adeegyada waxbarasho.",
-      "whereText": "Waxaan ka shaqeynaa Hiiraan/Hirshabelle iyo Koonfur Galbeed, agagaarka goobaha dib-u-dejinta.",
+      "whereText": "Waxaan ka shaqeynaa Gobolka Hirshabelle iyo Koonfur Galbeed, agagaarka goobaha dib-u-dejinta.",
       "measurement": "Waxaan la soconaa qalabka hoyga ee la qaybiyay iyo qoysaska adeegyada lagu xiray.",
       "story": "Kadib markii uu dib ugu dejiyay Baydhabo, qoyska Ahmed waxay helay qalab hoy waxaana lagu xiray xarun caafimaad u dhow. Magaca iyo faahfaahinta waa la beddelay.",
       "storyAttribution": "Waxaa lala wadaagay ogolaansho ujeeddo tusaale ah; ma aha xisaab dhab ah oo macmiil."
@@ -66,7 +66,7 @@
       "summary": "Waxaan bixinaa tababar xirfadeed iyo taageero ganacsi yar si qoysasku uga gudbaan ku tiirsanaanta gargaarka.",
       "problem": "La'aanta dakhli joogto ah, qoysaska barakacay way sii ku tiirsanaan gargaarka xitaa kadib dib-u-dejinta.",
       "whatWeDo": "Waxaan bixinaa tababar xirfadeed, fursado shaqo-lacag, iyo deeqo ganacsi yaryar.",
-      "whereText": "Waxaan ka shaqeynaa Hiiraan/Hirshabelle iyo Koonfur Galbeed.",
+      "whereText": "Waxaan ka shaqeynaa Gobolka Hirshabelle iyo Koonfur Galbeed.",
       "measurement": "Waxaan la soconaa tababarrada la dhammeeyay, deeqaha la bixiyay, iyo dakhliga qoysaska muddo ka dib.",
       "story": "Deeq ganacsi yar ayay Fartun ku furatay dukaan dharsameyn oo ku yaal Beledweyne, oo hadda shaqaaleysiisa laba haween ah oo dib loo dejiyay. Magaca iyo faahfaahinta waa la beddelay.",
       "storyAttribution": "Waxaa lala wadaagay ogolaansho ujeeddo tusaale ah; ma aha xisaab dhab ah oo macmiil."
@@ -76,7 +76,7 @@
       "summary": "Waxaan qabannaa shaqada ilaalinta, gudbinta xaaladaha, iyo xallinta khilaafaadka dhex mara bulshooyinka barakacay iyo kuwa martida loo yahay.",
       "problem": "Barakac wuxuu kordhin karaa khatarta rabshadaha jinsiga, walaaca ilaalinta caruurta, iyo xiisadda dhex mara bulshooyinka barakacay iyo kuwa martida loo yahay.",
       "whatWeDo": "Waxaan qabannaa adeegyada ilaalinta, wadooyinka gudbinta rabshadaha jinsiga, taageerada ilaalinta caruurta, iyo xallinta khilaafaadka bulshada.",
-      "whereText": "Waxaan ka shaqeynaa Hiiraan/Hirshabelle iyo Koonfur Galbeed.",
+      "whereText": "Waxaan ka shaqeynaa Gobolka Hirshabelle iyo Koonfur Galbeed.",
       "measurement": "Waxaan la soconaa gudbinta la sameeyay, khilaafaadka la xalliyay, iyo kulamada jawaab-celinta bulshada.",
       "story": "Kulan xallinta khilaaf oo ku dhacay Baydhabo ayaa caawiyay qoys barakacay iyo deris martida loo yahay inay ku heshiiyaan gelitaanka biyaha la wadaago. Faahfaahinta waa la beddelay.",
       "storyAttribution": "Waxaa lala wadaagay ogolaansho ujeeddo tusaale ah; ma aha xisaab dhab ah oo macmiil."
@@ -143,7 +143,7 @@
   "about": {
     "heading": "Nagu Saabsan",
     "whoWeAreHeading": "Waa Ayaan Nahay",
-    "whoWeAreBody": "Horumar Resettlement Network waa hay'ad Soomaali ah oo taageerta qoysaska ay barakaciyeen colaad iyo saameyn cimilo, kuwaas oo dib u dejinaya oo dib u dhisaya Hiiraan iyo Koonfur Galbeed.",
+    "whoWeAreBody": "Horumar Resettlement Network waa hay'ad Soomaali ah oo taageerta qoysaska ay barakaciyeen colaad iyo saameyn cimilo, kuwaas oo dib u dejinaya oo dib u dhisaya Gobolka Hirshabelle iyo Gobolka Koonfur Galbeed.",
     "missionHeading": "Hadafka",
     "missionBody": "In la caawiyo qoysaska barakacay inay helaan hoy ammaan ah, nolol-maalmeed waara, iyo meel ay ku noolaadaan si joogto ah.",
     "visionHeading": "Aragtida",
@@ -156,7 +156,7 @@
       "Waxyeelo la'aan"
     ],
     "ourStoryHeading": "Taariikhdeenna",
-    "ourStoryBody": "Waxaa la aasaasay jawaab celin loogu talagalay barakaca Hiiraan iyo Koonfur Galbeed, hay'adeenna waxay ka soo baxday dadaallo gargaar deegaan una soo baxday barnaamij dib-u-dejin iyo nolol-maalmeed oo qaab leh.",
+    "ourStoryBody": "Waxaa la aasaasay jawaab celin loogu talagalay barakaca Gobolka Hirshabelle iyo Gobolka Koonfur Galbeed, hay'adeenna waxay ka soo baxday dadaallo gargaar deegaan una soo baxday barnaamij dib-u-dejin iyo nolol-maalmeed oo qaab leh.",
     "leadershipHeading": "Hoggaanka iyo Guddiga",
     "leadership": [
       {
@@ -197,7 +197,7 @@
   },
   "whereWeWork": {
     "heading": "Meesha Aan Ka Shaqeyno",
-    "intro": "Waxaan ka shaqeynaa laba gobol oo Soomaaliya ah: Hiiraan/Hirshabelle iyo Koonfur Galbeed.",
+    "intro": "Waxaan ka shaqeynaa laba gobol oo Soomaaliya ah: Gobolka Hirshabelle iyo Koonfur Galbeed.",
     "regionLabels": {
       "districts": "Degmooyinka La Gaadhay",
       "office": "Xafiiskeenna",
@@ -205,7 +205,7 @@
       "coordination": "Kuwa Aan La Iskaashano"
     },
     "hiran": {
-      "heading": "Hiiraan / Hirshabelle",
+      "heading": "Gobolka Hirshabelle",
       "displacementContext": "Bishii Maajo 2023, Webiga Shabeelle ayaa ka buuxsamay Beledweyne, daadka ugu weyn 30 sano gudahood, taasoo saameysay ilaa 200,000 oo qof waxayna daadku qarqisay ilaa 79% oo magaalada ah — mid ka mid ah dhowr duufaan oo barakac ah oo ay keentay colaad iyo isbeddel cimileed. (Ilo: IOM, OCHA)",
       "districts": "Degmada Beledweyne.",
       "office": "Xafiiska goobta ee Beledweyne.",
@@ -228,7 +228,7 @@
     "donateBody": "Taageer barnaamijyadeenna hadiyad hal mar ah ama mid soo noqnoqota.",
     "donateCta": "Deeq bixi hadda",
     "partnerHeading": "Nala Iskaashó",
-    "partnerBody": "Waxaan soo dhaweynaa iskaashi la sameyno deeq-bixiyayaal, hay'adaha dawladda, iyo hay'ado kale oo ka shaqeeya Hiiraan iyo Koonfur Galbeed.",
+    "partnerBody": "Waxaan soo dhaweynaa iskaashi la sameyno deeq-bixiyayaal, hay'adaha dawladda, iyo hay'ado kale oo ka shaqeeya Gobolka Hirshabelle iyo Gobolka Koonfur Galbeed.",
     "partnerCta": "Nala soo xiriir si aad u iskaashato",
     "workHeading": "Nala Shaqee",
     "workBody": "Wax boos banaan ama door mutadawac ah halkan lagama qorin waqtigan. Haddii aad xiisaynayso inaad naga qeyb qaadato mutadawac ahaan, fadlan nagala soo xiriir foomka nala soo xiriirka oo sheeg xiisahaaga.",
@@ -236,7 +236,7 @@
   },
   "donate": {
     "heading": "Deeq Bixi",
-    "intro": "Taageeradaadu waxay caawisaa qoysaska barakacay ee Hiiraan iyo Koonfur Galbeed inay dib u dhisaan noloshooda.",
+    "intro": "Taageeradaadu waxay caawisaa qoysaska barakacay ee Gobolka Hirshabelle iyo Gobolka Koonfur Galbeed inay dib u dhisaan noloshooda.",
     "mobileMoneyHeading": "Lacagta Mobilada Soomaalida",
     "mobileMoneyIntro": "Deeq toos ah ugu dir adigoo isticmaalaya lacagta mobilada.",
     "copyButtonLabel": "Koobi lambarka",
@@ -288,7 +288,7 @@
     "offices": {
       "hiran": {
         "heading": "Xafiiska Beledweyne",
-        "address": "Xafiiska Horumar Resettlement Network, Beledweyne, Hiiraan, Soomaaliya",
+        "address": "Xafiiska Horumar Resettlement Network, Beledweyne, Gobolka Hirshabelle, Soomaaliya",
         "phone": "+252 61 234 5678",
         "whatsapp": "+252 61 234 5679",
         "email": "beledweyne@horumarresettlement.org"
@@ -361,7 +361,7 @@
   "seo": {
     "home": {
       "title": "Bogga Hore",
-      "description": "Horumar Resettlement Network waxay taageertaa qoysaska barakacay ee Hiiraan iyo Koonfur Galbeed, Soomaaliya, iyadoo bixineysa barnaamijyo dib-u-dejin, hoy, iyo nolol-maalmeed."
+      "description": "Horumar Resettlement Network waxay taageertaa qoysaska barakacay ee Gobolka Hirshabelle iyo Gobolka Koonfur Galbeed, Soomaaliya, iyadoo bixineysa barnaamijyo dib-u-dejin, hoy, iyo nolol-maalmeed."
     },
     "about": {
       "title": "Nagu Saabsan",
@@ -373,7 +373,7 @@
     },
     "whereWeWork": {
       "title": "Meesha Aan Ka Shaqeyno",
-      "description": "Arag gobollada Hiiraan/Hirshabelle iyo Koonfur Galbeed ee uu Horumar Resettlement Network ka shaqeeyo."
+      "description": "Arag gobollada Gobolka Hirshabelle iyo Koonfur Galbeed ee uu Horumar Resettlement Network ka shaqeeyo."
     },
     "impact": {
       "title": "Saameynta iyo Xisaabtan Bixinta",

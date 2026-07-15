@@ -8,10 +8,10 @@ describe('SomaliaMap', () => {
     render(<SomaliaMap lang="en" />)
 
     expect(
-      screen.getByTitle("Illustrative map of Somalia showing Hiran and Southwest State, the organization's areas of operation")
+      screen.getByTitle("Illustrative map of Somalia showing Hirshabelle State and Southwest State, the organization's areas of operation")
     ).toBeInTheDocument()
 
-    const hiranLink = screen.getByRole('link', { name: 'Hiran / Hirshabelle' })
+    const hiranLink = screen.getByRole('link', { name: 'Hirshabelle State' })
     expect(hiranLink).toHaveAttribute('href', '/en/where-we-work/#hiran')
 
     const southwestLink = screen.getByRole('link', { name: 'Southwest State' })

@@ -7,10 +7,10 @@ describe('WhereWeWorkPage', () => {
     render(<WhereWeWorkPage params={{ lang: 'en' }} />)
 
     const headings = screen.getAllByRole('heading').map((h) => h.textContent)
-    expect(headings).toEqual(['Where We Work', 'Hiran / Hirshabelle', 'Southwest State'])
+    expect(headings).toEqual(['Where We Work', 'Hirshabelle State', 'Southwest State'])
     expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('Where We Work')
 
-    const hiranHeading = screen.getByRole('heading', { level: 2, name: 'Hiran / Hirshabelle' })
+    const hiranHeading = screen.getByRole('heading', { level: 2, name: 'Hirshabelle State' })
     expect(hiranHeading.closest('section')).toHaveAttribute('id', 'hiran')
 
     const southwestHeading = screen.getByRole('heading', { level: 2, name: 'Southwest State' })

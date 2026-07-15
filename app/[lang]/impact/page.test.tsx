@@ -16,7 +16,7 @@ describe('ImpactPage', () => {
     ])
 
     expect(screen.getByRole('heading', { level: 1 })).toBeInTheDocument()
-    expect(screen.getByText('Hiran / Hirshabelle')).toBeInTheDocument()
+    expect(screen.getByText('Hirshabelle State')).toBeInTheDocument()
     expect(screen.getByText('Southwest State')).toBeInTheDocument()
     expect(
       screen.getByText('Our first annual report will be published here in early 2027.')

@@ -24,15 +24,15 @@
     "copyright": "© {year} Horumar Resettlement Network. All rights reserved."
   },
   "home": {
-    "heroHeadline": "Helping displaced families in Hiran and Southwest State rebuild their lives",
+    "heroHeadline": "Helping displaced families in Hirshabelle State and Southwest State rebuild their lives",
     "heroSubline": "Resettlement, shelter, and livelihoods support for families in Beledweyne and Baidoa.",
     "heroCtaPrimary": "Our work",
     "heroCtaSecondary": "Support our work",
     "heroPhotoAlt": "Hands stacked together in a show of unity and support",
     "heroPhotoCredit": "Photo: Hannah Busing / Unsplash",
     "whereWeWorkHeading": "Where We Work",
-    "mapAriaLabel": "Illustrative map of Somalia showing Hiran and Southwest State, the organization's areas of operation",
-    "mapRegionHiran": "Hiran / Hirshabelle",
+    "mapAriaLabel": "Illustrative map of Somalia showing Hirshabelle State and Southwest State, the organization's areas of operation",
+    "mapRegionHiran": "Hirshabelle State",
     "mapRegionSouthwest": "Southwest State",
     "mapAttribution": "Map data: geoBoundaries, CC-BY 4.0",
     "whatWeDoHeading": "What We Do",
@@ -44,9 +44,9 @@
     "resettlement": {
       "title": "Resettlement & Durable Solutions",
       "summary": "We help displaced families secure land, shelter, and a lasting place to rebuild.",
-      "problem": "Many displaced families in Hiran and Southwest State lack secure land tenure and safe shelter, leaving them without a stable place to rebuild.",
+      "problem": "Many displaced families in Hirshabelle State and Southwest State lack secure land tenure and safe shelter, leaving them without a stable place to rebuild.",
       "whatWeDo": "We support site selection, land tenure documentation, shelter construction, and integration support with host communities.",
-      "whereText": "Active in Hiran/Hirshabelle (Beledweyne) and Southwest State (Baidoa).",
+      "whereText": "Active in Hirshabelle State (Beledweyne) and Southwest State (Baidoa).",
       "measurement": "We track households resettled, land tenure documents issued, and household satisfaction surveys.",
       "story": "Halima and her three children were displaced twice before resettling near Beledweyne with support securing land and building a permanent shelter. Name and details changed to protect identity.",
       "storyAttribution": "Shared with consent for illustrative purposes; not a real client account."
@@ -56,7 +56,7 @@
       "summary": "We provide shelter kits and connect resettled families to water, health, and education.",
       "problem": "Resettled families often lack access to safe shelter and basic services like clean water, health care, and education.",
       "whatWeDo": "We distribute shelter kits and connect resettled households to water, health, and education services.",
-      "whereText": "Active in Hiran/Hirshabelle and Southwest State, alongside our resettlement sites.",
+      "whereText": "Active in Hirshabelle State and Southwest State, alongside our resettlement sites.",
       "measurement": "We track shelter kits distributed and households connected to essential services.",
       "story": "After resettling in Baidoa, Ahmed's family received a shelter kit and was connected to a nearby health clinic. Name and details changed to protect identity.",
       "storyAttribution": "Shared with consent for illustrative purposes; not a real client account."
@@ -66,7 +66,7 @@
       "summary": "We offer skills training and small business support so families move beyond aid dependency.",
       "problem": "Without stable income, displaced families remain dependent on aid long after resettlement.",
       "whatWeDo": "We provide skills training, cash-for-work opportunities, and small business grants.",
-      "whereText": "Active in Hiran/Hirshabelle and Southwest State.",
+      "whereText": "Active in Hirshabelle State and Southwest State.",
       "measurement": "We track trainings completed, grants disbursed, and household income over time.",
       "story": "With a small business grant, Fartun opened a tailoring shop in Beledweyne, now employing two other resettled women. Name and details changed to protect identity.",
       "storyAttribution": "Shared with consent for illustrative purposes; not a real client account."
@@ -76,7 +76,7 @@
       "summary": "We run safeguarding, referral, and dispute-resolution work between displaced and host communities.",
       "problem": "Displacement can increase risks of gender-based violence, child protection concerns, and tension between displaced and host communities.",
       "whatWeDo": "We run safeguarding services, GBV referral pathways, child protection support, and community dispute resolution.",
-      "whereText": "Active in Hiran/Hirshabelle and Southwest State.",
+      "whereText": "Active in Hirshabelle State and Southwest State.",
       "measurement": "We track referrals made, disputes resolved, and community feedback sessions held.",
       "story": "A community dispute-resolution session in Baidoa helped a displaced family and host neighbors agree on shared water access. Details changed to protect identity.",
       "storyAttribution": "Shared with consent for illustrative purposes; not a real client account."
@@ -143,7 +143,7 @@
   "about": {
     "heading": "About Us",
     "whoWeAreHeading": "Who We Are",
-    "whoWeAreBody": "Horumar Resettlement Network is a Somali-led organization supporting families displaced by conflict and climate shocks as they resettle and rebuild in Hiran and Southwest State.",
+    "whoWeAreBody": "Horumar Resettlement Network is a Somali-led organization supporting families displaced by conflict and climate shocks as they resettle and rebuild in Hirshabelle State and Southwest State.",
     "missionHeading": "Mission",
     "missionBody": "To help displaced families secure safe shelter, sustainable livelihoods, and a lasting place to belong.",
     "visionHeading": "Vision",
@@ -156,7 +156,7 @@
       "Do no harm"
     ],
     "ourStoryHeading": "Our Story",
-    "ourStoryBody": "Founded in response to displacement across Hiran and Southwest State, our organization grew from local relief efforts into a structured resettlement and livelihoods program.",
+    "ourStoryBody": "Founded in response to displacement across Hirshabelle State and Southwest State, our organization grew from local relief efforts into a structured resettlement and livelihoods program.",
     "leadershipHeading": "Leadership & Board",
     "leadership": [
       {
@@ -197,7 +197,7 @@
   },
   "whereWeWork": {
     "heading": "Where We Work",
-    "intro": "We work in two areas of Somalia: Hiran/Hirshabelle and Southwest State.",
+    "intro": "We work in two areas of Somalia: Hirshabelle State and Southwest State.",
     "regionLabels": {
       "districts": "Districts Covered",
       "office": "Our Office",
@@ -205,7 +205,7 @@
       "coordination": "Who We Coordinate With"
     },
     "hiran": {
-      "heading": "Hiran / Hirshabelle",
+      "heading": "Hirshabelle State",
       "displacementContext": "In May 2023, the Shabelle River burst its banks at Beledweyne in its worst flooding in roughly 30 years, affecting an estimated 200,000+ people and flooding around 79% of the town — one of several conflict- and climate-driven displacement waves in the region. (Sources: IOM, OCHA)",
       "districts": "Beledweyne district.",
       "office": "Beledweyne field office.",
@@ -228,7 +228,7 @@
     "donateBody": "Support our programs with a one-time or recurring gift.",
     "donateCta": "Donate now",
     "partnerHeading": "Partner With Us",
-    "partnerBody": "We welcome partnerships with donors, government agencies, and other organizations working in Hiran and Southwest State.",
+    "partnerBody": "We welcome partnerships with donors, government agencies, and other organizations working in Hirshabelle State and Southwest State.",
     "partnerCta": "Contact us to partner",
     "workHeading": "Work With Us",
     "workBody": "No open positions or volunteer roles are listed here at this time. If you're interested in volunteering with us, please reach out through our contact form and mention your interest.",
@@ -236,7 +236,7 @@
   },
   "donate": {
     "heading": "Donate",
-    "intro": "Your support helps displaced families in Hiran and Southwest State rebuild their lives.",
+    "intro": "Your support helps displaced families in Hirshabelle State and Southwest State rebuild their lives.",
     "mobileMoneyHeading": "Somali Mobile Money",
     "mobileMoneyIntro": "Send a donation directly using mobile money.",
     "copyButtonLabel": "Copy number",
@@ -288,7 +288,7 @@
     "offices": {
       "hiran": {
         "heading": "Beledweyne Office",
-        "address": "Horumar Resettlement Network Office, Beledweyne, Hiran, Somalia",
+        "address": "Horumar Resettlement Network Office, Beledweyne, Hirshabelle State, Somalia",
         "phone": "+252 61 234 5678",
         "whatsapp": "+252 61 234 5679",
         "email": "beledweyne@horumarresettlement.org"
@@ -361,7 +361,7 @@
   "seo": {
     "home": {
       "title": "Home",
-      "description": "Horumar Resettlement Network supports displaced families in Hiran and Southwest State, Somalia, with resettlement, shelter, and livelihoods programs."
+      "description": "Horumar Resettlement Network supports displaced families in Hirshabelle State and Southwest State, Somalia, with resettlement, shelter, and livelihoods programs."
     },
     "about": {
       "title": "About Us",
@@ -373,7 +373,7 @@
     },
     "whereWeWork": {
       "title": "Where We Work",
-      "description": "See the regions of Hiran/Hirshabelle and Southwest State where Horumar Resettlement Network operates."
+      "description": "See the regions of Hirshabelle State and Southwest State where Horumar Resettlement Network operates."
     },
     "impact": {
       "title": "Impact & Accountability",

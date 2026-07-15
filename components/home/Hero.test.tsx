@@ -7,7 +7,7 @@ describe('Hero', () => {
     render(<Hero lang="en" />)
 
     expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(
-      'Helping displaced families in Hiran and Southwest State rebuild their lives'
+      'Helping displaced families in Hirshabelle State and Southwest State rebuild their lives'
     )
     expect(
       screen.getByText(
