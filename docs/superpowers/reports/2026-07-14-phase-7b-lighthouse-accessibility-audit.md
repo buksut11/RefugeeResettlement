@@ -144,3 +144,37 @@ No fixed-width or non-reflowing elements found in the 2 recommended pages (or el
 - **3 distinct color-contrast defects**, one root cause per page (`components/donate/CopyableNumber.tsx`, `components/impact/FundsUseBar.tsx`, `components/programs/StoryBlock.tsx`) — Important each.
 - **4 total defects**, 0 Critical, 4 Important, 0 Minor.
 - Criteria 1 (heading order), 2 (alt text), 3 (keyboard/focus), and 6 (200% zoom) all pass — no additional Section 6 gaps beyond the four Lighthouse-flagged audits above.
+
+## After fixes
+
+Re-ran `npm run audit:lighthouse` after all four fixes (footer tap targets, donate USSD contrast, impact Funds Use Bar contrast, shelter story attribution contrast) landed:
+
+| URL | Performance | Accessibility | SEO | Best Practices |
+|---|---|---|---|---|
+| /en/ | 0.99 | 1.00 | 1.00 | 0.96 |
+| /so/ | 0.99 | 1.00 | 1.00 | 1.00 |
+| /en/about/ | 0.93 | 1.00 | 1.00 | 1.00 |
+| /en/programs/shelter/ | 1.00 | 1.00 | 1.00 | 1.00 |
+| /en/where-we-work/ | 1.00 | 1.00 | 1.00 | 1.00 |
+| /en/impact/ | 0.99 | 1.00 | 1.00 | 1.00 |
+| /en/donate/ | 0.98 | 1.00 | 1.00 | 1.00 |
+| /en/contact/ | 1.00 | 1.00 | 1.00 | 1.00 |
+| /en/privacy/ | 1.00 | 1.00 | 1.00 | 1.00 |
+| /so/contact/ | 0.96 | 1.00 | 1.00 | 1.00 |
+
+Accessibility is now 1.00 (perfect) on all 10/10 sampled pages, up from a 0.90-0.96 baseline range. No `target-size` or `color-contrast` audit failures remain in any of the 10 fresh JSON reports.
+
+## Fixes made
+
+- Enlarged the three footer legal links (Safeguarding, Privacy, Terms) to a ≥44px tap target (`components/layout/Footer.tsx`). Verified: `target-size` now scores 1 on all 10 URLs.
+- Raised the USSD-code text opacity on the Donate page from `text-ink/60` to a compliant shade (`components/donate/CopyableNumber.tsx`). Verified: `color-contrast` now scores 1 on `/en/donate/`.
+- Fixed insufficient contrast on the Funds Use Bar's accent ("Fundraising") segment (`components/impact/FundsUseBar.tsx`). Verified: `color-contrast` now scores 1 on `/en/impact/`.
+- Raised the shelter story attribution text opacity for AA contrast (`components/programs/StoryBlock.tsx`). Verified: `color-contrast` now scores 1 on `/en/programs/shelter/`.
+
+## Performance/SEO gaps (not fixed this phase)
+
+All Performance and SEO scores meet or exceed the master prompt's targets (Performance ≥ 90, SEO ≥ 95) across all 10 sample URLs — no gaps to record. (Lowest Performance score is `/en/about/` at 0.93 → 93/100, still above the 90 target.)
+
+## Scope note
+
+This audit ran against the local static build on `localhost`, not the real deployed domain. Re-verify scores once Phase 8 deploys to the real production URL, since network conditions and the real domain's TLS/CDN setup can shift results.

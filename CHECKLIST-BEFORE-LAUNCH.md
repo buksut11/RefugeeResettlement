@@ -82,3 +82,10 @@ None yet — impact statistics are introduced in Phase 3 (homepage) and Phase 5 
 - `sitemap.xml`, `robots.txt`, and every page's canonical/hreflang/Open Graph URL use a placeholder production domain (`https://example.org`) via the single `SITE_URL` constant in `lib/site-config.ts` (consumed by `app/sitemap.ts`, `app/robots.ts`, and `app/[lang]/layout.tsx`'s `metadataBase`) — update that one constant once Phase 8 assigns the real domain and every URL across the site becomes absolute and correct.
 - Security headers are configured in `vercel.json` but only take effect once the site is actually deployed (Phase 8).
 - The Safeguarding & PSEA page now resolves — the About page's Commitments block link, the Contact page's safeguarding callout, and the Footer's safeguarding link (all pointing here since Phase 4) are no longer 404s. The Terms page resolves the Footer's terms link similarly.
+
+## Phase 7b (Accessibility Audit & Lighthouse Run) — what's real vs. placeholder right now
+
+- A real Lighthouse run (not a re-implementation of its checks) was executed against 10 representative URLs covering every distinct page pattern, in both languages where relevant. See `docs/superpowers/reports/2026-07-14-phase-7b-lighthouse-accessibility-audit.md` for full scores.
+- 4 accessibility defects were found and fixed — see the report's Fixes Made section for details. Accessibility now scores 1.00 (perfect) on all 10/10 sampled pages, up from a 0.90-0.96 baseline.
+- All Performance and SEO scores meet the master prompt's targets (Performance ≥ 90, SEO ≥ 95) across all 10 sample URLs.
+- This audit ran against the local static build, not the real deployed domain — re-verify scores once Phase 8 assigns a real domain and deploys.
