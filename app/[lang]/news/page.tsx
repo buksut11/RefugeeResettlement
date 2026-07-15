@@ -25,7 +25,7 @@ export default function NewsPage({ params }: { params: { lang: Lang } }) {
   const posts = getAllNewsPosts(lang)
 
   return (
-    <div className="px-4 py-10">
+    <div className="px-page py-10">
       <h1 className="font-display text-3xl font-semibold">{content.news.pageHeading}</h1>
       <NewsFilters lang={lang} posts={posts} />
     </div>

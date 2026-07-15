@@ -10,7 +10,7 @@ export function ProgramDetail({ lang, slug }: { lang: Lang; slug: ProgramSlug })
   const { programDetail } = content
 
   return (
-    <div className="px-4 py-10">
+    <div className="px-page py-10">
       <h1 className="font-display text-3xl font-semibold">{program.title}</h1>
       <p className="mt-2 text-lg">{program.summary}</p>
 

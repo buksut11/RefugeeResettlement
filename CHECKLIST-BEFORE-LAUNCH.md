@@ -95,3 +95,12 @@ None yet — impact statistics are introduced in Phase 3 (homepage) and Phase 5 
 - All three remaining Section 10 deliverables now exist: `CONTENT-GUIDE.md` (how to edit any content without code), `DEPLOY.md` (click-by-click Vercel deployment and domain connection), and `ASSUMPTIONS.md` (every technical/design decision made without your explicit sign-off, for you to confirm or overrule).
 - The site has not actually been deployed yet — `DEPLOY.md` is ready to follow, but no live URL or real domain exists at time of writing. Every Section 0 fact (including the domain name itself) is still unconfirmed, which blocks `DEPLOY.md`'s domain-connection step (Step 5) and the `SITE_URL` update (Step 6) until you supply a real domain.
 - No code changed this phase — the site itself has been feature-complete and passing all tests/typecheck/build since Phase 7b.
+
+## Post-Phase-8 fix — layout bugs found by an actual browser check
+
+The Phase 7b report explicitly flagged that its "usable at 200% zoom" pass was a best-effort static-source assessment, not a literal rendered check, and recommended a real browser check before ship. That check happened after Phase 8 (screenshots at 375px and 1440px against the built static export) and found two real, site-wide defects that no test/audit had caught:
+
+- **Header nav overflowed on mobile.** `components/layout/Header.tsx`'s outer `<header>` forced the logo, all 9 nav links, and the language switcher into one non-wrapping flex row, causing nav text to run off the edge of a 375px viewport. Fixed by stacking logo/nav/switcher vertically below the `sm:` breakpoint instead of adding a JS hamburger menu (keeping with the site's "usable with JS disabled" requirement).
+- **No page anywhere constrained content width.** Every section used a flat `px-4`, so on desktop widths the whole site stretched edge-to-edge with no visual containment. Fixed with a `.px-page` utility (`app/globals.css`) — a `max()`-based centering padding applied to every page/section wrapper — that centers content at a ~1152px max width while preserving full-bleed background bands (e.g. the homepage Impact Strip, the Footer) since the padding lives on the section element itself, not a wrapping div.
+
+Both verified visually (before/after screenshots) and via the full test suite, typecheck, and build — all still pass.

@@ -7,7 +7,7 @@ export function Footer({ lang }: { lang: Lang }) {
   const year = new Date().getFullYear().toString()
 
   return (
-    <footer className="site-footer bg-primary px-4 py-8 text-sm text-paper">
+    <footer className="site-footer bg-primary px-page py-8 text-sm text-paper">
       <div className="mb-4">
         <h2 className="font-display text-base">{content.footer.contactHeading}</h2>
         <Link href={`/${lang}/contact/`}>{content.nav.contact}</Link>

@@ -19,3 +19,10 @@ a {
 a:hover {
   @apply text-secondary;
 }
+
+@layer utilities {
+  .px-page {
+    padding-left: max(1rem, calc((100% - 72rem) / 2));
+    padding-right: max(1rem, calc((100% - 72rem) / 2));
+  }
+}

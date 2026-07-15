@@ -25,7 +25,7 @@ export default function AboutPage({ params }: { params: { lang: Lang } }) {
   const { about } = content
 
   return (
-    <div className="px-4 py-10">
+    <div className="px-page py-10">
       <h1 className="font-display text-3xl font-semibold">{about.heading}</h1>
 
       <section className="mt-8">

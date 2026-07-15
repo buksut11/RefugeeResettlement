@@ -23,7 +23,7 @@ export default function WhereWeWorkPage({ params }: { params: { lang: Lang } }) 
   const { whereWeWork } = content
 
   return (
-    <div className="px-4 py-10">
+    <div className="px-page py-10">
       <h1 className="font-display text-3xl font-semibold">{whereWeWork.heading}</h1>
       <p className="mt-2 text-lg">{whereWeWork.intro}</p>
       <RegionBlock id="hiran" region={whereWeWork.hiran} labels={whereWeWork.regionLabels} />

@@ -27,7 +27,7 @@ export default function DonatePage({ params }: { params: { lang: Lang } }) {
   const { donate } = content
 
   return (
-    <div className="px-4 py-10">
+    <div className="px-page py-10">
       <h1 className="font-display text-3xl font-semibold">{donate.heading}</h1>
       <p className="mt-2 text-lg">{donate.intro}</p>
 

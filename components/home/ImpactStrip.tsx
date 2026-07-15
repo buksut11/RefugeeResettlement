@@ -12,7 +12,7 @@ export function ImpactStrip({ lang }: { lang: Lang }) {
   const content = getContent(lang)
 
   return (
-    <section className="bg-secondary/10 px-4 py-10">
+    <section className="bg-secondary/10 px-page py-10">
       <h2 className="font-display text-2xl font-semibold">{content.home.impactHeading}</h2>
       <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {FIGURE_KEYS.map((key) => (

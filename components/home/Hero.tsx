@@ -6,7 +6,7 @@ export function Hero({ lang }: { lang: Lang }) {
   const content = getContent(lang)
 
   return (
-    <section className="px-4 py-10">
+    <section className="px-page py-10">
       <div className="mb-6 flex h-56 items-center justify-center rounded bg-primary/10 text-ink">
         <span className="font-body text-sm">{content.home.heroPhotoPlaceholder}</span>
       </div>

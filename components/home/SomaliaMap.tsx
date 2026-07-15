@@ -13,7 +13,7 @@ export function SomaliaMap({ lang }: { lang: Lang }) {
   const content = getContent(lang)
 
   return (
-    <section className="px-4 py-10">
+    <section className="px-page py-10">
       <h2 className="font-display text-2xl font-semibold">{content.home.whereWeWorkHeading}</h2>
       <svg viewBox={VIEW_BOX} className="mt-4 w-full max-w-md">
         <title>{content.home.mapAriaLabel}</title>

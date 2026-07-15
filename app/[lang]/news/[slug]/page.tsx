@@ -49,7 +49,7 @@ export default function NewsPostPage({
         : content.news.regionBoth
 
   return (
-    <div className="px-4 py-10">
+    <div className="px-page py-10">
       <h1 className="font-display text-3xl font-semibold">{post.title}</h1>
       <p className="text-xs text-ink/60">{post.date}</p>
       <p className="mt-1 text-sm">

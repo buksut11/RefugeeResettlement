@@ -24,7 +24,7 @@ export default function PrivacyPage({ params }: { params: { lang: Lang } }) {
   const { privacy } = content
 
   return (
-    <div className="px-4 py-10">
+    <div className="px-page py-10">
       <div
         dangerouslySetInnerHTML={{
           __html:

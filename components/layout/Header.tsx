@@ -21,7 +21,7 @@ export function Header({ lang }: { lang: Lang }) {
   const content = getContent(lang)
 
   return (
-    <header className="site-header flex items-center justify-between gap-4 bg-paper px-4 py-3">
+    <header className="site-header flex flex-col gap-3 bg-paper px-page py-3 sm:flex-row sm:items-center sm:justify-between">
       <Link href={`/${lang}/`} className="site-header__logo font-display font-semibold text-primary">
         {content.site.name}
       </Link>
