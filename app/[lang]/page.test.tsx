@@ -17,6 +17,8 @@ describe('HomePage', () => {
       'Protection & Community Cohesion',
       'Impact',
       'Latest News',
+      'Shelter kits arrive in Beledweyne',
+      'First livelihoods training cohort completes course',
     ])
 
     expect(screen.getByRole('heading', { level: 1 })).toBeInTheDocument()
