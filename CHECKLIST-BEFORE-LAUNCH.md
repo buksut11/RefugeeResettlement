@@ -89,3 +89,9 @@ None yet — impact statistics are introduced in Phase 3 (homepage) and Phase 5 
 - 4 accessibility defects were found and fixed — see the report's Fixes Made section for details. Accessibility now scores 1.00 (perfect) on all 10/10 sampled pages, up from a 0.90-0.96 baseline.
 - All Performance and SEO scores meet the master prompt's targets (Performance ≥ 90, SEO ≥ 95) across all 10 sample URLs.
 - This audit ran against the local static build, not the real deployed domain — re-verify scores once Phase 8 assigns a real domain and deploys.
+
+## Phase 8 (Deployment & Handover) — what's real vs. placeholder right now
+
+- All three remaining Section 10 deliverables now exist: `CONTENT-GUIDE.md` (how to edit any content without code), `DEPLOY.md` (click-by-click Vercel deployment and domain connection), and `ASSUMPTIONS.md` (every technical/design decision made without your explicit sign-off, for you to confirm or overrule).
+- The site has not actually been deployed yet — `DEPLOY.md` is ready to follow, but no live URL or real domain exists at time of writing. Every Section 0 fact (including the domain name itself) is still unconfirmed, which blocks `DEPLOY.md`'s domain-connection step (Step 5) and the `SITE_URL` update (Step 6) until you supply a real domain.
+- No code changed this phase — the site itself has been feature-complete and passing all tests/typecheck/build since Phase 7b.
