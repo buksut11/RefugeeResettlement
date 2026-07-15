@@ -10,13 +10,17 @@ export function Footer({ lang }: { lang: Lang }) {
     <footer className="site-footer border-t border-primary bg-primary px-page pb-8 pt-12 text-sm text-paper">
       <div className="grid gap-8 border-b border-paper/15 pb-8 sm:grid-cols-2">
         <div>
-          <h2 className="eyebrow text-paper/60">{content.footer.contactHeading}</h2>
+          <h2 className="font-mono text-[0.7rem] uppercase tracking-[0.18em] text-paper/60">
+            {content.footer.contactHeading}
+          </h2>
           <Link href={`/${lang}/contact/`} className="mt-2 inline-block text-paper no-underline hover:underline">
             {content.nav.contact}
           </Link>
         </div>
         <div>
-          <h2 className="eyebrow text-paper/60">{content.footer.quickLinksHeading}</h2>
+          <h2 className="font-mono text-[0.7rem] uppercase tracking-[0.18em] text-paper/60">
+            {content.footer.quickLinksHeading}
+          </h2>
           <ul className="mt-1">
             <li>
               <Link href={`/${lang}/safeguarding/`} className="inline-block py-3 text-paper no-underline hover:underline">
