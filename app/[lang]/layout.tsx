@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Newsreader, IBM_Plex_Sans } from 'next/font/google'
+import { Newsreader, IBM_Plex_Sans, IBM_Plex_Mono } from 'next/font/google'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { getContent } from '@/lib/content'
@@ -18,6 +18,13 @@ const plexSans = IBM_Plex_Sans({
   subsets: ['latin'],
   weight: ['400', '500', '600'],
   variable: '--font-plex-sans',
+  display: 'swap',
+})
+
+const plexMono = IBM_Plex_Mono({
+  subsets: ['latin'],
+  weight: ['500'],
+  variable: '--font-plex-mono',
   display: 'swap',
 })
 
@@ -45,7 +52,7 @@ export default function LangLayout({
   const { lang } = params
 
   return (
-    <html lang={lang} className={`${newsreader.variable} ${plexSans.variable}`}>
+    <html lang={lang} className={`${newsreader.variable} ${plexSans.variable} ${plexMono.variable}`}>
       <body>
         <script
           type="application/ld+json"
