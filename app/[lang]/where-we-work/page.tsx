@@ -3,6 +3,7 @@ import { getContent } from '@/lib/content'
 import { buildMetadata } from '@/lib/seo'
 import { LANGS, type Lang } from '@/lib/i18n'
 import { RegionBlock } from '@/components/where-we-work/RegionBlock'
+import { RegionMap } from '@/components/where-we-work/RegionMap'
 
 export function generateStaticParams() {
   return LANGS.map((lang) => ({ lang }))
@@ -19,15 +20,23 @@ export function generateMetadata({ params }: { params: { lang: Lang } }): Metada
 }
 
 export default function WhereWeWorkPage({ params }: { params: { lang: Lang } }) {
-  const content = getContent(params.lang)
+  const { lang } = params
+  const content = getContent(lang)
   const { whereWeWork } = content
 
   return (
     <div className="px-page py-10">
-      <h1 className="font-display text-3xl font-semibold">{whereWeWork.heading}</h1>
-      <p className="mt-2 text-lg">{whereWeWork.intro}</p>
-      <RegionBlock id="hiran" region={whereWeWork.hiran} labels={whereWeWork.regionLabels} />
-      <RegionBlock id="southwest" region={whereWeWork.southwest} labels={whereWeWork.regionLabels} />
+      <p className="eyebrow">{content.home.mapRegionHiran} &middot; {content.home.mapRegionSouthwest}</p>
+      <h1 className="mt-2 font-display text-3xl font-semibold">{whereWeWork.heading}</h1>
+      <p className="mt-2 max-w-[52ch] text-lg text-ink/80">{whereWeWork.intro}</p>
+
+      <div className="mt-10 grid gap-10 lg:grid-cols-[minmax(0,22rem)_1fr] lg:items-start lg:gap-14">
+        <RegionMap lang={lang} />
+        <div className="grid gap-6">
+          <RegionBlock id="hiran" region={whereWeWork.hiran} labels={whereWeWork.regionLabels} tone="secondary" />
+          <RegionBlock id="southwest" region={whereWeWork.southwest} labels={whereWeWork.regionLabels} tone="accent" />
+        </div>
+      </div>
     </div>
   )
 }

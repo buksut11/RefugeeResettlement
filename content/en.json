@@ -208,18 +208,18 @@
     "hiran": {
       "heading": "Hirshabelle State",
       "displacementContext": "In May 2023, the Shabelle River burst its banks at Beledweyne in its worst flooding in roughly 30 years, affecting an estimated 200,000+ people and flooding around 79% of the town — one of several conflict- and climate-driven displacement waves in the region. (Sources: IOM, OCHA)",
-      "districts": "Beledweyne district.",
-      "office": "Beledweyne field office.",
-      "whatWeRun": "Resettlement, shelter, and livelihoods programming.",
-      "coordination": "Coordinates with district authorities and community leaders in Beledweyne."
+      "districts": "Beledweyne district",
+      "office": "Beledweyne field office",
+      "whatWeRun": "Resettlement, shelter, and livelihoods programming",
+      "coordination": "District authorities and community leaders in Beledweyne"
     },
     "southwest": {
       "heading": "Southwest State",
-      "displacementContext": "Southwest State has experienced repeated displacement driven by conflict and recurring drought across South-Central Somalia. (general, well-established context; specific incident data pending)",
-      "districts": "Baidoa district.",
-      "office": "Baidoa field office.",
-      "whatWeRun": "Resettlement, shelter, and livelihoods programming.",
-      "coordination": "Coordinates with district authorities and community leaders in Baidoa."
+      "displacementContext": "Southwest State has experienced repeated displacement driven by conflict and recurring drought across South-Central Somalia.",
+      "districts": "Baidoa district",
+      "office": "Baidoa field office",
+      "whatWeRun": "Resettlement, shelter, and livelihoods programming",
+      "coordination": "District authorities and community leaders in Baidoa"
     }
   },
   "getInvolved": {

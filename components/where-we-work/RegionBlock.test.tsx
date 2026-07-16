@@ -20,7 +20,7 @@ const labels = {
 
 describe('RegionBlock', () => {
   it('renders the region heading, context, and labeled fields, with the given anchor id', () => {
-    render(<RegionBlock id="hiran" region={region} labels={labels} />)
+    render(<RegionBlock id="hiran" region={region} labels={labels} tone="secondary" />)
 
     const heading = screen.getByRole('heading', { level: 2, name: 'Hiran / Hirshabelle' })
     expect(heading).toBeInTheDocument()

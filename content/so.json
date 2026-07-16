@@ -208,18 +208,18 @@
     "hiran": {
       "heading": "Gobolka Hirshabelle",
       "displacementContext": "Bishii Maajo 2023, Webiga Shabeelle ayaa ka buuxsamay Beledweyne, daadka ugu weyn 30 sano gudahood, taasoo saameysay ilaa 200,000 oo qof waxayna daadku qarqisay ilaa 79% oo magaalada ah — mid ka mid ah dhowr duufaan oo barakac ah oo ay keentay colaad iyo isbeddel cimileed. (Ilo: IOM, OCHA)",
-      "districts": "Degmada Beledweyne.",
-      "office": "Xafiiska goobta ee Beledweyne.",
-      "whatWeRun": "Barnaamijyada dib-u-dejinta, hoyga, iyo nolol-maalmeedka.",
-      "coordination": "Waxaan la iskaashanaa maamulka degmada iyo hoggaamiyeyaasha bulshada ee Beledweyne."
+      "districts": "Degmada Beledweyne",
+      "office": "Xafiiska goobta ee Beledweyne",
+      "whatWeRun": "Barnaamijyada dib-u-dejinta, hoyga, iyo nolol-maalmeedka",
+      "coordination": "Maamulka degmada iyo hoggaamiyeyaasha bulshada ee Beledweyne"
     },
     "southwest": {
-      "heading": "Koonfur Galbeed",
-      "displacementContext": "Koonfur Galbeed waxay soo martay barakac dib-u-soo-noqnoqda oo ay sababeen colaad iyo abaaro soo noqnoqda ee ka dhaca Koonfur-Dhexe ee Soomaaliya. (macluumaad guud oo la aqoonsaday; xogta dhacdada gaarka ah waa la sugayaa)",
-      "districts": "Degmada Baydhabo.",
-      "office": "Xafiiska goobta ee Baydhabo.",
-      "whatWeRun": "Barnaamijyada dib-u-dejinta, hoyga, iyo nolol-maalmeedka.",
-      "coordination": "Waxaan la iskaashanaa maamulka degmada iyo hoggaamiyeyaasha bulshada ee Baydhabo."
+      "heading": "Gobolka Koonfur Galbeed",
+      "displacementContext": "Koonfur Galbeed waxay soo martay barakac dib-u-soo-noqnoqda oo ay sababeen colaad iyo abaaro soo noqnoqda ee ka dhaca Koonfur-Dhexe ee Soomaaliya.",
+      "districts": "Degmada Baydhabo",
+      "office": "Xafiiska goobta ee Baydhabo",
+      "whatWeRun": "Barnaamijyada dib-u-dejinta, hoyga, iyo nolol-maalmeedka",
+      "coordination": "Maamulka degmada iyo hoggaamiyeyaasha bulshada ee Baydhabo"
     }
   },
   "getInvolved": {
